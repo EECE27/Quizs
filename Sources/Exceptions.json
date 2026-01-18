@@ -20,7 +20,7 @@
       "Eliminates the need for data bypassing entirely",
       "Reduces the number of cycles required for a single instruction"
     ],
-    "answer": "Instructions are of fixed size with fields in fixed locations",
+    "answer": "Increases the frequency of operation but adds timing overheads and hazards",
     "citation": "[2]"
   },
   {
@@ -200,7 +200,7 @@
       "Terminate vs. Resume",
       "User requested vs. Coerced"
     ],
-    "answer": "Asynchronous vs. Synchronous",
+    "answer": "User requested vs. Coerced",
     "citation": "[15]"
   },
   {
