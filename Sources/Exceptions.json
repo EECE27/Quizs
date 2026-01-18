@@ -516,18 +516,6 @@
     "citation": "[13]"
   },
   {
-    "id": 44,
-    "question": "In passage [20], what level of design is described as 'wires and electricity'?",
-    "options": [
-      "User level",
-      "Logic level",
-      "Physical/Electrical level",
-      "Architecture level"
-    ],
-    "answer": "Physical/Electrical level",
-    "citation": "[7, 20]"
-  },
-  {
     "id": 45,
     "question": "What is the 'cost' that the designer must justify to the customer?",
     "options": [
@@ -876,18 +864,6 @@
     "citation": "[16]"
   },
   {
-    "id": 74,
-    "question": "Which of these is a 'Looking Forward' topic in the slides?",
-    "options": [
-      "Dynamic scheduling",
-      "Branch prediction",
-      "Multiple parallel pipelines",
-      "All of the above"
-    ],
-    "answer": "All of the above",
-    "citation": "[19]"
-  },
-  {
     "id": 75,
     "question": "What is the main takeaway regarding pipeline design according to the sources?",
     "options": [
@@ -900,3 +876,4 @@
     "citation": "[2, 7, 20, 21]"
   }
 ]
+
