@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary characteristic of an instruction format that makes pipelining easier to implement?",
+    "options": [
+      "Instructions have varying sizes and flexible field locations",
+      "Instructions are of fixed size with fields in fixed locations",
+      "Instructions are exclusively focused on memory access",
+      "Instructions are compressed to reduce memory bandwidth"
+    ],
+    "answer": "Instructions are of fixed size with fields in fixed locations",
+    "citation": "[1]"
+  },
+  {
+    "id": 2,
+    "question": "Increasing the number of pipeline stages generally has what effect on the processor?",
+    "options": [
+      "Decreases the frequency of operation and simplifies logic",
+      "Increases the frequency of operation but adds timing overheads and hazards",
+      "Eliminates the need for data bypassing entirely",
+      "Reduces the number of cycles required for a single instruction"
+    ],
+    "answer": "Instructions are of fixed size with fields in fixed locations",
+    "citation": "[2]"
+  },
+  {
+    "id": 3,
+    "question": "Which type of dependency is described as 'essential' for the logic of a program?",
+    "options": [
+      "Write After Write (WAW)",
+      "Read After Write (RAW)",
+      "Write After Read (WAR)",
+      "Read After Read (RAR)"
+    ],
+    "answer": "Read After Write (RAW)",
+    "citation": "[2]"
+  },
+  {
+    "id": 4,
+    "question": "What is another term for a 'Write After Write' (WAW) dependency?",
+    "options": [
+      "Essential dependency",
+      "Ordering dependency",
+      "Output dependency",
+      "Anti-dependency"
+    ],
+    "answer": "Output dependency",
+    "citation": "[2]"
+  },
+  {
+    "id": 5,
+    "question": "What is the nature of a 'Write After Read' (WAR) dependency?",
+    "options": [
+      "It is an output dependency",
+      "It is an ordering dependency",
+      "It is an essential data flow dependency",
+      "It occurs when two instructions read the same register"
+    ],
+    "answer": "It is an ordering dependency",
+    "citation": "[2]"
+  },
+  {
+    "id": 6,
+    "question": "Which of the following dependencies does NOT typically cause a hazard in a standard pipeline?",
+    "options": [
+      "Read After Write (RAW)",
+      "Write After Write (WAW)",
+      "Read After Read (RAR)",
+      "Write After Read (WAR)"
+    ],
+    "answer": "Read After Read (RAR)",
+    "citation": "[2, 3]"
+  },
+  {
+    "id": 7,
+    "question": "In the code 'DIV R3, R1, R2' followed by 'ADD R5, R3, R2', what dependency exists on register R3?",
+    "options": [
+      "WAW",
+      "RAW",
+      "WAR",
+      "RAR"
+    ],
+    "answer": "RAW",
+    "citation": "[2]"
+  },
+  {
+    "id": 8,
+    "question": "In the code 'DIV R3, R1, R2' and 'MUL R1, R2, R6', what dependency exists regarding register R1?",
+    "options": [
+      "RAW",
+      "WAW",
+      "WAR",
+      "RAR"
+    ],
+    "answer": "WAR",
+    "citation": "[2]"
+  },
+  {
+    "id": 9,
+    "question": "What is the preferred hardware method to resolve RAW hazards without stopping the pipeline?",
+    "options": [
+      "Flushing",
+      "Bypassing (Forwarding)",
+      "Re-ordering in software",
+      "Stalling"
+    ],
+    "answer": "Bypassing (Forwarding)",
+    "citation": "[4]"
+  },
+  {
+    "id": 10,
+    "question": "Why can 'bypassing' NOT always eliminate stalls, specifically with 'Load' instructions?",
+    "options": [
+      "Memory is too slow to provide data before the WB stage",
+      "Data is only available after the Memory (M) stage, which may be too late for the next EX stage",
+      "Load instructions don't use the ALU",
+      "Bypassing only works for floating-point numbers"
+    ],
+    "answer": "Data is only available after the Memory (M) stage, which may be too late for the next EX stage",
+    "citation": "[4, 5]"
+  },
+  {
+    "id": 11,
+    "question": "What must happen if a 'Sub' instruction depends on a 'Load' instruction that has not yet finished its Memory stage?",
+    "options": [
+      "The 'Sub' instruction must be flushed",
+      "The pipeline must stall the 'Sub' instruction",
+      "The 'Load' instruction must be aborted",
+      "The 'Sub' instruction should skip the EX stage"
+    ],
+    "answer": "The pipeline must stall the 'Sub' instruction",
+    "citation": "[4]"
+  },
+  {
+    "id": 12,
+    "question": "According to the sources, what is the 'cost' of implementing extensive bypassing in hardware?",
+    "options": [
+      "It requires more software updates",
+      "It increases the number of wires and complexity (area)",
+      "It slows down the memory access time",
+      "It reduces the instruction set size"
+    ],
+    "answer": "It increases the number of wires and complexity (area)",
+    "citation": "[6-8]"
+  },
+  {
+    "id": 13,
+    "question": "How many cycles can a simple algorithm for a double precision floating point divide take?",
+    "options": [
+      "Exactly 5 cycles",
+      "Between 4 and 10 cycles",
+      "Over 50 cycles",
+      "Exactly 1 cycle"
+    ],
+    "answer": "Over 50 cycles",
+    "citation": "[9, 10]"
+  },
+  {
+    "id": 14,
+    "question": "What is the drawback of forcing all instructions to take the same number of stages as a slow floating-point operation?",
+    "options": [
+      "It makes the hardware too complex",
+      "It makes everything slow and reduces overall performance",
+      "It causes too many branch mispredictions",
+      "It leads to memory corruption"
+    ],
+    "answer": "It makes everything slow and reduces overall performance",
+    "citation": "[11, 12]"
+  },
+  {
+    "id": 15,
+    "question": "In an extended pipeline, what does 'out of order termination' mean?",
+    "options": [
+      "Instructions are fetched in a different order than written",
+      "Instructions may finish their execution in a different order than they started",
+      "The program ends before the last instruction",
+      "The processor shuts down due to an error"
+    ],
+    "answer": "Instructions may finish their execution in a different order than they started",
+    "citation": "[13]"
+  },
+  {
+    "id": 16,
+    "question": "In a multi-cycle pipeline, where might structural hazards (contention) occur?",
+    "options": [
+      "Only in the Fetch stage",
+      "In the Decode stage",
+      "In the Memory (M) or Write Back (WB) stages",
+      "Exclusively in the Instruction Cache"
+    ],
+    "answer": "In the Memory (M) or Write Back (WB) stages",
+    "citation": "[13, 14]"
+  },
+  {
+    "id": 17,
+    "question": "Which classification pair describes whether an exception is triggered by an external device or the program itself?",
+    "options": [
+      "Maskable vs. Nonmaskable",
+      "Asynchronous vs. Synchronous",
+      "Terminate vs. Resume",
+      "User requested vs. Coerced"
+    ],
+    "answer": "Asynchronous vs. Synchronous",
+    "citation": "[15]"
+  },
+  {
+    "id": 18,
+    "question": "What defines a 'Precise Exception'?",
+    "options": [
+      "The error occurs at an exact clock cycle",
+      "All instructions before the exception finish, and those after it do not change the state",
+      "The exception is handled in exactly one cycle",
+      "The processor identifies the exact transistor that failed"
+    ],
+    "answer": "All instructions before the exception finish, and those after it do not change the state",
+    "citation": "[15]"
+  },
+  {
+    "id": 19,
+    "question": "If an exception occurs and the instructions are restarted from scratch after handling, this is a characteristic of:",
+    "options": [
+      "Imprecise exceptions",
+      "Precise exceptions",
+      "Software interrupts",
+      "Branch prediction"
+    ],
+    "answer": "Precise exceptions",
+    "citation": "[15]"
+  },
+  {
+    "id": 20,
+    "question": "When an exception occurs during a multi-cycle 'Add' instruction, what happens to a 'Multiply' instruction that started before it?",
+    "options": [
+      "It is flushed",
+      "It is allowed to complete",
+      "It is restarted",
+      "It is paused and its state is saved to the stack"
+    ],
+    "answer": "It is allowed to complete",
+    "citation": "[16]"
+  },
+  {
+    "id": 21,
+    "question": "Why is handling exceptions in a pipeline with 'out of order termination' difficult?",
+    "options": [
+      "Because instructions can't be flushed",
+      "A later instruction might have already changed the state (WB) before an earlier instruction triggers an exception",
+      "Because memory is accessed twice",
+      "Because the ALU cannot perform divisions"
+    ],
+    "answer": "A later instruction might have already changed the state (WB) before an earlier instruction triggers an exception",
+    "citation": "[14, 16]"
+  },
+  {
+    "id": 22,
+    "question": "What is 'Coerced' exception classification referring to?",
+    "options": [
+      "An exception the user purposely triggered",
+      "An exception forced by a hardware failure or illegal operation",
+      "An exception that can be ignored by the CPU",
+      "An exception that occurs between instructions"
+    ],
+    "answer": "An exception forced by a hardware failure or illegal operation",
+    "citation": "[13]"
+  },
+  {
+    "id": 23,
+    "question": "Which type of exception is generally easier to implement and handle?",
+    "options": [
+      "Synchronous within an instruction",
+      "Asynchronous between instructions",
+      "Coerced nonmaskable exceptions",
+      "Out-of-order terminal exceptions"
+    ],
+    "answer": "Asynchronous between instructions",
+    "citation": "[15]"
+  },
+  {
+    "id": 24,
+    "question": "What is the result of a 'Maskable' exception?",
+    "options": [
+      "It can be disabled or ignored by the programmer",
+      "It always terminates the program",
+      "It must be handled immediately",
+      "It hides the error from the user"
+    ],
+    "answer": "It can be disabled or ignored by the programmer",
+    "citation": "[15]"
+  },
+  {
+    "id": 25,
+    "question": "What is 'Forwarding' (Bypassing) specifically intended to solve?",
+    "options": [
+      "Control Hazards",
+      "Structural Hazards",
+      "Data Hazards (RAW)",
+      "Exception handling delays"
+    ],
+    "answer": "Data Hazards (RAW)",
+    "citation": "[3, 4]"
+  },
+  {
+    "id": 26,
+    "question": "In the context of the lecture, what is 'flushing' the pipeline?",
+    "options": [
+      "Cleaning the cache",
+      "Removing instructions that were fetched but should not be executed",
+      "Resetting the power supply",
+      "Writing all register values to memory"
+    ],
+    "answer": "Removing instructions that were fetched but should not be executed",
+    "citation": "[10, 17]"
+  },
+  {
+    "id": 27,
+    "question": "What determines the clock cycle in a pipeline where stages have different lengths?",
+    "options": [
+      "The average speed of all stages",
+      "The delay of the slowest stage",
+      "The speed of the Decode stage",
+      "The frequency of the external oscillator"
+    ],
+    "answer": "The delay of the slowest stage",
+    "citation": "[9, 11]"
+  },
+  {
+    "id": 28,
+    "question": "What is one suggested solution to handle different execution times for instructions without slowing the clock?",
+    "options": [
+      "Remove floating point units",
+      "Allow instructions to take multiple cycles and terminate out of order",
+      "Use only one pipeline stage",
+      "Write all programs in assembly"
+    ],
+    "answer": "Allow instructions to take multiple cycles and terminate out of order",
+    "citation": "[12]"
+  },
+  {
+    "id": 29,
+    "question": "If two instructions reach the Write Back stage at the same time, what is a possible hardware solution?",
+    "options": [
+      "Double the clock speed",
+      "Stall one of the instructions at the Decode or WB stage",
+      "Execute both simultaneously in the same register",
+      "Discard the second instruction"
+    ],
+    "answer": "Stall one of the instructions at the Decode or WB stage",
+    "citation": "[13]"
+  },
+  {
+    "id": 30,
+    "question": "Which of these is a classification for exceptions mentioned in the slides?",
+    "options": [
+      "Internal vs. External",
+      "User requested vs. Coerced",
+      "Resume vs. Terminate",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "citation": "[13, 15]"
+  },
+  {
+    "id": 31,
+    "question": "How does the hardware handle a 'branch misprediction' according to the lecture's overview?",
+    "options": [
+      "It halts the processor",
+      "It flushes instructions from the 'wrong' direction",
+      "It ignores the error and continues",
+      "It re-runs the entire program"
+    ],
+    "answer": "It flushes instructions from the 'wrong' direction",
+    "citation": "[10, 17]"
+  },
+  {
+    "id": 32,
+    "question": "In the code '$I3: MUL R1, R2, R6' and '$I4: ADD R5, R1, R5', what is the dependency?",
+    "options": [
+      "RAR on R2",
+      "RAW on R1",
+      "WAW on R5",
+      "WAR on R6"
+    ],
+    "answer": "RAW on R1",
+    "citation": "[2]"
+  },
+  {
+    "id": 33,
+    "question": "A 'Synchronous' exception is one that:",
+    "options": [
+      "Occurs at the same time every day",
+      "Is tied to a specific instruction execution",
+      "Is caused by an external I/O device",
+      "Happens only when the clock stops"
+    ],
+    "answer": "Is tied to a specific instruction execution",
+    "citation": "[15]"
+  },
+  {
+    "id": 34,
+    "question": "An 'Asynchronous' exception (like an interrupt) is usually caused by:",
+    "options": [
+      "Division by zero",
+      "An external event or device",
+      "An illegal op-code",
+      "A page fault"
+    ],
+    "answer": "An external event or device",
+    "citation": "[15, 18]"
+  },
+  {
+    "id": 35,
+    "question": "What happens if an exception is classified as 'Terminate'?",
+    "options": [
+      "The program is paused and then continues",
+      "The program execution is stopped and cannot resume",
+      "The processor flushes the cache and restarts",
+      "The instruction is skipped"
+    ],
+    "answer": "The program execution is stopped and cannot resume",
+    "citation": "[15]"
+  },
+  {
+    "id": 36,
+    "question": "A 'Resume' exception allows the processor to:",
+    "options": [
+      "Restart the entire operating system",
+      "Continue program execution after handling the event",
+      "Undo the last 10 instructions",
+      "Switch to a different program"
+    ],
+    "answer": "Continue program execution after handling the event",
+    "citation": "[15]"
+  },
+  {
+    "id": 37,
+    "question": "Which of these is an example of an exception occurring 'within' an instruction?",
+    "options": [
+      "A timer interrupt",
+      "Arithmetic overflow or page fault",
+      "A keyboard press",
+      "A system call"
+    ],
+    "answer": "Arithmetic overflow or page fault",
+    "citation": "[15]"
+  },
+  {
+    "id": 38,
+    "question": "What is the 'Future' direction mentioned in the slides to improve performance?",
+    "options": [
+      "Using slower memory to save power",
+      "Dynamic scheduling of instructions by hardware",
+      "Removing the pipeline entirely",
+      "Moving back to Von Neumann architecture"
+    ],
+    "answer": "Dynamic scheduling of instructions by hardware",
+    "citation": "[19]"
+  },
+  {
+    "id": 39,
+    "question": "The lecture mentions 'Prediction on the branches'. Why is this important?",
+    "options": [
+      "To reduce the frequency of operation",
+      "To avoid flushing the pipeline by guessing the correct path",
+      "To make the instructions fixed-size",
+      "To increase the cost of the CPU"
+    ],
+    "answer": "To avoid flushing the pipeline by guessing the correct path",
+    "citation": "[17, 19]"
+  },
+  {
+    "id": 40,
+    "question": "What does 'multiple pipelines in parallel' aim to achieve?",
+    "options": [
+      "Execution of more than one instruction per cycle (superscalar)",
+      "Reducing the number of wires in the chip",
+      "Slowing down the clock to save energy",
+      "Simplifying the exception handling"
+    ],
+    "answer": "Execution of more than one instruction per cycle (superscalar)",
+    "citation": "[19]"
+  },
+  {
+    "id": 41,
+    "question": "In the example '$I4: ADD R5, R1, R5' and '$I2: ADD R5, R3, R2', what dependency exists?",
+    "options": [
+      "RAW",
+      "WAW (on R5)",
+      "WAR",
+      "RAR"
+    ],
+    "answer": "WAW (on R5)",
+    "citation": "[2]"
+  },
+  {
+    "id": 42,
+    "question": "What is the primary goal of the 'M' (Memory) stage in a floating-point pipeline?",
+    "options": [
+      "To perform complex additions",
+      "To access data memory for Load/Store operations",
+      "To stall the instruction for 50 cycles",
+      "To decode the floating-point op-code"
+    ],
+    "answer": "To access data memory for Load/Store operations",
+    "citation": "[5, 12]"
+  },
+  {
+    "id": 43,
+    "question": "What is a 'user requested' exception?",
+    "options": [
+      "A hardware crash",
+      "A system call or trap programmed by the developer",
+      "An unexpected power failure",
+      "A division by zero"
+    ],
+    "answer": "A system call or trap programmed by the developer",
+    "citation": "[13]"
+  },
+  {
+    "id": 44,
+    "question": "In passage [20], what level of design is described as 'wires and electricity'?",
+    "options": [
+      "User level",
+      "Logic level",
+      "Physical/Electrical level",
+      "Architecture level"
+    ],
+    "answer": "Physical/Electrical level",
+    "citation": "[7, 20]"
+  },
+  {
+    "id": 45,
+    "question": "What is the 'cost' that the designer must justify to the customer?",
+    "options": [
+      "The color of the processor",
+      "Performance gain vs. Area/Power/Price",
+      "The number of pins on the chip",
+      "The software compatibility"
+    ],
+    "answer": "Performance gain vs. Area/Power/Price",
+    "citation": "[7, 8, 21]"
+  },
+  {
+    "id": 46,
+    "question": "Which instruction typically takes the longest in an extended pipeline according to the sources?",
+    "options": [
+      "Integer Addition",
+      "Floating Point Multiply",
+      "Floating Point Divide",
+      "Load Word"
+    ],
+    "answer": "Floating Point Divide",
+    "citation": "[10]"
+  },
+  {
+    "id": 47,
+    "question": "Why is Read-After-Read (RAR) not considered a hazard?",
+    "options": [
+      "Because reading doesn't change the data",
+      "Because the pipeline stalls automatically",
+      "Because memory is faster than registers",
+      "Because it is handled by the software"
+    ],
+    "answer": "Because reading doesn't change the data",
+    "citation": "[3, 20]"
+  },
+  {
+    "id": 48,
+    "question": "In a 5-cycle Multiply, if an instruction depends on the result, where must it stall?",
+    "options": [
+      "Fetch stage",
+      "Decode stage",
+      "Execute stage",
+      "Memory stage"
+    ],
+    "answer": "Decode stage",
+    "citation": "[12]"
+  },
+  {
+    "id": 49,
+    "question": "How can 'out-of-order termination' be managed to ensure precise exceptions?",
+    "options": [
+      "By forcing instructions to write back in their original order",
+      "By using larger registers",
+      "By removing the Memory stage",
+      "By stopping the clock when an exception occurs"
+    ],
+    "answer": "By forcing instructions to write back in their original order",
+    "citation": "[16]"
+  },
+  {
+    "id": 50,
+    "question": "What does passage [22] say about 32-bit vs 64-bit buses and complexity?",
+    "options": [
+      "64-bit is simpler because it is newer",
+      "More bits mean more wires and potential interference/complexity",
+      "32-bit is no longer used in microprocessors",
+      "The number of bits doesn't affect hardware design"
+    ],
+    "answer": "More bits mean more wires and potential interference/complexity",
+    "citation": "[6, 7]"
+  },
+  {
+    "id": 51,
+    "question": "The term 'Anti-dependency' refers to which hazard?",
+    "options": [
+      "RAW",
+      "WAW",
+      "WAR",
+      "RAR"
+    ],
+    "answer": "WAR",
+    "citation": "[2]"
+  },
+  {
+    "id": 52,
+    "question": "What is a 'coerced' exception?",
+    "options": [
+      "When the programmer asks for a debug break",
+      "An event triggered by hardware, like a memory protection fault",
+      "A request from a peripheral device",
+      "A scheduled task in the OS"
+    ],
+    "answer": "An event triggered by hardware, like a memory protection fault",
+    "citation": "[13]"
+  },
+  {
+    "id": 53,
+    "question": "In 'Precise Exceptions', what happens to instructions 'after' the exception instruction?",
+    "options": [
+      "They are finished normally",
+      "They are stored in a buffer and executed later",
+      "They are flushed and do not change the state",
+      "They are skipped forever"
+    ],
+    "answer": "They are flushed and do not change the state",
+    "citation": "[15, 16]"
+  },
+  {
+    "id": 54,
+    "question": "If an instruction is 'Restartable', it means:",
+    "options": [
+      "The CPU must be rebooted",
+      "The instruction can be re-executed from scratch after the exception handler finishes",
+      "The program must be re-compiled",
+      "The instruction is faulty and should be deleted"
+    ],
+    "answer": "The instruction can be re-executed from scratch after the exception handler finishes",
+    "citation": "[15]"
+  },
+  {
+    "id": 55,
+    "question": "What is 'Masking' an interrupt?",
+    "options": [
+      "Hiding the interrupt from the user",
+      "Telling the CPU to temporarily ignore certain interrupts",
+      "Enciphering the interrupt signal",
+      "Giving the interrupt highest priority"
+    ],
+    "answer": "Telling the CPU to temporarily ignore certain interrupts",
+    "citation": "[15]"
+  },
+  {
+    "id": 56,
+    "question": "What is the priority problem in passage [16]?",
+    "options": [
+      "Choosing which instruction to fetch first",
+      "Determining which exception to handle first if multiple occur simultaneously",
+      "Deciding which register to write to",
+      "Determining the clock speed for the ALU"
+    ],
+    "answer": "Determining which exception to handle first if multiple occur simultaneously",
+    "citation": "[16]"
+  },
+  {
+    "id": 57,
+    "question": "What is an 'Internal' exception?",
+    "options": [
+      "A signal from a hard drive",
+      "An event generated within the CPU (e.g., division by zero)",
+      "A signal from the keyboard",
+      "A network packet arrival"
+    ],
+    "answer": "An event generated within the CPU (e.g., division by zero)",
+    "citation": "[13]"
+  },
+  {
+    "id": 58,
+    "question": "What is the consequence of a WAW hazard in a simple pipeline?",
+    "options": [
+      "The wrong value might remain in the register permanently",
+      "The CPU will catch fire",
+      "The instruction will be deleted",
+      "The memory will be erased"
+    ],
+    "answer": "The wrong value might remain in the register permanently",
+    "citation": "[3, 23]"
+  },
+  {
+    "id": 59,
+    "question": "Passage [23] mentions 'Register 5'. What is the problem with multiple instructions writing to it?",
+    "options": [
+      "It doesn't have enough space",
+      "It causes a structural conflict (WAW) if they finish out of order",
+      "It is too slow for writes",
+      "It only allows reads from the user"
+    ],
+    "answer": "It causes a structural conflict (WAW) if they finish out of order",
+    "citation": "[23, 24]"
+  },
+  {
+    "id": 60,
+    "question": "What does the instructor mean by 'the customer justifies the price'?",
+    "options": [
+      "The customer chooses the cheapest option",
+      "Advanced features must provide enough performance to be worth the extra design cost",
+      "Designers should work for free",
+      "Microprocessors should be sold in toy stores"
+    ],
+    "answer": "Advanced features must provide enough performance to be worth the extra design cost",
+    "citation": "[8, 21]"
+  },
+  {
+    "id": 61,
+    "question": "In the code '$I1: DIV R3, R1, R2' and '$I2: ADD R5, R3, R2', what hardware feature allows $I2 to get R3 early?",
+    "options": [
+      "A larger cache",
+      "Bypassing / Forwarding",
+      "A faster clock",
+      "A software patch"
+    ],
+    "answer": "Bypassing / Forwarding",
+    "citation": "[4]"
+  },
+  {
+    "id": 62,
+    "question": "How many 'stall' cycles are shown in passage [4] for a Load-Use hazard?",
+    "options": [
+      "0 cycles",
+      "1 cycle",
+      "5 cycles",
+      "10 cycles"
+    ],
+    "answer": "1 cycle",
+    "citation": "[4]"
+  },
+  {
+    "id": 63,
+    "question": "What is an 'External' exception usually called?",
+    "options": [
+      "A fault",
+      "An interrupt",
+      "A trap",
+      "A bug"
+    ],
+    "answer": "An interrupt",
+    "citation": "[13]"
+  },
+  {
+    "id": 64,
+    "question": "Which of these is a 'Synchronous' event?",
+    "options": [
+      "Timer tick",
+      "I/O device request",
+      "Illegal instruction op-code",
+      "Power button pressed"
+    ],
+    "answer": "Illegal instruction op-code",
+    "citation": "[15]"
+  },
+  {
+    "id": 65,
+    "question": "In passage [25], the instructor mentions instructions depending on each other. This is the definition of:",
+    "options": [
+      "Instruction Parallelism",
+      "Data Dependency / Hazard",
+      "Memory Allocation",
+      "Clock Synchronization"
+    ],
+    "answer": "Data Dependency / Hazard",
+    "citation": "[3, 25]"
+  },
+  {
+    "id": 66,
+    "question": "What is the primary difference between a 'Div' and an 'Add' in hardware complexity?",
+    "options": [
+      "Div uses more power but is faster",
+      "Div requires multiple iterations and logic steps, taking more cycles",
+      "Add is only for floating point numbers",
+      "There is no difference"
+    ],
+    "answer": "Div requires multiple iterations and logic steps, taking more cycles",
+    "citation": "[9, 10, 22]"
+  },
+  {
+    "id": 67,
+    "question": "What does passage [14] suggest about the 'Write Back' stage in multi-cycle pipelines?",
+    "options": [
+      "It is always the fastest stage",
+      "It can become a bottleneck if multiple instructions try to write at once",
+      "It is only used by the user",
+      "It doesn't require any wires"
+    ],
+    "answer": "It can become a bottleneck if multiple instructions try to write at once",
+    "citation": "[13, 14]"
+  },
+  {
+    "id": 68,
+    "question": "If an exception happens 'between' instructions, it means:",
+    "options": [
+      "It happened while the CPU was off",
+      "The current instruction finished, and the next one hasn't started yet",
+      "The instruction was halfway through the ALU",
+      "It's a software bug only"
+    ],
+    "answer": "The current instruction finished, and the next one hasn't started yet",
+    "citation": "[15]"
+  },
+  {
+    "id": 69,
+    "question": "What is 'Precise' handling of a page fault?",
+    "options": [
+      "Restarting the instruction after fetching the page into memory",
+      "Terminating the program immediately",
+      "Skipping the memory access",
+      "Using a different register"
+    ],
+    "answer": "Restarting the instruction after fetching the page into memory",
+    "citation": "[15]"
+  },
+  {
+    "id": 70,
+    "question": "What is the 'Ordering' dependency mentioned in passage [2]?",
+    "options": [
+      "RAW",
+      "WAR",
+      "RAR",
+      "Control Hazard"
+    ],
+    "answer": "WAR",
+    "citation": "[2]"
+  },
+  {
+    "id": 71,
+    "question": "Why does passage [3] say that 'without a pipeline, there are no hazards'?",
+    "options": [
+      "Because instructions finish one by one completely",
+      "Because the CPU is faster without a pipeline",
+      "Because memory is not used in non-pipelined CPUs",
+      "Because there is no clock"
+    ],
+    "answer": "Because instructions finish one by one completely",
+    "citation": "[3]"
+  },
+  {
+    "id": 72,
+    "question": "A 'Nonmaskable' interrupt (NMI):",
+    "options": [
+      "Can be turned off in settings",
+      "Must be handled immediately by the CPU (e.g., hardware failure)",
+      "Is used for mouse movements",
+      "Is a type of precise exception"
+    ],
+    "answer": "Must be handled immediately by the CPU (e.g., hardware failure)",
+    "citation": "[15]"
+  },
+  {
+    "id": 73,
+    "question": "What is 'Undo' in the context of exceptions?",
+    "options": [
+      "Reversing changes made by instructions that executed out of order",
+      "Deleting the program",
+      "A button on the keyboard",
+      "Resetting the whole chip"
+    ],
+    "answer": "Reversing changes made by instructions that executed out of order",
+    "citation": "[16]"
+  },
+  {
+    "id": 74,
+    "question": "Which of these is a 'Looking Forward' topic in the slides?",
+    "options": [
+      "Dynamic scheduling",
+      "Branch prediction",
+      "Multiple parallel pipelines",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "citation": "[19]"
+  },
+  {
+    "id": 75,
+    "question": "What is the main takeaway regarding pipeline design according to the sources?",
+    "options": [
+      "It is a simple process with no trade-offs",
+      "It is a complex balance of speed, area, hazards, and exception handling",
+      "Pipelining is only for scientific computers",
+      "Instructions should always be variable length"
+    ],
+    "answer": "It is a complex balance of speed, area, hazards, and exception handling",
+    "citation": "[2, 7, 20, 21]"
+  }
+]

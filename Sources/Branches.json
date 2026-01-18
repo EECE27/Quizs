@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "According to the sources, what are the two most important questions to resolve when dealing with branch instructions?",
+    "options": [
+      "How much power is consumed and how many cycles are saved?",
+      "When is the target address ready and when is the condition resolved?",
+      "Is the instruction RISC or CISC and is it a jump or a call?",
+      "What is the instruction length and what is the opcode type?"
+    ],
+    "answer": "When is the target address ready and when is the condition resolved?",
+    "citation": "[1, 2]"
+  },
+  {
+    "id": 2,
+    "question": "What is the primary function of the 'Speculation' technique in microprocessor design?",
+    "options": [
+      "To stop the pipeline until the branch result is 100% certain",
+      "To execute instructions based on a prediction or guess to improve performance",
+      "To reduce the physical area of the chip by eliminating registers",
+      "To allow the user to manually select the next instruction path"
+    ],
+    "answer": "To execute instructions based on a prediction or guess to improve performance",
+    "citation": "[3, 4]"
+  },
+  {
+    "id": 3,
+    "question": "In the 'merchant' analogy used in the lecture, why does a merchant buy winter clothes in advance?",
+    "options": [
+      "Because they are cheaper in the summer months",
+      "Because the delay (latency) of shipping requires acting on a prediction of cold weather",
+      "Because the merchant wants to avoid paying taxes in the spring",
+      "Because the factory only produces clothes once per year"
+    ],
+    "answer": "Because the delay (latency) of shipping requires acting on a prediction of cold weather",
+    "citation": "[5]"
+  },
+  {
+    "id": 4,
+    "question": "Which of the following describes a 'Fixed' branch prediction strategy?",
+    "options": [
+      "The processor always fetches in-line (e.g., predicts not taken) regardless of the branch type",
+      "The strategy changes every time the program is restarted",
+      "The prediction is determined by the history of the specific branch",
+      "The processor asks the compiler for the correct path"
+    ],
+    "answer": "The processor always fetches in-line (e.g., predicts not taken) regardless of the branch type",
+    "citation": "[6, 7]"
+  },
+  {
+    "id": 5,
+    "question": "What defines a 'Static' branch prediction strategy?",
+    "options": [
+      "The strategy is hardwired and never changes during execution, but varies by opcode type",
+      "The strategy is updated every cycle based on current temperature",
+      "The strategy is only used for unconditional jumps",
+      "The strategy involves a table that records every single branch outcome"
+    ],
+    "answer": "The strategy is hardwired and never changes during execution, but varies by opcode type",
+    "citation": "[7, 8]"
+  },
+  {
+    "id": 6,
+    "question": "How does 'Dynamic' branch prediction differ from 'Static' prediction?",
+    "options": [
+      "Dynamic prediction uses fixed rules for every instruction",
+      "Dynamic prediction depends on the history and behaviour of the branch during runtime",
+      "Dynamic prediction is only possible in CISC architectures",
+      "Dynamic prediction does not require any additional hardware area"
+    ],
+    "answer": "Dynamic prediction depends on the history and behaviour of the branch during runtime",
+    "citation": "[7, 9]"
+  },
+  {
+    "id": 7,
+    "question": "Why are 'Delayed Branches' generally considered a failed historical approach for general-purpose processors?",
+    "options": [
+      "They made the hardware too simple and cheap",
+      "They caused major software compatibility issues and complicated interrupt handling",
+      "They were only compatible with mechanical computers",
+      "They required the processor to run at a lower clock speed"
+    ],
+    "answer": "They caused major software compatibility issues and complicated interrupt handling",
+    "citation": "[10-12]"
+  },
+  {
+    "id": 8,
+    "question": "What is the 'Delayed Branch' slot?",
+    "options": [
+      "A register used to store the target address",
+      "The instruction immediately following a branch that is executed regardless of the branch outcome",
+      "A specific time delay where the CPU does nothing",
+      "A memory location used for exception handling"
+    ],
+    "answer": "The instruction immediately following a branch that is executed regardless of the branch outcome",
+    "citation": "[13, 14]"
+  },
+  {
+    "id": 9,
+    "question": "In a 'Static' prediction model, what is a common heuristic for 'Backward' branches (branches to a previous address)?",
+    "options": [
+      "They are predicted as 'Not Taken' because they usually exit loops",
+      "They are predicted as 'Taken' because they usually represent loop iterations",
+      "They are predicted randomly to balance the load",
+      "They are predicted based on the value of Register 0"
+    ],
+    "answer": "They are predicted as 'Taken' because they usually represent loop iterations",
+    "citation": "[15, 16]"
+  },
+  {
+    "id": 10,
+    "question": "What hardware component is used in dynamic prediction to track if a branch was taken or not?",
+    "options": [
+      "A 32-bit floating point adder",
+      "Saturating up-down counters",
+      "A permanent Read-Only Memory (ROM) chip",
+      "A cooling fan controller"
+    ],
+    "answer": "Saturating up-down counters",
+    "citation": "[7, 17]"
+  },
+  {
+    "id": 11,
+    "question": "What is the 'Branch History Table' (BHT)?",
+    "options": [
+      "A list of all instructions in the program",
+      "A table indexed by the PC's lower bits to store branch outcome history",
+      "A backup of the main memory used during crashes",
+      "A database of processor serial numbers"
+    ],
+    "answer": "A table indexed by the PC's lower bits to store branch outcome history",
+    "citation": "[18, 19]"
+  },
+  {
+    "id": 12,
+    "question": "If a BHT entry is only 1-bit, what is stored?",
+    "options": [
+      "The full target address of the branch",
+      "Whether the branch was Taken (1) or Not Taken (0) the last time it was seen",
+      "The number of times the branch has been executed in total",
+      "The opcode of the instruction"
+    ],
+    "answer": "Whether the branch was Taken (1) or Not Taken (0) the last time it was seen",
+    "citation": "[19, 20]"
+  },
+  {
+    "id": 13,
+    "question": "What is a major problem with a 1-bit predictor in a loop that iterates many times?",
+    "options": [
+      "It mispredicts twice (once at the start and once at the end) every time the loop is entered",
+      "It never predicts the branch correctly",
+      "It causes the processor to overheat",
+      "It requires more power than a 2-bit predictor"
+    ],
+    "answer": "It mispredicts twice (once at the start and once at the end) every time the loop is entered",
+    "citation": "[21, 22]"
+  },
+  {
+    "id": 14,
+    "question": "How does a 2-bit predictor improve on a 1-bit predictor?",
+    "options": [
+      "By using twice as much memory for the target address",
+      "By requiring two consecutive mispredictions before changing the prediction",
+      "By predicting both 'Taken' and 'Not Taken' paths simultaneously",
+      "By ignoring all branches that occur within a loop"
+    ],
+    "answer": "By requiring two consecutive mispredictions before changing the prediction",
+    "citation": "[22, 23]"
+  },
+  {
+    "id": 15,
+    "question": "Which of these is NOT a state in a 2-bit saturating counter?",
+    "options": [
+      "Strongly Taken",
+      "Weakly Not Taken",
+      "Moderately Likely",
+      "Strongly Not Taken"
+    ],
+    "answer": "Moderately Likely",
+    "citation": "[24, 25]"
+  },
+  {
+    "id": 16,
+    "question": "In a 2-bit saturating counter, if the current state is 'Strongly Taken' (11) and the branch is 'Taken', what is the next state?",
+    "options": [
+      "Weakly Taken (10)",
+      "Strongly Taken (11)",
+      "Strongly Not Taken (00)",
+      "It resets to zero"
+    ],
+    "answer": "Strongly Taken (11)",
+    "citation": "[17, 24, 25]"
+  },
+  {
+    "id": 17,
+    "question": "What is 'Aliasing' in the context of a Branch History Table?",
+    "options": [
+      "When a branch has multiple different names in the code",
+      "When multiple different branch instructions map to the same entry in the BHT",
+      "When the processor misidentifies an ADD as a BRANCH",
+      "When a branch target is outside the memory range"
+    ],
+    "answer": "When multiple different branch instructions map to the same entry in the BHT",
+    "citation": "[19, 20]"
+  },
+  {
+    "id": 18,
+    "question": "How is the Branch History Table typically indexed?",
+    "options": [
+      "Using the full 32-bit Program Counter",
+      "Using the least significant bits of the Program Counter",
+      "Using the most significant bits of the Program Counter",
+      "Using a random number generator"
+    ],
+    "answer": "Using the least significant bits of the Program Counter",
+    "citation": "[19, 26, 27]"
+  },
+  {
+    "id": 19,
+    "question": "What is the 'Branch Target Buffer' (BTB)?",
+    "options": [
+      "A table that only stores the history of branches",
+      "A table that stores the prediction, the target address, and a tag to verify the branch",
+      "A temporary storage for instructions being deleted",
+      "A cache for the register file"
+    ],
+    "answer": "A table that stores the prediction, the target address, and a tag to verify the branch",
+    "citation": "[27-29]"
+  },
+  {
+    "id": 20,
+    "question": "At which pipeline stage is the Branch Target Buffer (BTB) ideally accessed?",
+    "options": [
+      "Instruction Fetch (IF)",
+      "Decode (D)",
+      "Execute (EX)",
+      "Write Back (WB)"
+    ],
+    "answer": "Instruction Fetch (IF)",
+    "citation": "[27, 30]"
+  },
+  {
+    "id": 21,
+    "question": "What is the primary advantage of hitting in the BTB during the Fetch stage?",
+    "options": [
+      "It allows the target instruction to be fetched immediately, potentially with zero-cycle penalty",
+      "It reduces the size of the ALU",
+      "It prevents all data hazards in the pipeline",
+      "It makes the software run in a different language"
+    ],
+    "answer": "It allows the target instruction to be fetched immediately, potentially with zero-cycle penalty",
+    "citation": "[29, 31]"
+  },
+  {
+    "id": 22,
+    "question": "What information does the 'Tag' in a BTB entry provide?",
+    "options": [
+      "The binary code of the instruction",
+      "The upper bits of the PC to confirm the instruction is actually the correct branch",
+      "The priority of the branch compared to others",
+      "The timestamp of the last execution"
+    ],
+    "answer": "The upper bits of the PC to confirm the instruction is actually the correct branch",
+    "citation": "[28, 32]"
+  },
+  {
+    "id": 23,
+    "question": "If an instruction fetch results in a 'miss' in the BTB, what does the processor assume?",
+    "options": [
+      "The instruction is not a branch or is a branch with no history",
+      "The computer has crashed",
+      "The instruction is definitely a jump to address zero",
+      "The memory is corrupted"
+    ],
+    "answer": "The instruction is not a branch or is a branch with no history",
+    "citation": "[33, 34]"
+  },
+  {
+    "id": 24,
+    "question": "What is 'Correlated' branch prediction (or Global prediction)?",
+    "options": [
+      "Predicting a branch based on its own history only",
+      "Predicting a branch based on the outcomes of other recent branches",
+      "Predicting branches based on the time of day",
+      "Predicting branches using external sensors"
+    ],
+    "answer": "Predicting a branch based on the outcomes of other recent branches",
+    "citation": "[35, 36]"
+  },
+  {
+    "id": 25,
+    "question": "Which trade-off is most critical when increasing the size of the BTB?",
+    "options": [
+      "Higher prediction accuracy vs. higher power consumption and chip area",
+      "Better cooling vs. slower clock speed",
+      "More registers vs. fewer instructions",
+      "Software complexity vs. user interface design"
+    ],
+    "answer": "Higher prediction accuracy vs. higher power consumption and chip area",
+    "citation": "[29, 37, 38]"
+  },
+  {
+    "id": 26,
+    "question": "Why would a designer choose a 2-bit counter over a finite state machine for prediction?",
+    "options": [
+      "Counters are easier to scale (e.g., to 3-bit or 4-bit)",
+      "State machines are not allowed in RISC",
+      "Counters do not use electricity",
+      "State machines are too fast for memory"
+    ],
+    "answer": "Counters are easier to scale (e.g., to 3-bit or 4-bit)",
+    "citation": "[39, 40]"
+  },
+  {
+    "id": 27,
+    "question": "In the example of an inner loop with 4 iterations, what is the accuracy of a 1-bit predictor after it stabilizes?",
+    "options": [
+      "100%",
+      "75%",
+      "50%",
+      "25%"
+    ],
+    "answer": "50%",
+    "citation": "[22, 23]"
+  },
+  {
+    "id": 28,
+    "question": "In the same 4-iteration inner loop, what is the accuracy of a 2-bit predictor?",
+    "options": [
+      "100%",
+      "75%",
+      "50%",
+      "90%"
+    ],
+    "answer": "75%",
+    "citation": "[25, 39]"
+  },
+  {
+    "id": 29,
+    "question": "What happens when a branch prediction is found to be incorrect (misprediction)?",
+    "options": [
+      "The processor ignores the error and continues",
+      "The pipeline is flushed and execution restarts from the correct path",
+      "The processor enters a permanent sleep mode",
+      "The branch instruction is deleted from memory"
+    ],
+    "answer": "The pipeline is flushed and execution restarts from the correct path",
+    "citation": "[4, 18, 31]"
+  },
+  {
+    "id": 30,
+    "question": "According to the sources, what was the 'golden age' of research for branch prediction?",
+    "options": [
+      "The 1970s",
+      "The 1990s",
+      "The 2010s",
+      "The 1950s"
+    ],
+    "answer": "The 1990s",
+    "citation": "[36, 41]"
+  },
+  {
+    "id": 31,
+    "question": "What is the penalty for a misprediction in a simple 5-stage pipeline if the branch is resolved in the Decode stage?",
+    "options": [
+      "0 cycles",
+      "1 cycle",
+      "5 cycles",
+      "10 cycles"
+    ],
+    "answer": "1 cycle",
+    "citation": "[14, 42]"
+  },
+  {
+    "id": 32,
+    "question": "If a branch's target is a constant (e.g., Jump to 100), when is the target address known?",
+    "options": [
+      "At Compile time",
+      "Only at Run time when the value is calculated",
+      "When the processor is turned on",
+      "Never"
+    ],
+    "answer": "At Compile time",
+    "citation": "[1]"
+  },
+  {
+    "id": 33,
+    "question": "If a branch depends on a variable (e.g., Switch on X), when is the target address typically known?",
+    "options": [
+      "At Compile time",
+      "Only at Run time after the variable is evaluated",
+      "When the BIOS loads",
+      "During the Instruction Fetch stage always"
+    ],
+    "answer": "Only at Run time after the variable is evaluated",
+    "citation": "[1]"
+  },
+  {
+    "id": 34,
+    "question": "What does a 'Perfect' branch prediction effectively do to a conditional branch?",
+    "options": [
+      "Turns it into a No-Operation (NOP)",
+      "Converts it into an unconditional branch (eliminates the condition delay)",
+      "Increases the latency of the instruction",
+      "Forces it to always be 'Not Taken'"
+    ],
+    "answer": "Converts it into an unconditional branch (eliminates the condition delay)",
+    "citation": "[7, 43]"
+  },
+  {
+    "id": 35,
+    "question": "In 'Speculation', what is the first step of the 'game'?",
+    "options": [
+      "Verify the guess",
+      "Guess the branch target",
+      "Flushing the pipeline",
+      "Updating the BHT"
+    ],
+    "answer": "Guess the branch target",
+    "citation": "[4, 41]"
+  },
+  {
+    "id": 36,
+    "question": "In 'Speculation', what is the third step of the 'game'?",
+    "options": [
+      "Stalling the processor",
+      "Start execution at the guessed position",
+      "Checking the power rails",
+      "Consulting the compiler"
+    ],
+    "answer": "Start execution at the guessed position",
+    "citation": "[4, 41]"
+  },
+  {
+    "id": 37,
+    "question": "What is 'Profiling' in the context of static branch prediction?",
+    "options": [
+      "Observing the program's behaviour on a sample run to determine likely branch directions",
+      "Measuring the height and weight of the processor",
+      "Restricting the program to run on only one core",
+      "Encrypting the branch instructions"
+    ],
+    "answer": "Observing the program's behaviour on a sample run to determine likely branch directions",
+    "citation": "[8, 16]"
+  },
+  {
+    "id": 38,
+    "question": "Why is 'Predicting Not Taken' easy for hardware?",
+    "options": [
+      "Because the target is simply PC + 4",
+      "Because it doesn't require any logic",
+      "Because most programs don't use branches",
+      "Because it saves energy in the ALU"
+    ],
+    "answer": "Because the target is simply PC + 4",
+    "citation": "[16]"
+  },
+  {
+    "id": 39,
+    "question": "If the BHT has 1024 entries, how many bits of the PC are needed for indexing?",
+    "options": [
+      "8 bits",
+      "10 bits",
+      "12 bits",
+      "32 bits"
+    ],
+    "answer": "10 bits",
+    "citation": "[19, 26]"
+  },
+  {
+    "id": 40,
+    "question": "What is the 'least significant bits' (LSB) range usually used for BHT indexing in the examples?",
+    "options": [
+      "Bits 0 to 31",
+      "A small number like 10 or 12 bits",
+      "Only the most significant 2 bits",
+      "The bits that represent the opcode"
+    ],
+    "answer": "A small number like 10 or 12 bits",
+    "citation": "[19, 26]"
+  },
+  {
+    "id": 41,
+    "question": "What is a 'Saturating' counter?",
+    "options": [
+      "A counter that overflows to zero after reaching max",
+      "A counter that stays at its maximum or minimum value instead of wrapping around",
+      "A counter that only counts in even numbers",
+      "A counter that resets when the CPU temperature is too high"
+    ],
+    "answer": "A counter that stays at its maximum or minimum value instead of wrapping around",
+    "citation": "[7, 17]"
+  },
+  {
+    "id": 42,
+    "question": "Which of these is an example of an 'Asynchronous' change in program flow?",
+    "options": [
+      "A Jump instruction",
+      "An external interrupt (exception)",
+      "A function call",
+      "A loop exit"
+    ],
+    "answer": "An external interrupt (exception)",
+    "citation": "[11]"
+  },
+  {
+    "id": 43,
+    "question": "What is a 'Trap' or 'System Call' in the context of branch prediction?",
+    "options": [
+      "A hardware failure",
+      "A software-requested change in program flow (User requested exception)",
+      "A physical trap for the CPU's electrons",
+      "A prediction that is always wrong"
+    ],
+    "answer": "A software-requested change in program flow (User requested exception)",
+    "citation": "[44]"
+  },
+  {
+    "id": 44,
+    "question": "The BTB can be seen as a cache for:",
+    "options": [
+      "Data",
+      "Branch information",
+      "Op-codes",
+      "ALU results"
+    ],
+    "answer": "Branch information",
+    "citation": "[27, 28]"
+  },
+  {
+    "id": 45,
+    "question": "How does the 'Accuracy' of a 2-bit predictor compare to a 1-bit predictor for most real-world applications?",
+    "options": [
+      "It is significantly higher (high 80s to over 99%)",
+      "It is exactly the same",
+      "It is lower because it is slower",
+      "It is 50% for all cases"
+    ],
+    "answer": "It is significantly higher (high 80s to over 99%)",
+    "citation": "[27, 45]"
+  },
+  {
+    "id": 46,
+    "question": "If a branch is predicted 'Taken' in the Fetch stage via the BTB, what is the next PC value fetched?",
+    "options": [
+      "PC + 4",
+      "The Target Address stored in the BTB",
+      "Zero",
+      "The value of Register 31"
+    ],
+    "answer": "The Target Address stored in the BTB",
+    "citation": "[27, 29, 31]"
+  },
+  {
+    "id": 47,
+    "question": "What happens in the BTB if a 'Tag' comparison fails during the Fetch stage?",
+    "options": [
+      "The processor halts",
+      "It is a 'miss' and the processor continues in-line (PC + 4)",
+      "It assumes the branch is taken anyway",
+      "It triggers a divide-by-zero exception"
+    ],
+    "answer": "It is a 'miss' and the processor continues in-line (PC + 4)",
+    "citation": "[32, 46]"
+  },
+  {
+    "id": 48,
+    "question": "Why do some systems use more than 2 bits for prediction?",
+    "options": [
+      "To handle very long and complex patterns",
+      "Because 2-bit predictors are not allowed in 64-bit CPUs",
+      "To increase the speed of light in the circuits",
+      "To store the instruction's text description"
+    ],
+    "answer": "To handle very long and complex patterns",
+    "citation": "[36, 40]"
+  },
+  {
+    "id": 49,
+    "question": "According to the sources, what is the 'important goal' of branch prediction research?",
+    "options": [
+      "Only higher prediction accuracy",
+      "Minimisation of the branch delay",
+      "Reducing the number of pins on the chip",
+      "Making the processor waterproof"
+    ],
+    "answer": "Minimisation of the branch delay",
+    "citation": "[7, 31, 43]"
+  },
+  {
+    "id": 50,
+    "question": "In a 2-bit counter, if we are in 'Strongly Not Taken' (00) and the branch is 'Taken', what is the next state?",
+    "options": [
+      "Strongly Not Taken (00)",
+      "Weakly Not Taken (01)",
+      "Strongly Taken (11)",
+      "Weakly Taken (10)"
+    ],
+    "answer": "Weakly Not Taken (01)",
+    "citation": "[24, 25]"
+  },
+  {
+    "id": 51,
+    "question": "In the 'Inner Loop' example with 4 iterations, how many 'Taken' outcomes occur before the 'Not Taken' exit?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "3",
+    "citation": "[21, 22, 25]"
+  },
+  {
+    "id": 52,
+    "question": "What is the result of using a 2-bit predictor for a loop that iterates 1000 times?",
+    "options": [
+      "It will mispredict 500 times",
+      "It will only mispredict once (at the end)",
+      "It will never mispredict",
+      "It will crash after 100 iterations"
+    ],
+    "answer": "It will only mispredict once (at the end)",
+    "citation": "[40]"
+  },
+  {
+    "id": 53,
+    "question": "What is 'Branch Target' referring to?",
+    "options": [
+      "The address where the program jumps if the branch is taken",
+      "The physical center of the CPU die",
+      "The last instruction in a program",
+      "The name of the compiler used"
+    ],
+    "answer": "The address where the program jumps if the branch is taken",
+    "citation": "[2, 44]"
+  },
+  {
+    "id": 54,
+    "question": "If multiple branches 'alias' to the same entry, what happens to the prediction accuracy?",
+    "options": [
+      "It stays 100%",
+      "It decreases because the history is corrupted by different branches",
+      "It increases because the table is more efficient",
+      "It has no effect on accuracy"
+    ],
+    "answer": "It decreases because the history is corrupted by different branches",
+    "citation": "[19, 20]"
+  },
+  {
+    "id": 55,
+    "question": "What is the 'cost' of the BTB in terms of hardware?",
+    "options": [
+      "It is very large and complex (Tag + Prediction + Target)",
+      "It only requires a single wire",
+      "It is purely a software concept",
+      "It uses less power than a simple wire"
+    ],
+    "answer": "It is very large and complex (Tag + Prediction + Target)",
+    "citation": "[34, 37, 38]"
+  },
+  {
+    "id": 56,
+    "question": "Which architecture level is branch prediction logic part of?",
+    "options": [
+      "The User Level",
+      "The Architecture/Microarchitecture Level",
+      "The Physical/Wire Level",
+      "The Operating System Level only"
+    ],
+    "answer": "The Architecture/Microarchitecture Level",
+    "citation": "[24]"
+  },
+  {
+    "id": 57,
+    "question": "A branch that is 'Not Taken' effectively behaves like a:",
+    "options": [
+      "Jump",
+      "NOP or sequential instruction",
+      "Exception",
+      "Register Reset"
+    ],
+    "answer": "NOP or sequential instruction",
+    "citation": "[15, 16]"
+  },
+  {
+    "id": 58,
+    "question": "What is the common term for 'Predicting Based on Previous outcomes'?",
+    "options": [
+      "History-based prediction",
+      "Future-based prediction",
+      "Random guessing",
+      "Opcode analysis"
+    ],
+    "answer": "History-based prediction",
+    "citation": "[7, 9]"
+  },
+  {
+    "id": 59,
+    "question": "In the 'Switch Case' example, how can it be handled by a simple branch predictor?",
+    "options": [
+      "By breaking it into multiple 'if-else' branches at the assembly level",
+      "By using a single 100-bit counter",
+      "By ignoring the switch and stopping the CPU",
+      "By only allowing one case"
+    ],
+    "answer": "By breaking it into multiple 'if-else' branches at the assembly level",
+    "citation": "[47]"
+  },
+  {
+    "id": 60,
+    "question": "According to the sources, why would a data center customer pay more for better branch prediction?",
+    "options": [
+      "To save energy and increase processing speed for billions of users",
+      "To make the servers look more modern",
+      "Because they are required to by law",
+      "To reduce the number of employees"
+    ],
+    "answer": "To save energy and increase processing speed for billions of users",
+    "citation": "[29]"
+  },
+  {
+    "id": 61,
+    "question": "What happens if a branch is 'Unconditional'?",
+    "options": [
+      "The condition is always taken, so we only need the target address",
+      "It is never taken",
+      "It is predicted 50% of the time",
+      "It is only executed on weekends"
+    ],
+    "answer": "The condition is always taken, so we only need the target address",
+    "citation": "[7, 44]"
+  },
+  {
+    "id": 62,
+    "question": "In a 2-bit counter, which states correspond to a 'Taken' prediction?",
+    "options": [
+      "00 and 01",
+      "10 and 11",
+      "01 and 10",
+      "11 and 00"
+    ],
+    "answer": "10 and 11",
+    "citation": "[24, 25]"
+  },
+  {
+    "id": 63,
+    "question": "In a 2-bit counter, which states correspond to a 'Not Taken' prediction?",
+    "options": [
+      "00 and 01",
+      "10 and 11",
+      "01 and 10",
+      "11 and 00"
+    ],
+    "answer": "00 and 01",
+    "citation": "[24, 25]"
+  },
+  {
+    "id": 64,
+    "question": "The 'History' in dynamic prediction refers to:",
+    "options": [
+      "The history of the CPU manufacturer",
+      "The outcomes of previous executions of that specific branch",
+      "The history of all programs ever run",
+      "The BIOS version"
+    ],
+    "answer": "The outcomes of previous executions of that specific branch",
+    "citation": "[7, 9]"
+  },
+  {
+    "id": 65,
+    "question": "What does 'Speculative Execution' do with results before they are verified?",
+    "options": [
+      "Permanently writes them to the registers",
+      "Holds them temporarily and discards them if the prediction was wrong",
+      "Sends them to the printer",
+      "Ignores them"
+    ],
+    "answer": "Holds them temporarily and discards them if the prediction was wrong",
+    "citation": "[3, 4, 41]"
+  },
+  {
+    "id": 66,
+    "question": "Why is 'Zero Delay' possible with a BTB?",
+    "options": [
+      "Because the target address is known and fetched in the same cycle as the branch itself",
+      "Because the CPU runs at infinite speed",
+      "Because branches are removed from the code",
+      "Because memory is faster than the CPU"
+    ],
+    "answer": "Because the target address is known and fetched in the same cycle as the branch itself",
+    "citation": "[29, 31]"
+  },
+  {
+    "id": 67,
+    "question": "How many bits are typically in a 'saturating' counter in modern systems?",
+    "options": [
+      "Exactly 32 bits",
+      "Usually 2 bits, but can be more",
+      "Only 1 bit",
+      "8 bits only"
+    ],
+    "answer": "Usually 2 bits, but can be more",
+    "citation": "[7, 25, 40]"
+  },
+  {
+    "id": 68,
+    "question": "What is 'Branch Penalty'?",
+    "options": [
+      "The extra cycles lost when a branch is mispredicted or causes a stall",
+      "A fine paid by the programmer",
+      "The time taken to write the code",
+      "The physical weight of the CPU"
+    ],
+    "answer": "The extra cycles lost when a branch is mispredicted or causes a stall",
+    "citation": "[31, 41, 48]"
+  },
+  {
+    "id": 69,
+    "question": "Which of these is a 'Control' instruction mentioned in the lecture?",
+    "options": [
+      "Branch, Jump, Call, Return",
+      "Add, Sub, Mul, Div",
+      "Load, Store, Move",
+      "And, Or, Xor, Not"
+    ],
+    "answer": "Branch, Jump, Call, Return",
+    "citation": "[44, 49]"
+  },
+  {
+    "id": 70,
+    "question": "What is the 'Condition' in a branch instruction?",
+    "options": [
+      "The logic that determines if the jump should happen (e.g., A > B)",
+      "The temperature of the room",
+      "The speed of the internet connection",
+      "The size of the hard drive"
+    ],
+    "answer": "The logic that determines if the jump should happen (e.g., A > B)",
+    "citation": "[1, 2]"
+  },
+  {
+    "id": 71,
+    "question": "Why would a 2-bit predictor mispredict at the end of a loop?",
+    "options": [
+      "Because it has seen many 'Taken' outcomes and is in a 'Strongly Taken' state",
+      "Because it is broken",
+      "Because it ran out of power",
+      "Because the loop index is always zero"
+    ],
+    "answer": "Because it has seen many 'Taken' outcomes and is in a 'Strongly Taken' state",
+    "citation": "[21, 22, 25]"
+  },
+  {
+    "id": 72,
+    "question": "If a branch is 'Forward' (jumping to a later address), what is a common static prediction?",
+    "options": [
+      "Taken",
+      "Not Taken",
+      "Random",
+      "Stop the CPU"
+    ],
+    "answer": "Not Taken",
+    "citation": "[15, 16]"
+  },
+  {
+    "id": 73,
+    "question": "What is 'In-line' fetching?",
+    "options": [
+      "Fetching the next sequential instruction (PC + 4)",
+      "Fetching instructions from a website",
+      "Fetching instructions in reverse order",
+      "Fetching instructions from a different program"
+    ],
+    "answer": "Fetching the next sequential instruction (PC + 4)",
+    "citation": "[7, 16]"
+  },
+  {
+    "id": 74,
+    "question": "The sources suggest combining different predictors because:",
+    "options": [
+      "Different predictors work best for different branches",
+      "It makes the CPU heavier",
+      "It is required for compatibility with Windows",
+      "It reduces the number of transistors"
+    ],
+    "answer": "Different predictors work best for different branches",
+    "citation": "[31]"
+  },
+  {
+    "id": 75,
+    "question": "In the 'Fire extinguishing' / 'Merchant' analogies, what is the ultimate lesson?",
+    "options": [
+      "Preparation based on experience and probability improves efficiency despite the risks",
+      "Always use water for fires",
+      "Merchants should never use computers",
+      "History is useless for engineering"
+    ],
+    "answer": "Preparation based on experience and probability improves efficiency despite the risks",
+    "citation": "[3, 5, 50]"
+  }
+]

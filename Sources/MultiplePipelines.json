@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "What is 'Instruction Level Parallelism' (ILP) primarily a property of?",
+    "options": [
+      "The hardware execution units",
+      "The software code and its logic",
+      "The power supply capacity",
+      "The clock frequency of the CPU"
+    ],
+    "answer": "The software code and its logic",
+    "citation": "[1], [2]"
+  },
+  {
+    "id": 2,
+    "question": "What is the term for the 'issue rate' ceiling where CPI = 1 in a single pipeline?",
+    "options": [
+      "Patterson Limit",
+      "Moore's Bottleneck",
+      "Flynn Bottleneck",
+      "Amdahl's Constraint"
+    ],
+    "answer": "Flynn Bottleneck",
+    "citation": "[3], [2]"
+  },
+  {
+    "id": 3,
+    "question": "According to the sources, why is an 'average' person at a well handing buckets to two lines not as efficient as two people at the well?",
+    "options": [
+      "One person cannot lift two buckets",
+      "The fetch stage (person at the well) becomes the bottleneck",
+      "The two lines move at different speeds",
+      "The buckets are too heavy for a single line"
+    ],
+    "answer": "The fetch stage (person at the well) becomes the bottleneck",
+    "citation": "[4], [5]"
+  },
+  {
+    "id": 4,
+    "question": "What are the three ways hardware supports Instruction Level Parallelism (ILP)?",
+    "options": [
+      "Overclocking, Cooling, and Voltage scaling",
+      "Pipelining, Superscalar in-order, and Superscalar out-of-order",
+      "Caching, Branching, and Polling",
+      "RISC, CISC, and VLIW"
+    ],
+    "answer": "Pipelining, Superscalar in-order, and Superscalar out-of-order",
+    "citation": "[2]"
+  },
+  {
+    "id": 5,
+    "question": "In a superscalar processor with 'n' pipelines, what happens to the complexity of dependency check circuits?",
+    "options": [
+      "It grows linearly (n)",
+      "It grows quadratically (n^2)",
+      "It remains constant",
+      "It grows exponentially (2^n)"
+    ],
+    "answer": "It grows quadratically (n^2)",
+    "citation": "[6], [7]"
+  },
+  {
+    "id": 6,
+    "question": "What is 'Wide Fetch' primarily concerned with?",
+    "options": [
+      "Reading instructions from different programs simultaneously",
+      "Retrieving multiple instructions from the cache in one cycle",
+      "Increasing the size of the hard drive",
+      "Sending data to the monitor faster"
+    ],
+    "answer": "Retrieving multiple instructions from the cache in one cycle",
+    "citation": "[8], [9]"
+  },
+  {
+    "id": 7,
+    "question": "What is a major problem with fetching multiple instructions starting from a branch target?",
+    "options": [
+      "The instructions might be in a different language",
+      "The target address might fall in the middle of a cache line (non-aligned access)",
+      "Branches are always predicted correctly",
+      "The ALU cannot process branches"
+    ],
+    "answer": "The target address might fall in the middle of a cache line (non-aligned access)",
+    "citation": "[10], [9]"
+  },
+  {
+    "id": 8,
+    "question": "What does a 'Trace Cache' store to improve fetch utilization?",
+    "options": [
+      "The original sequence of instructions from memory",
+      "The dynamic instruction sequence as it was actually executed",
+      "A backup of the register file",
+      "All possible paths of a branch"
+    ],
+    "answer": "The dynamic instruction sequence as it was actually executed",
+    "citation": "[11], [12]"
+  },
+  {
+    "id": 9,
+    "question": "Which processor is explicitly mentioned in the sources as using a Trace Cache?",
+    "options": [
+      "Intel 8086",
+      "Sun UltraSparc",
+      "Intel Pentium 4",
+      "ARM Cortex-M0"
+    ],
+    "answer": "Intel Pentium 4",
+    "citation": "[11], [12]"
+  },
+  {
+    "id": 10,
+    "question": "In a wide decode stage for 'n' instructions, how many register read ports are typically required?",
+    "options": [
+      "n ports",
+      "2n ports",
+      "n squared ports",
+      "4n ports"
+    ],
+    "answer": "2n ports",
+    "citation": "[13], [14]"
+  },
+  {
+    "id": 11,
+    "question": "Why does a large number of register file ports make the processor slower?",
+    "options": [
+      "It increases the capacitive load and wires, requiring more drive time",
+      "It reduces the number of instructions in the buffer",
+      "It forces the CPU to use a slower clock for thermal reasons",
+      "It makes the instruction opcodes longer"
+    ],
+    "answer": "It increases the capacitive load and wires, requiring more drive time",
+    "citation": "[15], [14]"
+  },
+  {
+    "id": 12,
+    "question": "What is the primary reason for choosing a mix of execution units instead of 'n' identical units?",
+    "options": [
+      "To save energy by turning off unused units",
+      "Based on instruction statistics; some units like FP division are used infrequently",
+      "Because compilers cannot handle identical units",
+      "To prevent structural hazards in the fetch stage"
+    ],
+    "answer": "Based on instruction statistics; some units like FP division are used infrequently",
+    "citation": "[16], [17], [18]"
+  },
+  {
+    "id": 13,
+    "question": "How many ALU/FP units did the RS/6000 architecture have according to the slides?",
+    "options": [
+      "1 ALU/memory/branch + 1 FP",
+      "2 ALU + 2 FP",
+      "4 ALU + 0 FP",
+      "1 ALU + 1 Load + 1 Store"
+    ],
+    "answer": "1 ALU/memory/branch + 1 FP",
+    "citation": "[17], [18]"
+  },
+  {
+    "id": 14,
+    "question": "While n^2 logic for bypass detection is acceptable, what aspect of 'n' bypasses is NOT acceptable?",
+    "options": [
+      "The power consumed by the logic gates",
+      "The routing and layout of n^2 wide (32/64-bit) bypass buses",
+      "The number of registers in the file",
+      "The latency of the branch predictor"
+    ],
+    "answer": "The routing and layout of n^2 wide (32/64-bit) bypass buses",
+    "citation": "[19], [18]"
+  },
+  {
+    "id": 15,
+    "question": "What is the hardware solution to the 'n^2 bypass bus' problem?",
+    "options": [
+      "Deleting the bypass network",
+      "Grouping functional units into clusters",
+      "Increasing the number of pipelines to 20",
+      "Using only 8-bit processors"
+    ],
+    "answer": "Grouping functional units into clusters",
+    "citation": "[20], [21]"
+  },
+  {
+    "id": 16,
+    "question": "In the example 'Div.f F0, F1, F2' followed by 'Add.f F3, F0, F4', why does the Add.f stall?",
+    "options": [
+      "Structural Hazard",
+      "Control Hazard",
+      "RAW (Read After Write) Data Hazard",
+      "WAW (Write After Write) Data Hazard"
+    ],
+    "answer": "RAW (Read After Write) Data Hazard",
+    "citation": "[22], [23]"
+  },
+  {
+    "id": 17,
+    "question": "In the same example, why can 'Mul.f F8, F2, F5' potentially start before the Add.f finishes?",
+    "options": [
+      "Because it is an independent instruction that doesn't rely on F0",
+      "Because Mul.f is faster than Add.f",
+      "Because the hardware forces multiplication to happen first",
+      "Because it uses different memory banks"
+    ],
+    "answer": "Because it is an independent instruction that doesn't rely on F0",
+    "citation": "[22], [23]"
+  },
+  {
+    "id": 18,
+    "question": "What is the main benefit of 'Dynamic Scheduling'?",
+    "options": [
+      "It makes the compiler's job much harder",
+      "It reduces stalls and improves functional unit utilization",
+      "It ensures that instructions always finish in order",
+      "It eliminates the need for an instruction cache"
+    ],
+    "answer": "It reduces stalls and improves functional unit utilization",
+    "citation": "[24], [23]"
+  },
+  {
+    "id": 19,
+    "question": "What requirement makes 'Out of Order' execution difficult to implement?",
+    "options": [
+      "The need for high voltage",
+      "The requirement for precise exceptions",
+      "The need for a keyboard and mouse",
+      "The requirement for sequential fetching"
+    ],
+    "answer": "The requirement for precise exceptions",
+    "citation": "[24], [25]"
+  },
+  {
+    "id": 20,
+    "question": "Where are instructions held while the decoder checks for dependencies and available units?",
+    "options": [
+      "In the ALU",
+      "In the Instruction Buffer (or Queue/Reservations)",
+      "In the L2 Cache",
+      "In the Program Counter"
+    ],
+    "answer": "In the Instruction Buffer (or Queue/Reservations)",
+    "citation": "[26], [25]"
+  },
+  {
+    "id": 21,
+    "question": "What is the 'Dispatch' stage in dynamic scheduling?",
+    "options": [
+      "Starting the execution of an instruction",
+      "Bringing instructions in-order from memory to the instruction buffer",
+      "Writing results back to the register file",
+      "Deleting instructions after a branch misprediction"
+    ],
+    "answer": "Bringing instructions in-order from memory to the instruction buffer",
+    "citation": "[27], [28]"
+  },
+  {
+    "id": 22,
+    "question": "What is the 'Issue' stage in dynamic scheduling?",
+    "options": [
+      "Sending instructions from the buffer to execution units out-of-order",
+      "Updating the Program Counter",
+      "Reading instructions from the hard drive",
+      "Handling external interrupts"
+    ],
+    "answer": "Sending instructions from the buffer to execution units out-of-order",
+    "citation": "[27], [28]"
+  },
+  {
+    "id": 23,
+    "question": "What happens to the dispatch unit if the instruction buffer is full?",
+    "options": [
+      "It deletes the oldest instruction",
+      "It stalls all following instructions",
+      "It clears the buffer and restarts",
+      "It speeds up the clock to clear space"
+    ],
+    "answer": "It stalls all following instructions",
+    "citation": "[27], [28]"
+  },
+  {
+    "id": 24,
+    "question": "What is the core idea of 'Register Renaming'?",
+    "options": [
+      "Using letters instead of numbers for registers",
+      "Treating registers as names that map to physical locations",
+      "Adding more bits to each register",
+      "Preventing any writes to the register file"
+    ],
+    "answer": "Treating registers as names that map to physical locations",
+    "citation": "[29], [30]"
+  },
+  {
+    "id": 25,
+    "question": "Which types of hazards are primarily eliminated by Register Renaming?",
+    "options": [
+      "RAW only",
+      "WAW and WAR",
+      "Control hazards",
+      "Structural hazards only"
+    ],
+    "answer": "WAW and WAR",
+    "citation": "[31], [30]"
+  },
+  {
+    "id": 26,
+    "question": "In Register Renaming, what is the 'Map Table' used for?",
+    "options": [
+      "To track the physical location of the CPU on the motherboard",
+      "To record which physical location currently holds a specific register's 'name'",
+      "To store branch prediction history",
+      "To list all instructions in the program"
+    ],
+    "answer": "To record which physical location currently holds a specific register's 'name'",
+    "citation": "[32], [30]"
+  },
+  {
+    "id": 27,
+    "question": "When does 'De-allocation' of a physical location occur in register renaming?",
+    "options": [
+      "As soon as the instruction starts",
+      "When the dependent RAW hazards are cleared",
+      "When the processor is turned off",
+      "When a branch is taken"
+    ],
+    "answer": "When the dependent RAW hazards are cleared",
+    "citation": "[33], [30]"
+  },
+  {
+    "id": 28,
+    "question": "What does 'VLIW' stand for?",
+    "options": [
+      "Variable Length Instruction Width",
+      "Very Long Instruction Word",
+      "Virtual Logic Integrated Wire",
+      "Vectorized Linear Instruction Window"
+    ],
+    "answer": "Very Long Instruction Word",
+    "citation": "[34], [35]"
+  },
+  {
+    "id": 29,
+    "question": "In a VLIW architecture, who is responsible for ensuring instructions in a group are independent?",
+    "options": [
+      "The hardware decoder",
+      "The compiler",
+      "The end-user",
+      "The operating system"
+    ],
+    "answer": "The compiler",
+    "citation": "[34], [35]"
+  },
+  {
+    "id": 30,
+    "question": "What is the main advantage of a 'pure' VLIW machine?",
+    "options": [
+      "The hardware does not need to perform dependency checks",
+      "It can predict branches with 100% accuracy",
+      "It uses no electrical power",
+      "It can run any software from 40 years ago without changes"
+    ],
+    "answer": "The hardware does not need to perform dependency checks",
+    "citation": "[34], [35]"
+  },
+  {
+    "id": 31,
+    "question": "What is a significant drawback of VLIW regarding software compatibility?",
+    "options": [
+      "Code must often be recompiled for different hardware implementations",
+      "It only supports assembly language",
+      "It cannot run loops",
+      "It requires a specific type of monitor"
+    ],
+    "answer": "Code must often be recompiled for different hardware implementations",
+    "citation": "[36], [37]"
+  },
+  {
+    "id": 32,
+    "question": "Why is a 'Cache Miss' a problem for VLIW compilers?",
+    "options": [
+      "Compilers cannot understand cache",
+      "The latency of a cache miss is variable and unknown at compile time",
+      "A cache miss deletes the program",
+      "Cache misses only happen in superscalar processors"
+    ],
+    "answer": "The latency of a cache miss is variable and unknown at compile time",
+    "citation": "[36], [37]"
+  },
+  {
+    "id": 33,
+    "question": "Which type of processor commonly uses the VLIW philosophy today?",
+    "options": [
+      "General Purpose Processors (Intel/AMD)",
+      "Digital Signal Processors (DSPs)",
+      "Web Browser engines",
+      "Mainframe storage controllers"
+    ],
+    "answer": "Digital Signal Processors (DSPs)",
+    "citation": "[38]"
+  },
+  {
+    "id": 34,
+    "question": "What is 'Loop Unrolling' as mentioned in the lecture?",
+    "options": [
+      "Stopping a loop early to save power",
+      "A software/compiler technique to increase the number of instructions between branches",
+      "Physically stretching the silicon of the CPU",
+      "Deleting a loop from the code"
+    ],
+    "answer": "A software/compiler technique to increase the number of instructions between branches",
+    "citation": "[39], [40]"
+  },
+  {
+    "id": 35,
+    "question": "What is a strength of the Compiler (Software) scheduling approach?",
+    "options": [
+      "It has dynamic information about memory delays",
+      "It has a large scope (can see the whole program)",
+      "It has high branch prediction accuracy",
+      "It can recover from hardware failures easily"
+    ],
+    "answer": "It has a large scope (can see the whole program)",
+    "citation": "[41], [42]"
+  },
+  {
+    "id": 36,
+    "question": "What is a strength of the Hardware scheduling approach?",
+    "options": [
+      "It leads to simpler and cheaper hardware",
+      "It has dynamic information about memory delays and cache misses",
+      "It can see the entire program code at once",
+      "It requires no verification"
+    ],
+    "answer": "It has dynamic information about memory delays and cache misses",
+    "citation": "[41], [42]"
+  },
+  {
+    "id": 37,
+    "question": "According to the sources, what happens to hardware as it becomes more 'complicated' with dynamic scheduling?",
+    "options": [
+      "It becomes easier to verify",
+      "It may lead to a slower clock and harder verification",
+      "It always uses less area",
+      "It becomes immune to bugs"
+    ],
+    "answer": "It may lead to a slower clock and harder verification",
+    "citation": "[43], [44]"
+  },
+  {
+    "id": 38,
+    "question": "What did the instructor mean by 'Merchant' and 'Winter Clothes' in this lecture's context?",
+    "options": [
+      "The importance of sales in the tech industry",
+      "The need for speculation because of shipping/latency delays",
+      "The seasonality of processor releases",
+      "The cost of power in different climates"
+    ],
+    "answer": "The need for speculation because of shipping/latency delays",
+    "citation": "[3]"
+  },
+  {
+    "id": 39,
+    "question": "If a processor has 4 pipelines, what is the maximum possible IPC?",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "16"
+    ],
+    "answer": "4",
+    "citation": "[45], [46]"
+  },
+  {
+    "id": 40,
+    "question": "Why would a data center designer choose a specialized processor for searching text?",
+    "options": [
+      "Because text searching doesn't need floating-point units",
+      "Because specialized processors are always more expensive",
+      "Because text searching requires VLIW only",
+      "To increase the number of branches in the code"
+    ],
+    "answer": "Because text searching doesn't need floating-point units",
+    "citation": "[47], [48]"
+  },
+  {
+    "id": 41,
+    "question": "What is the term for having multiple independent programs running on different processor cores?",
+    "options": [
+      "Instruction Level Parallelism",
+      "Multi-core / Parallel processing",
+      "Superscalar execution",
+      "VLIW"
+    ],
+    "answer": "Multi-core / Parallel processing",
+    "citation": "[46]"
+  },
+  {
+    "id": 42,
+    "question": "In the 'Fire extinguishing' analogy, what does the bucket represent?",
+    "options": [
+      "A data packet",
+      "An instruction",
+      "A clock cycle",
+      "A pipeline stage"
+    ],
+    "answer": "An instruction",
+    "citation": "[4], [5]"
+  },
+  {
+    "id": 43,
+    "question": "What is 'Shadow Registers' another name for in hardware?",
+    "options": [
+      "Cache memory",
+      "The physical registers used in register renaming",
+      "The branch history table",
+      "The power management unit"
+    ],
+    "answer": "The physical registers used in register renaming",
+    "citation": "[29], [31]"
+  },
+  {
+    "id": 44,
+    "question": "Which architecture is known for 'Superscalar in-order' execution in the 90s?",
+    "options": [
+      "Intel Pentium 4",
+      "Sun UltraSparc",
+      "Cray-1",
+      "Apple M1"
+    ],
+    "answer": "Sun UltraSparc",
+    "citation": "[49], [2]"
+  },
+  {
+    "id": 45,
+    "question": "What does 'Symmetric' pipelines imply?",
+    "options": [
+      "All pipelines are identical and can execute any instruction",
+      "Pipelines are mirrored physically on the chip",
+      "The pipelines use the same amount of power",
+      "The clock edges are the same"
+    ],
+    "answer": "All pipelines are identical and can execute any instruction",
+    "citation": "[50]"
+  },
+  {
+    "id": 46,
+    "question": "What is a 'Super-scalar' processor?",
+    "options": [
+      "A processor that can execute more than one instruction per cycle",
+      "A processor that runs at more than 1 GHz",
+      "A processor with more than 1 GB of cache",
+      "A processor used exclusively for scalar mathematics"
+    ],
+    "answer": "A processor that can execute more than one instruction per cycle",
+    "citation": "[51], [2]"
+  },
+  {
+    "id": 47,
+    "question": "In the context of the lecture, what is 'Clustering'?",
+    "options": [
+      "Grouping CPUs into a data center",
+      "Grouping functional units to limit the bypass bus complexity",
+      "Putting similar instructions together in memory",
+      "Combining multiple bits into a byte"
+    ],
+    "answer": "Grouping functional units to limit the bypass bus complexity",
+    "citation": "[20], [21]"
+  },
+  {
+    "id": 48,
+    "question": "Why is the term 'Super-scalar' used instead of 'Vector'?",
+    "options": [
+      "Because it handles multiple independent scalar values, not a mathematically linked vector",
+      "Because 'Vector' was trademarked",
+      "Because 'Scalar' is faster than 'Vector'",
+      "Because it only works on 32-bit values"
+    ],
+    "answer": "Because it handles multiple independent scalar values, not a mathematically linked vector",
+    "citation": "[52]"
+  },
+  {
+    "id": 49,
+    "question": "What is the 'Issue Rate' ceiling for a single-pipeline processor?",
+    "options": [
+      "IPC = 0.5",
+      "IPC = 1",
+      "IPC = 2",
+      "IPC = 4"
+    ],
+    "answer": "IPC = 1",
+    "citation": "[45], [2]"
+  },
+  {
+    "id": 50,
+    "question": "If a processor has an IPC of 2, how many clock cycles are needed on average for 10 instructions?",
+    "options": [
+      "2",
+      "5",
+      "10",
+      "20"
+    ],
+    "answer": "5",
+    "citation": "[45]"
+  },
+  {
+    "id": 51,
+    "question": "Which stage is responsible for 'Register Renaming' logic?",
+    "options": [
+      "Fetch",
+      "Decode (Dispatch/Issue)",
+      "Execute",
+      "Memory"
+    ],
+    "answer": "Decode (Dispatch/Issue)",
+    "citation": "[53], [28]"
+  },
+  {
+    "id": 52,
+    "question": "What is 'Aliasing' in the instruction cache?",
+    "options": [
+      "When two instructions have the same opcode",
+      "When different memory addresses map to the same cache location",
+      "When the CPU cannot find the branch target",
+      "When the user renames a variable"
+    ],
+    "answer": "When different memory addresses map to the same cache location",
+    "citation": "[54]"
+  },
+  {
+    "id": 53,
+    "question": "The 'Alpha 21164' processor had how many ALU/FP units according to the sources?",
+    "options": [
+      "1 ALU/FP/branch + 2 ALU + 1 load/store",
+      "4 ALU + 4 FP",
+      "1 ALU + 1 FP",
+      "2 Load + 2 Store"
+    ],
+    "answer": "1 ALU/FP/branch + 2 ALU + 1 load/store",
+    "citation": "[17], [18]"
+  },
+  {
+    "id": 54,
+    "question": "What did the instructor say about '20 pipelines'?",
+    "options": [
+      "It is the standard for modern gaming CPUs",
+      "It would be a waste because software rarely has that much parallel independence",
+      "It is impossible to build due to heat",
+      "It would require 20 different compilers"
+    ],
+    "answer": "It would be a waste because software rarely has that much parallel independence",
+    "citation": "[46]"
+  },
+  {
+    "id": 55,
+    "question": "What is the 'appearance' that out-of-order hardware must maintain?",
+    "options": [
+      "That the CPU is always cool",
+      "The appearance of sequential execution",
+      "That only one instruction exists",
+      "That the clock speed is infinite"
+    ],
+    "answer": "The appearance of sequential execution",
+    "citation": "[24], [25]"
+  },
+  {
+    "id": 56,
+    "question": "What is 'Non-aligned' access?",
+    "options": [
+      "Accessing memory at an address that isn't a multiple of the word size",
+      "Putting instructions in the wrong order",
+      "Branching to a negative address",
+      "Using two different clocks"
+    ],
+    "answer": "Accessing memory at an address that isn't a multiple of the word size",
+    "citation": "[10], [9]"
+  },
+  {
+    "id": 57,
+    "question": "What happens in a 'pure' VLIW machine if there is a cache miss?",
+    "options": [
+      "The hardware must still handle it, breaking the 'pure' compile-time schedule",
+      "The machine ignores the data and continues",
+      "The compiler predicts the miss and waits",
+      "The memory system reboots"
+    ],
+    "answer": "The hardware must still handle it, breaking the 'pure' compile-time schedule",
+    "citation": "[55], [37]"
+  },
+  {
+    "id": 58,
+    "question": "The 'Pentium II' unit mix included:",
+    "options": [
+      "1 ALU/FP + 1 ALU + 1 load + 1 store + 1 branch",
+      "1 ALU + 1 FP only",
+      "5 ALUs",
+      "2 Branches + 2 Loads"
+    ],
+    "answer": "1 ALU/FP + 1 ALU + 1 load + 1 store + 1 branch",
+    "citation": "[17], [18]"
+  },
+  {
+    "id": 59,
+    "question": "Why is 'Precise Exception' recovery easier in hardware?",
+    "options": [
+      "Hardware can use shadow registers to undo state changes immediately",
+      "Software can't see the state of the registers",
+      "Hardware doesn't have bugs",
+      "Because hardware is faster than software"
+    ],
+    "answer": "Hardware can use shadow registers to undo state changes immediately",
+    "citation": "[43], [42]"
+  },
+  {
+    "id": 60,
+    "question": "What does 'Speculation' require to be effective?",
+    "options": [
+      "A way to verify the guess and a way to recover if the guess was wrong",
+      "100% accuracy",
+      "A large cooling system",
+      "Manual input from the programmer"
+    ],
+    "answer": "A way to verify the guess and a way to recover if the guess was wrong",
+    "citation": "[11], [42]"
+  },
+  {
+    "id": 61,
+    "question": "What percentage of instructions are typically control branches in real programs?",
+    "options": [
+      "1-2%",
+      "15-20%",
+      "50-60%",
+      "90%"
+    ],
+    "answer": "15-20%",
+    "citation": "[56]"
+  },
+  {
+    "id": 62,
+    "question": "What is 'WAW' (Write After Write)?",
+    "options": [
+      "When two instructions try to read the same register",
+      "When a later instruction writes to a register before an earlier one, potentially leaving the wrong value",
+      "When the memory fails to write",
+      "When a branch goes to the wrong address"
+    ],
+    "answer": "When a later instruction writes to a register before an earlier one, potentially leaving the wrong value",
+    "citation": "[57], [30]"
+  },
+  {
+    "id": 63,
+    "question": "What is the 'Commit' stage (implied in precise exceptions)?",
+    "options": [
+      "Fetching a new instruction",
+      "Permanently updating the state only when it is safe/in-order",
+      "Sending an interrupt",
+      "Calculating a sum"
+    ],
+    "answer": "Permanently updating the state only when it is safe/in-order",
+    "citation": "[24], [25]"
+  },
+  {
+    "id": 64,
+    "question": "If we have 2 pipelines, by what factor does the stall/bypass logic grow?",
+    "options": [
+      "2x",
+      "4x",
+      "8x",
+      "16x"
+    ],
+    "answer": "4x",
+    "citation": "[6], [7]"
+  },
+  {
+    "id": 65,
+    "question": "In the example 'Div F0... Add F3, F0... Mul F0...', the Mul F0 creates what hazard with the first Div?",
+    "options": [
+      "RAW",
+      "WAW",
+      "WAR",
+      "Structural"
+    ],
+    "answer": "WAW",
+    "citation": "[58], [57], [30]"
+  },
+  {
+    "id": 66,
+    "question": "The 'TransMeta' company was mentioned for what specific technology?",
+    "options": [
+      "Building the first GPU",
+      "Recompiling code 'on the fly' to adapt to hardware",
+      "Inventing the Trace Cache",
+      "Creating the ARM architecture"
+    ],
+    "answer": "Recompiling code 'on the fly' to adapt to hardware",
+    "citation": "[55], [37]"
+  },
+  {
+    "id": 67,
+    "question": "In VLIW, the 'group' of instructions travels the pipeline as:",
+    "options": [
+      "Individual pieces",
+      "One single unit",
+      "A software interrupt",
+      "A data packet"
+    ],
+    "answer": "One single unit",
+    "citation": "[34], [35]"
+  },
+  {
+    "id": 68,
+    "question": "A 'Pure' VLIW compiler must know:",
+    "options": [
+      "The exact latencies and organization of the pipeline",
+      "The user's password",
+      "The current temperature of the chip",
+      "The size of the hard drive"
+    ],
+    "answer": "The exact latencies and organization of the pipeline",
+    "citation": "[36], [37]"
+  },
+  {
+    "id": 69,
+    "question": "Which architecture is optimized for 'rotations' and 'translations' in 3D space?",
+    "options": [
+      "DSP",
+      "GPU",
+      "CPU",
+      "VLIW"
+    ],
+    "answer": "GPU",
+    "citation": "[47]"
+  },
+  {
+    "id": 70,
+    "question": "What does 'ILP' stand for?",
+    "options": [
+      "Internal Logic Parallelism",
+      "Instruction Level Parallelism",
+      "Integrated Link Protocol",
+      "Instruction Latency Period"
+    ],
+    "answer": "Instruction Level Parallelism",
+    "citation": "[59], [2]"
+  },
+  {
+    "id": 71,
+    "question": "In the context of superscalar, 'n' refers to:",
+    "options": [
+      "Number of bits in a register",
+      "Number of parallel instructions/pipelines",
+      "Number of clock cycles",
+      "Number of transistors"
+    ],
+    "answer": "Number of parallel instructions/pipelines",
+    "citation": "[13], [14]"
+  },
+  {
+    "id": 72,
+    "question": "What happens if a branch is mispredicted in an out-of-order machine?",
+    "options": [
+      "The machine stalls for 100 cycles",
+      "The speculative instructions are flushed and the state is restored",
+      "The program is terminated",
+      "The branch is marked as 'permanently not taken'"
+    ],
+    "answer": "The speculative instructions are flushed and the state is restored",
+    "citation": "[24], [41], [42]"
+  },
+  {
+    "id": 73,
+    "question": "What is the primary trade-off between hardware and software scheduling?",
+    "options": [
+      "Speed vs. Cost",
+      "Complexity/Area vs. Dynamic Information/Adaptability",
+      "Memory size vs. Register count",
+      "Power vs. Voltage"
+    ],
+    "answer": "Complexity/Area vs. Dynamic Information/Adaptability",
+    "citation": "[40], [41], [42]"
+  },
+  {
+    "id": 74,
+    "question": "Which stage handles 'Write Port' contention in multiple pipelines?",
+    "options": [
+      "Decode",
+      "Execute",
+      "Write Back",
+      "Fetch"
+    ],
+    "answer": "Write Back",
+    "citation": "[60], [21]"
+  },
+  {
+    "id": 75,
+    "question": "What will be the topic of the next 4 lectures after Lecture 4?",
+    "options": [
+      "Advanced ALUs",
+      "Memory Systems",
+      "Operating Systems",
+      "External I/O"
+    ],
+    "answer": "Memory Systems",
+    "citation": "[43], [44]"
+  }
+]

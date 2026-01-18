@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "question": "How is 'performance' typically measured in microprocessor design according to the sources?",
+    "options": [
+      "By the size of the processor and the power consumed",
+      "By latency (time delay) or throughput (tasks per time unit)",
+      "Exclusively by the clock speed measured in GHz",
+      "By the number of transistors on a single chip"
+    ],
+    "answer": "By latency (time delay) or throughput (tasks per time unit)",
+    "citation": "[1, 2]"
+  },
+  {
+    "id": 2,
+    "question": "Which term describes the time taken to finish a specific task?",
+    "options": [
+      "Throughput",
+      "Bandwidth",
+      "Latency",
+      "Cycle Time"
+    ],
+    "answer": "Latency",
+    "citation": "[1, 2]"
+  },
+  {
+    "id": 3,
+    "question": "What does 'throughput' represent in the context of processor performance?",
+    "options": [
+      "The total time required to execute one instruction",
+      "The delay between input and output of a logic gate",
+      "The number of tasks completed within a fixed period",
+      "The maximum frequency a processor can reach"
+    ],
+    "answer": "The number of tasks completed within a fixed period",
+    "citation": "[1, 2]"
+  },
+  {
+    "id": 4,
+    "question": "What is the mathematical relationship between throughput and latency in a pipelined system?",
+    "options": [
+      "Throughput is always exactly 1/Latency",
+      "Throughput equals some constant divided by Latency",
+      "They are completely independent variables",
+      "Latency is always the square root of Throughput"
+    ],
+    "answer": "Throughput equals some constant divided by Latency",
+    "citation": "[3]"
+  },
+  {
+    "id": 5,
+    "question": "In the baking bread analogy, what happens to latency when a pipeline is introduced?",
+    "options": [
+      "Latency decreases because stages are faster",
+      "Latency remains essentially the same for a single loaf",
+      "Latency doubles because of the stages",
+      "Latency becomes zero after the first loaf"
+    ],
+    "answer": "Latency remains essentially the same for a single loaf",
+    "citation": "[4, 5]"
+  },
+  {
+    "id": 6,
+    "question": "In the baking bread example, how does pipelining improve the bakery's output?",
+    "options": [
+      "By making the oven heat up twice as fast",
+      "By allowing multiple loaves to be in different stages simultaneously",
+      "By reducing the amount of ingredients used",
+      "By eliminating the need for a fermentation stage"
+    ],
+    "answer": "By allowing multiple loaves to be in different stages simultaneously",
+    "citation": "[4]"
+  },
+  {
+    "id": 7,
+    "question": "What are the five classic stages of a basic processor pipeline mentioned in the lecture?",
+    "options": [
+      "Fetch, Store, Execute, Output, Reset",
+      "Instruction Fetch, Decode, Execute, Memory, Write Back",
+      "Input, Processing, Logic, Memory, Output",
+      "Start, Read, Add, Subtract, Stop"
+    ],
+    "answer": "Instruction Fetch, Decode, Execute, Memory, Write Back",
+    "citation": "[5-8]"
+  },
+  {
+    "id": 8,
+    "question": "What is the primary function of the 'Instruction Fetch' (IF) stage?",
+    "options": [
+      "To interpret the operation code",
+      "To bring an instruction from memory to the processor",
+      "To perform arithmetic operations",
+      "To save the results in a register"
+    ],
+    "answer": "To bring an instruction from memory to the processor",
+    "citation": "[7]"
+  },
+  {
+    "id": 9,
+    "question": "During which stage does the processor determine if an instruction is an addition or a load?",
+    "options": [
+      "Instruction Fetch (IF)",
+      "Decode (D)",
+      "Execute (EX)",
+      "Write Back (WB)"
+    ],
+    "answer": "Decode (D)",
+    "citation": "[7]"
+  },
+  {
+    "id": 10,
+    "question": "What occurs during the 'Execute' (EX) stage of the pipeline?",
+    "options": [
+      "The instruction is fetched from the cache",
+      "The ALU performs the required operation",
+      "Data is written back to the register file",
+      "The instruction is translated into machine code"
+    ],
+    "answer": "The ALU performs the required operation",
+    "citation": "[5, 9]"
+  },
+  {
+    "id": 11,
+    "question": "In a Load instruction, what is the 'Memory' (M) stage used for?",
+    "options": [
+      "To store the instruction's op-code",
+      "To retrieve data from a specific memory address",
+      "To clear the CPU's cache",
+      "To write the result of a sum into a register"
+    ],
+    "answer": "To retrieve data from a specific memory address",
+    "citation": "[8]"
+  },
+  {
+    "id": 12,
+    "question": "What is the purpose of the 'Write Back' (WB) stage?",
+    "options": [
+      "To send data back to the main memory",
+      "To record the final result in the designated register",
+      "To restart the pipeline if an error occurs",
+      "To undo the last executed instruction"
+    ],
+    "answer": "To record the final result in the designated register",
+    "citation": "[8, 10]"
+  },
+  {
+    "id": 13,
+    "question": "Why do ALU instructions pass through the Memory (M) stage even if they don't access memory?",
+    "options": [
+      "To increase the latency of the instruction",
+      "To maintain a uniform pipeline flow and simplify design",
+      "Because the ALU needs memory to store temporary results",
+      "To allow the processor to cool down"
+    ],
+    "answer": "To maintain a uniform pipeline flow and simplify design",
+    "citation": "[11, 12]"
+  },
+  {
+    "id": 14,
+    "question": "What is the 'ideal speedup' of a processor with 'n' pipeline stages compared to a non-pipelined one?",
+    "options": [
+      "Speedup = 1/n",
+      "Speedup = n",
+      "Speedup = n squared",
+      "Speedup = n - 1"
+    ],
+    "answer": "Speedup = n",
+    "citation": "[13, 14]"
+  },
+  {
+    "id": 15,
+    "question": "Why is the real speedup often less than the ideal 'n' stages?",
+    "options": [
+      "Because instructions are too fast for the pipeline",
+      "Due to pipeline overheads like latch delays and hazards",
+      "Because memory is faster than the CPU",
+      "Because RISC instructions are too simple"
+    ],
+    "answer": "Due to pipeline overheads like latch delays and hazards",
+    "citation": "[14-16]"
+  },
+  {
+    "id": 16,
+    "question": "What hardware component is placed between pipeline stages to save results?",
+    "options": [
+      "Multiplexer",
+      "Register (Latch)",
+      "Capacitor",
+      "ALU"
+    ],
+    "answer": "Register (Latch)",
+    "citation": "[17-19]"
+  },
+  {
+    "id": 17,
+    "question": "What two timing requirements must be met by signals entering a register latch?",
+    "options": [
+      "Rise time and Fall time",
+      "Setup time and Hold time",
+      "Propagation delay and Gate delay",
+      "Clock period and Duty cycle"
+    ],
+    "answer": "Setup time and Hold time",
+    "citation": "[20]"
+  },
+  {
+    "id": 18,
+    "question": "What is 'Setup Time'?",
+    "options": [
+      "The time taken to turn on the processor",
+      "The time data must be stable before the clock edge",
+      "The time data must be stable after the clock edge",
+      "The time taken to load the first instruction"
+    ],
+    "answer": "The time data must be stable before the clock edge",
+    "citation": "[20]"
+  },
+  {
+    "id": 19,
+    "question": "What is 'Hold Time'?",
+    "options": [
+      "The time the CPU waits for memory",
+      "The duration data must remain stable after the clock edge",
+      "The time it takes to fetch a bucket of water",
+      "The maximum frequency the clock can hold"
+    ],
+    "answer": "The duration data must remain stable after the clock edge",
+    "citation": "[20]"
+  },
+  {
+    "id": 20,
+    "question": "What is a 'hazard' in a microprocessor pipeline?",
+    "options": [
+      "A physical damage to the silicon chip",
+      "A situation where two dependent instructions are in the pipeline simultaneously",
+      "When the processor runs out of electrical power",
+      "When the user inputs incorrect data"
+    ],
+    "answer": "A situation where two dependent instructions are in the pipeline simultaneously",
+    "citation": "[21, 22]"
+  },
+  {
+    "id": 21,
+    "question": "Which type of hazard occurs when two instructions need the same hardware resource at the same time?",
+    "options": [
+      "Data Hazard",
+      "Structural Hazard",
+      "Control Hazard",
+      "Software Hazard"
+    ],
+    "answer": "Structural Hazard",
+    "citation": "[22-24]"
+  },
+  {
+    "id": 22,
+    "question": "What is an example of a structural hazard mentioned in the lecture?",
+    "options": [
+      "An 'if' statement changing the program flow",
+      "Accessing memory for an instruction and data simultaneously",
+      "Adding two floating-point numbers",
+      "Writing a result to a register that is being read"
+    ],
+    "answer": "Accessing memory for an instruction and data simultaneously",
+    "citation": "[19, 23]"
+  },
+  {
+    "id": 23,
+    "question": "What is a 'Control Hazard' primarily associated with?",
+    "options": [
+      "Memory access delays",
+      "Branch and jump instructions",
+      "Arithmetic overflow",
+      "Power management"
+    ],
+    "answer": "Branch and jump instructions",
+    "citation": "[22, 25]"
+  },
+  {
+    "id": 24,
+    "question": "When does a 'Data Hazard' occur?",
+    "options": [
+      "When the data bus is physically disconnected",
+      "When an instruction depends on the result of a previous instruction still in the pipeline",
+      "When the memory is full",
+      "When data is corrupted by radiation"
+    ],
+    "answer": "When an instruction depends on the result of a previous instruction still in the pipeline",
+    "citation": "[22, 24]"
+  },
+  {
+    "id": 25,
+    "question": "What is the common method to handle a 'Control Hazard'?",
+    "options": [
+      "Stalling the pipeline",
+      "Flushing the pipeline",
+      "Replicating the ALU",
+      "Increasing the clock frequency"
+    ],
+    "answer": "Flushing the pipeline",
+    "citation": "[21, 22]"
+  },
+  {
+    "id": 26,
+    "question": "Which architecture separates memory into distinct spaces for instructions and data?",
+    "options": [
+      "Von Neumann Architecture",
+      "Harvard Architecture",
+      "CISC Architecture",
+      "Stack Architecture"
+    ],
+    "answer": "Harvard Architecture",
+    "citation": "[26, 27]"
+  },
+  {
+    "id": 27,
+    "question": "The 'Von Neumann' architecture is characterised by:",
+    "options": [
+      "Separate caches for data and instructions",
+      "Storing both programs and data in the same memory",
+      "Having 20+ pipeline stages",
+      "Exclusively using fixed-length instructions"
+    ],
+    "answer": "Storing both programs and data in the same memory",
+    "citation": "[28]"
+  },
+  {
+    "id": 28,
+    "question": "How can 'Replication of Resources' solve a structural hazard?",
+    "options": [
+      "By creating two copies of the contended resource (e.g., memory)",
+      "By reducing the number of instructions in the program",
+      "By slowing down the clock speed",
+      "By making the processor smaller"
+    ],
+    "answer": "By creating two copies of the contended resource (e.g., memory)",
+    "citation": "[27, 29]"
+  },
+  {
+    "id": 29,
+    "question": "What is 'DDR' (Double Data Rate) memory used for in the context of pipeline efficiency?",
+    "options": [
+      "To use twice as much power for better reliability",
+      "To provide two data outputs per clock cycle (on both edges)",
+      "To double the storage capacity of the RAM",
+      "To encrypt data twice for security"
+    ],
+    "answer": "To provide two data outputs per clock cycle (on both edges)",
+    "citation": "[30]"
+  },
+  {
+    "id": 30,
+    "question": "What does 'CISC' stand for?",
+    "options": [
+      "Computer Integrated System Control",
+      "Complex Instruction Set Computer",
+      "Centralized Instruction Storage Cache",
+      "Core Instruction Synchronized Chip"
+    ],
+    "answer": "Complex Instruction Set Computer",
+    "citation": "[2, 31]"
+  },
+  {
+    "id": 31,
+    "question": "What does 'RISC' stand for?",
+    "options": [
+      "Rapid Instruction Set Core",
+      "Reduced Instruction Set Computer",
+      "Reliable Integrated System Component",
+      "Registered Instruction Sequence Control"
+    ],
+    "answer": "Reduced Instruction Set Computer",
+    "citation": "[2, 31]"
+  },
+  {
+    "id": 32,
+    "question": "Why is it easier to pipeline a RISC processor compared to a CISC processor?",
+    "options": [
+      "RISC instructions have variable lengths",
+      "RISC instructions typically have fixed lengths and fixed fields",
+      "RISC processors don't have an ALU",
+      "RISC processors use more power"
+    ],
+    "answer": "RISC instructions typically have fixed lengths and fixed fields",
+    "citation": "[14, 32]"
+  },
+  {
+    "id": 33,
+    "question": "Which university is associated with the early development of the 'MIPS' architecture?",
+    "options": [
+      "Harvard University",
+      "Stanford University",
+      "UC Berkeley",
+      "MIT"
+    ],
+    "answer": "Stanford University",
+    "citation": "[33]"
+  },
+  {
+    "id": 34,
+    "question": "David Patterson at UC Berkeley is famous for launching which project in 1981?",
+    "options": [
+      "The Pentium Processor",
+      "RISC I and RISC II",
+      "The IBM Mainframe",
+      "Windows OS"
+    ],
+    "answer": "RISC I and RISC II",
+    "citation": "[33, 34]"
+  },
+  {
+    "id": 35,
+    "question": "Which modern, open-source architecture is described as the 'biggest challenger' to ARM?",
+    "options": [
+      "Intel x86",
+      "RISC-V",
+      "MIPS",
+      "IBM S/390"
+    ],
+    "answer": "RISC-V",
+    "citation": "[33]"
+  },
+  {
+    "id": 36,
+    "question": "What happened to the 'Advanced RISC Machines' company name?",
+    "options": [
+      "It became Intel",
+      "It was shortened to ARM",
+      "It was renamed MIPS",
+      "It went out of business"
+    ],
+    "answer": "It was shortened to ARM",
+    "citation": "[33]"
+  },
+  {
+    "id": 37,
+    "question": "Why are CISC architectures like x86 (Intel/AMD) still widely used today despite their complexity?",
+    "options": [
+      "Because they are physically smaller",
+      "Due to software compatibility and legacy support",
+      "Because they consume less power than RISC",
+      "Because they don't require cooling"
+    ],
+    "answer": "Due to software compatibility and legacy support",
+    "citation": "[32]"
+  },
+  {
+    "id": 38,
+    "question": "What is an 'exception' or 'interrupt' in a processor?",
+    "options": [
+      "A bug in the hardware design",
+      "An external event that forces the CPU to deviate from its current program",
+      "The end of a program execution",
+      "A mathematical error like division by zero only"
+    ],
+    "answer": "An external event that forces the CPU to deviate from its current program",
+    "citation": "[19, 35, 36]"
+  },
+  {
+    "id": 39,
+    "question": "How does a pipeline respond to an interrupt (exception)?",
+    "options": [
+      "It ignores the interrupt until the program is finished",
+      "It must handle the exception correctly, often by flushing the pipeline",
+      "It speeds up the clock to finish faster",
+      "It deletes the current program"
+    ],
+    "answer": "It must handle the exception correctly, often by flushing the pipeline",
+    "citation": "[22, 37]"
+  },
+  {
+    "id": 40,
+    "question": "What is 'polling' in the context of handling devices?",
+    "options": [
+      "When a device sends a signal to the CPU",
+      "When the CPU periodically checks devices to see if they need service",
+      "When the CPU goes into sleep mode",
+      "When the user votes for a processor speed"
+    ],
+    "answer": "When the CPU periodically checks devices to see if they need service",
+    "citation": "[36]"
+  },
+  {
+    "id": 41,
+    "question": "Which operation usually takes more cycles than an integer addition?",
+    "options": [
+      "Moving data between registers",
+      "Floating point division",
+      "A logical AND operation",
+      "Fetching the next instruction"
+    ],
+    "answer": "Floating point division",
+    "citation": "[19, 38]"
+  },
+  {
+    "id": 42,
+    "question": "What is the 'CPI' in microprocessor performance terminology?",
+    "options": [
+      "Cycles Per Instruction",
+      "Computer Processing Interface",
+      "Central Programming Information",
+      "Control Pipeline Index"
+    ],
+    "answer": "Cycles Per Instruction",
+    "citation": "[39]"
+  },
+  {
+    "id": 43,
+    "question": "What is 'IPC'?",
+    "options": [
+      "Instructions Per Cycle",
+      "Integrated Processing Chip",
+      "Internal Pipeline Control",
+      "Instruction Programming Code"
+    ],
+    "answer": "Instructions Per Cycle",
+    "citation": "[39]"
+  },
+  {
+    "id": 44,
+    "question": "In an ideal pipeline, what is the goal for CPI?",
+    "options": [
+      "CPI = 0",
+      "CPI = 1",
+      "CPI = 5 (for a 5-stage pipeline)",
+      "CPI = Infinity"
+    ],
+    "answer": "CPI = 1",
+    "citation": "[14, 39]"
+  },
+  {
+    "id": 45,
+    "question": "A 'superpipeline' refers to a processor with:",
+    "options": [
+      "Only one very fast stage",
+      "A very large number of stages (e.g., more than 20)",
+      "No registers between stages",
+      "Liquid nitrogen cooling"
+    ],
+    "answer": "A very large number of stages (e.g., more than 20)",
+    "citation": "[5, 14]"
+  },
+  {
+    "id": 46,
+    "question": "What is one major drawback of having a very deep pipeline (many stages)?",
+    "options": [
+      "It makes the processor too cheap",
+      "High overhead from latches and higher penalty during flushes",
+      "It decreases the clock frequency",
+      "It requires a special type of memory called ROM"
+    ],
+    "answer": "High overhead from latches and higher penalty during flushes",
+    "citation": "[16]"
+  },
+  {
+    "id": 47,
+    "question": "The lecture mentions 'Domain Specific Architectures' (DSA). What is an example given?",
+    "options": [
+      "Standard Intel CPUs",
+      "GPUs and Neural Network Units",
+      "Mechanical calculators",
+      "Power supplies"
+    ],
+    "answer": "GPUs and Neural Network Units",
+    "citation": "[40]"
+  },
+  {
+    "id": 48,
+    "question": "What is a 'DSP' used for?",
+    "options": [
+      "Designing Software Programs",
+      "Digital Signal Processing",
+      "Data Storage Protocol",
+      "Dual System Processing"
+    ],
+    "answer": "Digital Signal Processing",
+    "citation": "[41]"
+  },
+  {
+    "id": 49,
+    "question": "Why might a DSP design differ from a general-purpose CPU?",
+    "options": [
+      "Because it doesn't need to be fast",
+      "It is optimized for specific tasks like audio encoding",
+      "It uses vacuum tubes instead of transistors",
+      "It is designed by software engineers only"
+    ],
+    "answer": "It is optimized for specific tasks like audio encoding",
+    "citation": "[40, 41]"
+  },
+  {
+    "id": 50,
+    "question": "In the 'Fire extinguishing' analogy, what represents 'Parallelism'?",
+    "options": [
+      "One person running faster",
+      "Multiple people in a line passing buckets",
+      "Waiting for the fire to go out on its own",
+      "Using a larger bucket"
+    ],
+    "answer": "Multiple people in a line passing buckets",
+    "citation": "[42, 43]"
+  },
+  {
+    "id": 51,
+    "question": "Which design rule helps minimize structural hazards?",
+    "options": [
+      "Allowing instructions to use resources for multiple cycles",
+      "Ensuring each instruction uses a resource only once",
+      "Mixing the order of stages for different instructions",
+      "Reducing the number of registers"
+    ],
+    "answer": "Ensuring each instruction uses a resource only once",
+    "citation": "[11, 12]"
+  },
+  {
+    "id": 52,
+    "question": "What is 'Stalling' in a pipeline?",
+    "options": [
+      "Stopping the clock entirely",
+      "Holding an instruction in a stage for extra cycles to resolve a hazard",
+      "Increasing the power voltage",
+      "Deleting the instruction from the queue"
+    ],
+    "answer": "Holding an instruction in a stage for extra cycles to resolve a hazard",
+    "citation": "[22, 27, 44]"
+  },
+  {
+    "id": 53,
+    "question": "What is the primary trade-off when adding more pipeline stages?",
+    "options": [
+      "Increased Throughput vs. Increased Latency and Power",
+      "Decreased Cost vs. Decreased Reliability",
+      "Smaller Area vs. Higher Clock Speed",
+      "Slower Memory vs. Faster CPU"
+    ],
+    "answer": "Increased Throughput vs. Increased Latency and Power",
+    "citation": "[14, 16]"
+  },
+  {
+    "id": 54,
+    "question": "According to the slides, what is a 'Point to take home' regarding real vs. ideal pipelines?",
+    "options": [
+      "Real pipelines are always identical to ideal ones",
+      "Note the differences between 'ideal' and 'real'",
+      "Ideal pipelines are impossible to design",
+      "Real pipelines don't use clock cycles"
+    ],
+    "answer": "Note the differences between 'ideal' and 'real'",
+    "citation": "[45]"
+  },
+  {
+    "id": 55,
+    "question": "What is the 'instruction format' advantage in RISC?",
+    "options": [
+      "Variable field sizes for flexibility",
+      "Fixed field sizes for easier decoding while reading registers",
+      "Encryption of all instructions",
+      "No op-codes are used"
+    ],
+    "answer": "Fixed field sizes for easier decoding while reading registers",
+    "citation": "[14, 32]"
+  },
+  {
+    "id": 56,
+    "question": "If a pipeline has 5 stages, how many instructions can be 'in flight' at once?",
+    "options": [
+      "1",
+      "5",
+      "10",
+      "0"
+    ],
+    "answer": "5",
+    "citation": "[6, 39]"
+  },
+  {
+    "id": 57,
+    "question": "In a processor for a washing machine, why is a high-performance pipeline NOT necessary?",
+    "options": [
+      "Because washing machines don't use electricity",
+      "The tasks are slow (taking minutes) and don't require microsecond speed",
+      "Because the water would interfere with the CPU",
+      "Because washing machines use analog signals only"
+    ],
+    "answer": "The tasks are slow (taking minutes) and don't require microsecond speed",
+    "citation": "[46, 47]"
+  },
+  {
+    "id": 58,
+    "question": "What is the effect of 'pipelining the contended resource' itself?",
+    "options": [
+      "It always makes the system slower",
+      "It improves performance with a smaller area than full replication",
+      "It eliminates the need for any clock",
+      "It prevents the CPU from accessing memory"
+    ],
+    "answer": "It improves performance with a smaller area than full replication",
+    "citation": "[12, 27]"
+  },
+  {
+    "id": 59,
+    "question": "Which of these is a 'Structural' limitation?",
+    "options": [
+      "A branch being taken",
+      "Having only one memory port for both IF and M stages",
+      "A register being empty",
+      "A divide-by-zero error"
+    ],
+    "answer": "Having only one memory port for both IF and M stages",
+    "citation": "[22, 23]"
+  },
+  {
+    "id": 60,
+    "question": "What is 'RAW' in the context of data dependencies (though not explicitly named, it is described)?",
+    "options": [
+      "Read After Write",
+      "Register Access Width",
+      "Remote Address Wire",
+      "Random Allocation Word"
+    ],
+    "answer": "Read After Write",
+    "citation": "[22, 24]"
+  },
+  {
+    "id": 61,
+    "question": "What does the 'M' stage stand for?",
+    "options": [
+      "Mathematics",
+      "Memory",
+      "Multiplexer",
+      "Mainframe"
+    ],
+    "answer": "Memory",
+    "citation": "[5, 8]"
+  },
+  {
+    "id": 62,
+    "question": "Why do we say pipelining increases 'throughput'?",
+    "options": [
+      "Because each instruction finishes in less time",
+      "Because instructions overlap, so more finish per second",
+      "Because it reduces the clock frequency",
+      "Because it simplifies the ALU"
+    ],
+    "answer": "Because instructions overlap, so more finish per second",
+    "citation": "[4, 5]"
+  },
+  {
+    "id": 63,
+    "question": "The Ferrari vs. Bus analogy was used to explain:",
+    "options": [
+      "Fuel efficiency in CPUs",
+      "Latency vs. Throughput for different applications",
+      "The speed of light in circuits",
+      "The importance of Italian design"
+    ],
+    "answer": "Latency vs. Throughput for different applications",
+    "citation": "[48-50]"
+  },
+  {
+    "id": 64,
+    "question": "Which component manages the flow of data through the stages?",
+    "options": [
+      "The Power Supply",
+      "The Control Unit",
+      "The Heat Sink",
+      "The Keyboard"
+    ],
+    "answer": "The Control Unit",
+    "citation": "[7, 46]"
+  },
+  {
+    "id": 65,
+    "question": "A 'Bubble' in a pipeline is another name for:",
+    "options": [
+      "A thermal issue",
+      "A stall or No-Operation (NOP) inserted to resolve hazards",
+      "A physical defect in the silicon",
+      "An instruction that executes twice"
+    ],
+    "answer": "A stall or No-Operation (NOP) inserted to resolve hazards",
+    "citation": "[27]"
+  },
+  {
+    "id": 66,
+    "question": "How long does a typical semester last according to the lecture?",
+    "options": [
+      "10 weeks",
+      "15 weeks",
+      "20 weeks",
+      "12 weeks"
+    ],
+    "answer": "15 weeks",
+    "citation": "[1]"
+  },
+  {
+    "id": 67,
+    "question": "What is the specific goal of the Advanced Microprocessor course?",
+    "options": [
+      "To learn how to use Microsoft Word",
+      "To understand/analyze processor designs and their trade-offs",
+      "To build a mechanical robot",
+      "To learn basic C++ programming"
+    ],
+    "answer": "To understand/analyze processor designs and their trade-offs",
+    "citation": "[51, 52]"
+  },
+  {
+    "id": 68,
+    "question": "What is the 'D' in the IF-D-EX-M-WB sequence?",
+    "options": [
+      "Data",
+      "Decode",
+      "Delay",
+      "Digital"
+    ],
+    "answer": "Decode",
+    "citation": "[5, 7]"
+  },
+  {
+    "id": 69,
+    "question": "If one stage takes longer than the others, the clock period is determined by:",
+    "options": [
+      "The fastest stage",
+      "The average of all stages",
+      "The slowest stage",
+      "The Memory stage only"
+    ],
+    "answer": "The slowest stage",
+    "citation": "[18, 53]"
+  },
+  {
+    "id": 70,
+    "question": "What is 'Instruction Cache'?",
+    "options": [
+      "A place where the CPU stores its history",
+      "A fast memory used to store instructions for quick fetching",
+      "A type of permanent hard drive",
+      "A backup of the processor's registers"
+    ],
+    "answer": "A fast memory used to store instructions for quick fetching",
+    "citation": "[29]"
+  },
+  {
+    "id": 71,
+    "question": "Which of these is NOT a resource mentioned that could cause a structural hazard?",
+    "options": [
+      "Memory",
+      "ALU",
+      "Register file ports",
+      "The power cord"
+    ],
+    "answer": "The power cord",
+    "citation": "[22, 27]"
+  },
+  {
+    "id": 72,
+    "question": "The lecture refers to 'Classic RISC Pipeline'. How many stages does it typically have?",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "10"
+    ],
+    "answer": "5",
+    "citation": "[6, 45]"
+  },
+  {
+    "id": 73,
+    "question": "What happens in the 'Memory' stage for an R-type instruction (like Add)?",
+    "options": [
+      "It reads from the hard drive",
+      "It usually does nothing but pass the result to the next stage",
+      "It fetches the next instruction",
+      "It shuts down to save power"
+    ],
+    "answer": "It usually does nothing but pass the result to the next stage",
+    "citation": "[10, 12]"
+  },
+  {
+    "id": 74,
+    "question": "Why is 'Design' used to minimize structural hazards?",
+    "options": [
+      "To make the chip look better",
+      "To ensure all instructions follow a predictable path through resources",
+      "To eliminate the need for an operating system",
+      "To make the processor waterproof"
+    ],
+    "answer": "To ensure all instructions follow a predictable path through resources",
+    "citation": "[12]"
+  },
+  {
+    "id": 75,
+    "question": "Which company is associated with 'Mainframes' and the early history of pipelining?",
+    "options": [
+      "Apple",
+      "IBM",
+      "Google",
+      "Tesla"
+    ],
+    "answer": "IBM",
+    "citation": "[31, 32]"
+  }
+]
