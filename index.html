@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Quiz App</title>
+  <title>
+    Quiz App</title>
   <link rel="shortcut icon" href="logo.png" type="image/x-icon">
   <style>
 /* Base layout */
@@ -336,20 +337,21 @@ h1 {
             }
 
             shuffledOptions.forEach(opt => {
-            const btn = document.createElement("button");
-            btn.textContent = opt;
+                const btn = document.createElement("button");
+                btn.textContent = opt;
 
-            if (savedAnswers[index] === opt) {
-                btn.style.backgroundColor = (opt === q.answer) ? "lightgreen" : "salmon";
-            }
+                if (savedAnswers[index] === opt) {
+                    btn.style.backgroundColor = (opt === q.answer) ? "#72f872" : "#fd5d4b";
+                }else if(savedAnswers[index] && opt === q.answer) {
+                    btn.style.backgroundColor = "#72f872";
+                }
+                btn.onclick = () => checkAnswer(index, opt, btn);
+                    optionsDiv.appendChild(btn);
+                });
 
-            btn.onclick = () => checkAnswer(index, opt, btn);
-            optionsDiv.appendChild(btn);
+                qDiv.appendChild(optionsDiv);
+                quizDiv.appendChild(qDiv);
             });
-
-            qDiv.appendChild(optionsDiv);
-            quizDiv.appendChild(qDiv);
-        });
 
         updateScore();
     }
@@ -357,13 +359,24 @@ h1 {
         const savedAnswers = JSON.parse(localStorage.getItem(getStorageKey())) || {};
         if (savedAnswers[index]) return;
 
+        const correctAnswer = questions[index].answer;
+
+
         savedAnswers[index] = selected;
         localStorage.setItem(getStorageKey(), JSON.stringify(savedAnswers));
+        const optionsDiv = btn.parentElement;
 
         if (selected === questions[index].answer) {
             btn.style.backgroundColor = "#72f872";
         } else {
             btn.style.backgroundColor = "#fd5d4b";
+            // Highlight the correct answer
+            Array.from(optionsDiv.children).forEach(b => {
+                if (b.textContent === correctAnswer) {
+                    b.style.backgroundColor = "#72f872";
+                }
+            });
+
         }
         updateScore();
     }
@@ -450,6 +463,4 @@ h1 {
     }
   </script>
 </body>
-
 </html>
-
