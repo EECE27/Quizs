@@ -1,0 +1,632 @@
+[
+  {
+    "question": "What is the primary purpose of a Digital Signal Processor (DSP)?",
+    "options": [
+      "To manage high-level operating system functions",
+      "To serve as the main processor in personal computers",
+      "To perform low-latency, deterministic, and efficient execution of specific, repetitive numerical algorithms",
+      "To handle a wide range of general computing tasks"
+    ],
+    "answer": "To perform low-latency, deterministic, and efficient execution of specific, repetitive numerical algorithms"
+  },
+  {
+    "question": "How do modern GPPs and DSPs demonstrate architectural convergence?",
+    "options": [
+      "By completely replacing traditional DSP and GPP architectures",
+      "By eliminating specialized instruction sets altogether",
+      "By adopting features like SIMD extensions and integrating DSP-like capabilities",
+      "By maintaining strict separation of their core functionalities"
+    ],
+    "answer": "By adopting features like SIMD extensions and integrating DSP-like capabilities"
+  },
+  {
+    "question": "What is a key feature of a DSP's Instruction Set Architecture (ISA)?",
+    "options": [
+      "Multiply-Accumulate (MAC) instructions for numerical efficiency",
+      "Lack of specialized instructions for signal processing",
+      "Instructions primarily designed for broad utility and flexibility",
+      "Instructions focused on high-level language compatibility"
+    ],
+    "answer": "Multiply-Accumulate (MAC) instructions for numerical efficiency"
+  },
+  {
+    "question": "In what applications are DSPs most commonly used?",
+    "options": [
+      "General-purpose computing tasks",
+      "Word processing and web browsing",
+      "Database management and enterprise resource planning",
+      "Audio and speech processing, telecommunications, and medical imaging"
+    ],
+    "answer": "Audio and speech processing, telecommunications, and medical imaging"
+  },
+  {
+    "question": "What is a significant advantage of integrating DSP features into GPPs?",
+    "options": [
+      "Limited to specific signal processing tasks only",
+      "Increased complexity and power consumption",
+      "Enhanced performance on multimedia and numerical workloads without separate DSP cores",
+      "Reduced overall processing power"
+    ],
+    "answer": "Enhanced performance on multimedia and numerical workloads without separate DSP cores"
+  },
+  {
+    "question": "Which architectural component is most specialized in a DSP for signal processing algorithms?",
+    "options": [
+      "Universal control flow units",
+      "Standard instruction pipeline",
+      "General-purpose cache memory",
+      "Register files with hardware support for saturation arithmetic Page 2 of 12"
+    ],
+    "answer": "Register files with hardware support for saturation arithmetic Page 2 of 12"
+  },
+  {
+    "question": "What is a common feature of SIMD extensions in modern processors?",
+    "options": [
+      "Reduce the number of instructions available",
+      "Allow a single instruction to operate on multiple data points simultaneously",
+      "Focus solely on control flow operations",
+      "Disable parallel data processing"
+    ],
+    "answer": "Allow a single instruction to operate on multiple data points simultaneously"
+  },
+  {
+    "question": "Why are DSPs considered highly efficient for their targeted applications?",
+    "options": [
+      "Because they are optimized for low latency, power efficiency, and repetitive numerical calculations",
+      "Because they lack specialized hardware features",
+      "Because they use general-purpose instruction sets",
+      "Because they are designed for broad versatility across many tasks"
+    ],
+    "answer": "Because they are optimized for low latency, power efficiency, and repetitive numerical calculations"
+  },
+  {
+    "question": "What is a typical application domain for DSPs in biomedical technology?",
+    "options": [
+      "Performing word processing tasks",
+      "Enhancing image quality in medical imaging systems",
+      "Running general-purpose operating systems",
+      "Managing database transactions"
+    ],
+    "answer": "Enhancing image quality in medical imaging systems"
+  },
+  {
+    "question": "What trend is observed in the evolution of processor architectures regarding DSPs and GPPs?",
+    "options": [
+      "Increasing integration and adoption of features across both processor types",
+      "Complete replacement of one with the other",
+      "Reduction of specialized features in favor of generality",
+      "Strict separation with no feature sharing"
+    ],
+    "answer": "Increasing integration and adoption of features across both processor types"
+  },
+  {
+    "question": "What is the main architectural difference between a DSP and a GPP?",
+    "options": [
+      "GPPs are only used in embedded systems, unlike DSPs.",
+      "DSPs do not support instruction pipelining, unlike GPPs.",
+      "DSPs are optimized for numerical efficiency with specialized instructions like MAC, while GPPs are designed for broad versatility with general-purpose instructions.",
+      "DSPs have larger cache sizes than GPPs. Page 3 of 12"
+    ],
+    "answer": "DSPs are optimized for numerical efficiency with specialized instructions like MAC, while GPPs are designed for broad versatility with general-purpose instructions."
+  },
+  {
+    "question": "Which feature is commonly integrated into modern GPPs to enhance multimedia processing?",
+    "options": [
+      "Single Instruction, Multiple Data (SIMD) extensions",
+      "Dedicated neural processing units",
+      "Hardware random number generators",
+      "Quantum computing units"
+    ],
+    "answer": "Single Instruction, Multiple Data (SIMD) extensions"
+  },
+  {
+    "question": "How do DSPs achieve low latency and power efficiency?",
+    "options": [
+      "By avoiding the use of register files",
+      "By using larger, more complex instruction sets",
+      "By increasing clock speeds beyond GPPs",
+      "By using specialized hardware features like MAC instructions and saturation arithmetic"
+    ],
+    "answer": "By using specialized hardware features like MAC instructions and saturation arithmetic"
+  },
+  {
+    "question": "What is a common trend in modern processor architectures regarding DSPs and GPPs?",
+    "options": [
+      "Complete separation with no feature sharing",
+      "GPPs abandoning multimedia capabilities",
+      "DSPs replacing GPPs entirely",
+      "Increasing integration and adoption of features across both processor types"
+    ],
+    "answer": "Increasing integration and adoption of features across both processor types"
+  },
+  {
+    "question": "What is a primary benefit of integrating DSP-like features into GPPs?",
+    "options": [
+      "Reduced overall processing power",
+      "Enhanced performance on multimedia and numerical workloads without separate DSP cores",
+      "Limited to specific signal processing tasks only",
+      "Increased complexity and power consumption"
+    ],
+    "answer": "Enhanced performance on multimedia and numerical workloads without separate DSP cores"
+  },
+  {
+    "question": "What is the main architectural focus of a DSP's instruction set?",
+    "options": [
+      "Lacks specialized instructions for signal processing",
+      "Optimized for numerical efficiency with instructions like MAC",
+      "Primarily focused on high-level language compatibility",
+      "Designed for broad utility and flexibility Page 4 of 12"
+    ],
+    "answer": "Optimized for numerical efficiency with instructions like MAC"
+  },
+  {
+    "question": "What is the primary method used by PS to achieve high performance?",
+    "options": [
+      "Executing a large number of general-purpose instructions in parallel",
+      "Reducing the number of instructions in the pipeline",
+      "Creating single, specialized instructions for complex algorithms",
+      "Using only scalar execution techniques"
+    ],
+    "answer": "Executing a large number of general-purpose instructions in parallel"
+  },
+  {
+    "question": "What does the inclusion of SIMD extensions like ARM's Neon in GPPs signify?",
+    "options": [
+      "A reduction in general-purpose capabilities",
+      "Architectural convergence driven by multimedia and AI workloads",
+      "The elimination of parallel processing features",
+      "A move towards specialized DSP cores only"
+    ],
+    "answer": "Architectural convergence driven by multimedia and AI workloads"
+  },
+  {
+    "question": "How do DSP register files differ from GPP register files?",
+    "options": [
+      "DSP register files are highly multi-ported for general use",
+      "DSP register files are designed for unpredictable workloads",
+      "DSP register files are smaller and less specialized",
+      "DSP register files are centered around specialized, wider accumulators"
+    ],
+    "answer": "DSP register files are centered around specialized, wider accumulators"
+  },
+  {
+    "question": "What is a key feature of DSP pipelines?",
+    "options": [
+      "Pipeline that relies heavily on cache hierarchies",
+      "Pipeline with complex branch prediction logic",
+      "Deep, speculative pipeline designed for maximum instruction-level parallelism",
+      "Deterministic, low-latency assembly line optimized for streaming data"
+    ],
+    "answer": "Deterministic, low-latency assembly line optimized for streaming data"
+  },
+  {
+    "question": "Why do DSPs typically lack complex branch prediction logic?",
+    "options": [
+      "Branch prediction is unnecessary in modern DSPs",
+      "They are designed for highly unpredictable, general-purpose code",
+      "They use hardware loop controllers to manage control flow",
+      "Their core workload is predictable and stream-based"
+    ],
+    "answer": "Their core workload is predictable and stream-based"
+  },
+  {
+    "question": "What is the main purpose of branch prediction in GPPs?",
+    "options": [
+      "To reduce the number of instructions in the pipeline",
+      "To mitigate pipeline stalls caused by conditional branches",
+      "To eliminate the need for speculative execution",
+      "To simplify the pipeline design Page 5 of 12"
+    ],
+    "answer": "To mitigate pipeline stalls caused by conditional branches"
+  },
+  {
+    "question": "How do DSPs typically handle cache hierarchy?",
+    "options": [
+      "They use large, multi-level caches exclusively",
+      "They often lack a deep cache hierarchy to maintain determinism",
+      "Cache hierarchy is not relevant to DSP design",
+      "They rely on multi-level caches for performance"
+    ],
+    "answer": "They often lack a deep cache hierarchy to maintain determinism"
+  },
+  {
+    "question": "What is a major advantage of DSPs not having a deep cache hierarchy?",
+    "options": [
+      "They simplify the overall processor architecture",
+      "They achieve higher average-case speeds",
+      "They maintain guaranteed worst-case performance for real-time systems",
+      "They reduce power consumption significantly"
+    ],
+    "answer": "They maintain guaranteed worst-case performance for real-time systems"
+  },
+  {
+    "question": "What is the main design philosophy difference between DSPs and GPPs?",
+    "options": [
+      "DSPs focus on general-purpose computing; GPPs focus on specialized tasks",
+      "DSPs prioritize deterministic, predictable performance; GPPs prioritize flexibility and parallelism",
+      "DSPs are designed for high power consumption; GPPs for low power",
+      "DSPs and GPPs have identical design philosophies"
+    ],
+    "answer": "DSPs prioritize deterministic, predictable performance; GPPs prioritize flexibility and parallelism"
+  },
+  {
+    "question": "What is the primary architectural difference between DSP and GPP register files?",
+    "options": [
+      "DSP register files are specialized with wider accumulators, while GPP register files are highly multi-ported and general-purpose.",
+      "DSP register files are designed for unpredictable workloads, unlike GPP register files.",
+      "DSP register files are used only for floating-point operations, unlike GPP register files.",
+      "DSP register files are smaller and less specialized than GPP register files."
+    ],
+    "answer": "DSP register files are specialized with wider accumulators, while GPP register files are highly multi-ported and general-purpose."
+  },
+  {
+    "question": "How do DSP pipelines differ from GPP pipelines in terms of control flow?",
+    "options": [
+      "DSP pipelines are deterministic and optimized for streaming data, while GPP pipelines are deep and speculative.",
+      "DSP pipelines rely heavily on branch prediction, unlike GPP pipelines.",
+      "Both DSP and GPP pipelines are highly speculative and deep.",
+      "DSP pipelines are deep and speculative, while GPP pipelines are deterministic. Page 6 of 12"
+    ],
+    "answer": "DSP pipelines are deterministic and optimized for streaming data, while GPP pipelines are deep and speculative."
+  },
+  {
+    "question": "Why do DSPs typically lack complex branch prediction logic?",
+    "options": [
+      "Because their core workload is predictable and stream-based, making such hardware unnecessary.",
+      "Because branch prediction is too costly for DSPs.",
+      "Because they rely solely on software-based control flow management.",
+      "Because they are designed for highly unpredictable, general-purpose code."
+    ],
+    "answer": "Because their core workload is predictable and stream-based, making such hardware unnecessary."
+  },
+  {
+    "question": "What is the main reason DSPs prioritize deterministic, low-latency pipelines?",
+    "options": [
+      "To maximize instruction-level parallelism.",
+      "To guarantee real-time performance in streaming data applications.",
+      "To support highly unpredictable workloads.",
+      "To reduce power consumption in mobile devices."
+    ],
+    "answer": "To guarantee real-time performance in streaming data applications."
+  },
+  {
+    "question": "What is the main purpose of SIMD extensions like ARM's Neon in modern GPPs?",
+    "options": [
+      "To reduce the number of general-purpose instructions",
+      "To replace the need for specialized DSP cores",
+      "To handle computationally intensive algorithms efficiently",
+      "To simplify the processor architecture"
+    ],
+    "answer": "To handle computationally intensive algorithms efficiently"
+  },
+  {
+    "question": "How do DSP register files differ from GPP register files?",
+    "options": [
+      "DSP register files are designed for unpredictable workloads",
+      "DSP register files are smaller and less specialized",
+      "DSP register files are centered around specialized, wider accumulators",
+      "DSP register files are highly multi-ported for general use"
+    ],
+    "answer": "DSP register files are centered around specialized, wider accumulators"
+  },
+  {
+    "question": "What is a characteristic of DSP pipelines?",
+    "options": [
+      "Pipeline with multiple stages for out-of-order execution",
+      "Deep, speculative pipeline designed for maximum instruction-level parallelism",
+      "Deterministic, low-latency assembly line optimized for streaming data",
+      "Reliance on complex branch prediction logic"
+    ],
+    "answer": "Deterministic, low-latency assembly line optimized for streaming data"
+  },
+  {
+    "question": "Why do DSPs typically lack complex branch prediction logic?",
+    "options": [
+      "Because their core workload is predictable and stream-based",
+      "Because they are designed for highly unpredictable code",
+      "Because branch prediction is too costly",
+      "Because they rely on software control flow management Page 7 of 12"
+    ],
+    "answer": "Because their core workload is predictable and stream-based"
+  },
+  {
+    "question": "What is the main purpose of branch prediction in GPPs?",
+    "options": [
+      "To simplify the pipeline design",
+      "To mitigate pipeline stalls caused by conditional branches",
+      "To reduce the number of instructions in the pipeline",
+      "To eliminate the need for speculative execution"
+    ],
+    "answer": "To mitigate pipeline stalls caused by conditional branches"
+  },
+  {
+    "question": "How do DSPs typically handle cache hierarchy?",
+    "options": [
+      "They often lack a deep cache hierarchy to maintain determinism",
+      "They use large, multi-level caches exclusively",
+      "Cache hierarchy is not relevant to DSP design",
+      "They rely on multi-level caches for performance"
+    ],
+    "answer": "They often lack a deep cache hierarchy to maintain determinism"
+  },
+  {
+    "question": "What is a major advantage of DSPs not having a deep cache hierarchy?",
+    "options": [
+      "They reduce power consumption significantly",
+      "They simplify the overall processor architecture",
+      "They maintain guaranteed worst-case performance for real-time systems",
+      "They achieve higher average-case speeds"
+    ],
+    "answer": "They maintain guaranteed worst-case performance for real-time systems"
+  },
+  {
+    "question": "What is the purpose of specialized accumulators in DSP register files?",
+    "options": [
+      "To support only floating-point operations",
+      "To handle general-purpose computations efficiently",
+      "To prevent overflow during multiply-accumulate operations and maintain accuracy",
+      "To reduce the size of the register file"
+    ],
+    "answer": "To prevent overflow during multiply-accumulate operations and maintain accuracy"
+  },
+  {
+    "question": "How does the design of GPP register files support out-of-order execution?",
+    "options": [
+      "By avoiding register files altogether",
+      "By having a highly multi-ported structure with multiple read and write ports",
+      "By using specialized accumulators for each register",
+      "By limiting the number of registers Page 8 of 12"
+    ],
+    "answer": "By having a highly multi-ported structure with multiple read and write ports"
+  },
+  {
+    "question": "What is the primary architectural difference between DSPs and GPPs?",
+    "options": [
+      "GPPs are designed for deterministic workloads, whereas DSPs are optimized for unpredictable workloads.",
+      "DSPs typically use a Harvard architecture with separate memory spaces for instructions and data, while GPPs use a von Neumann architecture with a unified memory space.",
+      "DSPs rely on virtual memory management, while GPPs do not.",
+      "DSPs and GPPs both use the same architecture but differ in their instruction sets."
+    ],
+    "answer": "DSPs typically use a Harvard architecture with separate memory spaces for instructions and data, while GPPs use a von Neumann architecture with a unified memory space."
+  },
+  {
+    "question": "What feature is commonly used in DSPs to efficiently implement circular buffers?",
+    "options": [
+      "Circular addressing modes.",
+      "Out-of-order execution.",
+      "Speculative execution.",
+      "Branch prediction."
+    ],
+    "answer": "Circular addressing modes."
+  },
+  {
+    "question": "Which of the following is a characteristic of GPPs?",
+    "options": [
+      "They typically lack cache hierarchies.",
+      "They do not support multitasking or virtual memory.",
+      "They focus solely on deterministic, low-latency processing.",
+      "They have deep, complex pipelines with speculative execution."
+    ],
+    "answer": "They have deep, complex pipelines with speculative execution."
+  },
+  {
+    "question": "What is a key advantage of the Harvard architecture used in DSPs?",
+    "options": [
+      "It supports virtual memory and complex memory management.",
+      "It allows simultaneous fetching of instructions and data, increasing throughput.",
+      "It is designed primarily for general-purpose computing.",
+      "It simplifies the hardware design by using a single memory space."
+    ],
+    "answer": "It allows simultaneous fetching of instructions and data, increasing throughput."
+  },
+  {
+    "question": "How do modern GPPs and DSPs tend to converge in their design?",
+    "options": [
+      "DSPs are moving towards virtual memory support to match GPPs.",
+      "They incorporate features of each other, such as SIMD extensions in GPPs and hardware looping in DSPs.",
+      "They are becoming more distinct, with less overlap in features.",
+      "GPPs are abandoning complex pipelines to become more like DSPs."
+    ],
+    "answer": "They incorporate features of each other, such as SIMD extensions in GPPs and hardware looping in DSPs."
+  },
+  {
+    "question": "What is the main purpose of a GPP's MMU?",
+    "options": [
+      "To translate virtual addresses to physical addresses and support multitasking.",
+      "To execute single-cycle MAC instructions.",
+      "To handle circular buffer addressing. Page 9 of 12",
+      "To provide hardware-based zero-overhead looping."
+    ],
+    "answer": "To translate virtual addresses to physical addresses and support multitasking."
+  },
+  {
+    "question": "Which feature is a hallmark of DSPs that makes them suitable for streaming data applications?",
+    "options": [
+      "Multi-level cache hierarchies.",
+      "Branch prediction algorithms.",
+      "Deep speculative pipelines.",
+      "Hardware-based zero-overhead looping."
+    ],
+    "answer": "Hardware-based zero-overhead looping."
+  },
+  {
+    "question": "What is the primary goal of a DSP compared to a GPP?",
+    "options": [
+      "Supporting complex virtual memory management.",
+      "Maximizing general-purpose computing capabilities.",
+      "Efficiency, determinism, and low latency for specific tasks.",
+      "Versatility and high average-case performance across various applications."
+    ],
+    "answer": "Efficiency, determinism, and low latency for specific tasks."
+  },
+  {
+    "question": "What is a common feature of modern processor designs regarding GPPs and DSPs?",
+    "options": [
+      "They are increasingly integrating heterogeneous multi-core systems with both types of cores.",
+      "They are strictly separating GPP and DSP architectures with no overlap.",
+      "DSPs are now primarily used for general-purpose computing.",
+      "GPPs are replacing DSPs entirely in most applications."
+    ],
+    "answer": "They are increasingly integrating heterogeneous multi-core systems with both types of cores."
+  },
+  {
+    "question": "How does the cache hierarchy in GPPs differ from that in DSPs?",
+    "options": [
+      "Both GPPs and DSPs use the same cache hierarchy, but DSPs have larger caches.",
+      "GPPs use caches only for instructions, while DSPs use caches only for data.",
+      "GPPs do not use caches, whereas DSPs rely heavily on multi-level caches for high throughput.",
+      "GPPs typically have a multi-level cache hierarchy (L1, L2, L"
+    ],
+    "answer": "GPPs typically have a multi-level cache hierarchy (L1, L2, L"
+  },
+  {
+    "question": "What is the main reason DSPs do not typically include a Memory Management Unit (MMU)?",
+    "options": [
+      "Because DSPs are designed for high-level multitasking and complex memory management.",
+      "Because the Harvard architecture inherently provides all necessary memory management features.",
+      "To maintain low latency and predictability, avoiding the overhead of address translation and context switching. Page 10 of 12",
+      "Because DSPs use virtual memory extensively, making an MMU unnecessary."
+    ],
+    "answer": "To maintain low latency and predictability, avoiding the overhead of address translation and context switching. Page 10 of 12"
+  },
+  {
+    "question": "Which hardware feature in DSPs allows for efficient implementation of streaming data processing?",
+    "options": [
+      "Out-of-order execution capabilities.",
+      "Deep speculative execution pipelines.",
+      "Branch prediction algorithms.",
+      "Specialized hardware addressing modes, such as circular addressing."
+    ],
+    "answer": "Specialized hardware addressing modes, such as circular addressing."
+  },
+  {
+    "question": "How does the instruction set of DSPs differ from that of GPPs?",
+    "options": [
+      "DSPs use only RISC instructions, while GPPs use only CISC instructions.",
+      "DSPs support virtual memory and complex instruction sets, unlike GPPs.",
+      "Both DSPs and GPPs use the same instruction set architecture.",
+      "DSPs have specialized instructions like single-cycle MAC and saturation arithmetic, whereas GPPs have a broad, general-purpose ISA with complex instructions."
+    ],
+    "answer": "DSPs have specialized instructions like single-cycle MAC and saturation arithmetic, whereas GPPs have a broad, general-purpose ISA with complex instructions."
+  },
+  {
+    "question": "What is a key architectural feature of GPPs that helps mitigate pipeline stalls?",
+    "options": [
+      "Branch prediction and speculative execution.",
+      "Circular addressing modes.",
+      "Dedicated accumulators.",
+      "Hardware-based zero-overhead looping."
+    ],
+    "answer": "Branch prediction and speculative execution."
+  },
+  {
+    "question": "In terms of design philosophy, what is the primary focus of DSPs?",
+    "options": [
+      "Efficiency, determinism, and low latency for specific, predictable tasks.",
+      "Supporting virtual memory and complex multitasking.",
+      "Maximizing general-purpose computing capabilities.",
+      "Versatility and high average-case performance across various applications."
+    ],
+    "answer": "Efficiency, determinism, and low latency for specific, predictable tasks."
+  },
+  {
+    "question": "What distinguishes the microarchitecture of GPPs from that of DSPs?",
+    "options": [
+      "GPPs lack cache hierarchies, whereas DSPs have multi-level caches.",
+      "GPPs are designed for deterministic workloads, unlike DSPs.",
+      "GPPs have deep, complex pipelines with speculative execution, while DSPs have shorter, predictable pipelines with hardware-based low-overhead looping.",
+      "GPPs rely solely on hardware addressing modes, while DSPs use virtual memory. Page 11 of 12"
+    ],
+    "answer": "GPPs have deep, complex pipelines with speculative execution, while DSPs have shorter, predictable pipelines with hardware-based low-overhead looping."
+  },
+  {
+    "question": "What is the primary function of the register file in a CPU?",
+    "options": [
+      "To control the execution of instructions",
+      "To perform arithmetic operations",
+      "To store temporary data and instructions",
+      "To manage memory addresses"
+    ],
+    "answer": "To store temporary data and instructions"
+  },
+  {
+    "question": "Which architecture feature is responsible for overlapping the execution of multiple instructions?",
+    "options": [
+      "Branch prediction",
+      "Instruction pipelining",
+      "Memory management unit",
+      "Register file"
+    ],
+    "answer": "Instruction pipelining"
+  },
+  {
+    "question": "What does zero-overhead looping optimize in DSP architectures?",
+    "options": [
+      "Memory access speed",
+      "Loop execution efficiency",
+      "Data transfer rate",
+      "Instruction decoding"
+    ],
+    "answer": "Loop execution efficiency"
+  },
+  {
+    "question": "Which component predicts the outcome of branch instructions to improve pipeline flow?",
+    "options": [
+      "Cache controller",
+      "Memory management unit",
+      "Branch predictor",
+      "ALU"
+    ],
+    "answer": "Branch predictor"
+  },
+  {
+    "question": "What is the main purpose of the CPU cache?",
+    "options": [
+      "To execute instructions",
+      "To store the entire program",
+      "To manage memory addresses",
+      "To reduce the time to access frequently used data"
+    ],
+    "answer": "To reduce the time to access frequently used data"
+  },
+  {
+    "question": "Which microarchitecture is associated with the Intel Core series?",
+    "options": [
+      "Intel Core microarchitecture",
+      "TMS320C674x",
+      "C6000 Architecture",
+      "ARM Cortex-A Page 12 of 12"
+    ],
+    "answer": "Intel Core microarchitecture"
+  },
+  {
+    "question": "What is the primary role of the Memory Management Unit (MMU)?",
+    "options": [
+      "To control the register file",
+      "To handle virtual memory and address translation",
+      "To execute instructions",
+      "To perform arithmetic operations"
+    ],
+    "answer": "To handle virtual memory and address translation"
+  },
+  {
+    "question": "Which processor series is known for its DSP capabilities in ARM Cortex processors?",
+    "options": [
+      "Intel Core",
+      "Cortex-M4 and Cortex-M7",
+      "Cortex-A",
+      "TMS320C674x"
+    ],
+    "answer": "Cortex-M4 and Cortex-M7"
+  },
+  {
+    "question": "What is instruction pipelining primarily used for?",
+    "options": [
+      "To increase instruction throughput",
+      "To improve cache performance",
+      "To simplify instruction decoding",
+      "To reduce power consumption"
+    ],
+    "answer": "To increase instruction throughput"
+  }
+]

@@ -1,0 +1,852 @@
+[
+    {
+    "question": "What is the primary advantage of HDDs in hyperscale data centers?",
+    "options": [
+      "Their durability and resistance to shock",
+      "Their energy efficiency and low power consumption",
+      "Their cost-effectiveness for mass storage",
+      "Their high performance and speed"
+    ],
+    "answer": "Their cost-effectiveness for mass storage"
+  },
+  {
+    "question": "Why are NVMe SSDs preferred for high-performance computing workloads?",
+    "options": [
+      "They are more susceptible to physical damage",
+      "They are cheaper than HDDs",
+      "They have larger physical size",
+      "They offer ultra-low latency and high IOPS"
+    ],
+    "answer": "They offer ultra-low latency and high IOPS"
+  },
+  {
+    "question": "What is a key feature of modern hybrid storage architectures in data centers?",
+    "options": [
+      "Using only HDDs for all storage needs",
+      "Using high-performance NVMs for hot data and HDDs for cold data",
+      "Using only SSDs for all data storage without tiering",
+      "Replacing all HDDs with traditional tape storage"
+    ],
+    "answer": "Using high-performance NVMs for hot data and HDDs for cold data"
+  },
+  {
+    "question": "What has caused HDDs to be phased out as primary drives in new PCs?",
+    "options": [
+      "Their inability to store large amounts of data",
+      "Their high cost compared to SSDs",
+      "Their incompatibility with modern operating systems",
+      "Their mechanical parts cause slow performance and susceptibility to damage"
+    ],
+    "answer": "Their mechanical parts cause slow performance and susceptibility to damage"
+  },
+  {
+    "question": "What is a significant benefit of NVMs over HDDs in personal computers?",
+    "options": [
+      "Near-instantaneous boot times and rapid application loading",
+      "Their mechanical durability and resistance to shock",
+      "Their larger physical size and weight",
+      "Lower initial cost and higher capacity"
+    ],
+    "answer": "Near-instantaneous boot times and rapid application loading"
+  },
+  {
+    "question": "Which storage technology is most suitable for long-term, infrequently accessed data in hyperscale data centers?",
+    "options": [
+      "NVMe SSDs because of their high speed",
+      "Optical discs because of their durability",
+      "RAM modules because of their speed",
+      "HDDs due to their low cost per gigabyte"
+    ],
+    "answer": "HDDs due to their low cost per gigabyte"
+  },
+  {
+    "question": "What is a common application of HDDs in hyperscale data centers?",
+    "options": [
+      "Real-time AI processing",
+      "Archival and data warehousing workloads",
+      "High-speed transaction processing",
+      "Mobile computing devices"
+    ],
+    "answer": "Archival and data warehousing workloads"
+  },
+  {
+    "question": "Why are SSDs more energy-efficient than HDDs?",
+    "options": [
+      "They operate at higher voltages",
+      "They use more advanced power supplies",
+      "They lack moving parts and generate less heat",
+      "They require more cooling due to heat generation"
+    ],
+    "answer": "They lack moving parts and generate less heat"
+  },
+  {
+    "question": "What is a major challenge associated with the mechanical nature of HDDs?",
+    "options": [
+      "High power consumption compared to SSDs",
+      "Inability to store large amounts of data",
+      "Lack of compatibility with modern data protocols",
+      "Susceptibility to physical damage from shock or vibration"
+    ],
+    "answer": "Susceptibility to physical damage from shock or vibration"
+  },
+  {
+    "question": "What is the primary benefit of NVMe SSDs in data centers?",
+    "options": [
+      "They are cheaper than HDDs",
+      "They are more susceptible to physical damage",
+      "They have larger physical size",
+      "They offer ultra-low latency and high IOPS"
+    ],
+    "answer": "They offer ultra-low latency and high IOPS"
+  },
+  {
+    "question": "What is a key advantage of hybrid storage architectures in data centers?",
+    "options": [
+      "Using only HDDs for all storage needs",
+      "Using only SSDs for all data storage without tiering",
+      "Using high-performance NVMs for hot data and HDDs for cold data",
+      "Replacing all HDDs with traditional tape storage"
+    ],
+    "answer": "Using high-performance NVMs for hot data and HDDs for cold data"
+  },
+  {
+    "question": "Why are HDDs still used for archival storage in hyperscale data centers?",
+    "options": [
+      "Because they are more durable than SSDs",
+      "Because of their low cost per gigabyte",
+      "Because they consume less power than SSDs",
+      "Because they have faster access times"
+    ],
+    "answer": "Because of their low cost per gigabyte"
+  },
+  {
+    "question": "What is a significant drawback of HDDs compared to SSDs?",
+    "options": [
+      "Their lack of compatibility with modern data protocols",
+      "Their mechanical parts cause slow performance and susceptibility to damage",
+      "Their inability to store large amounts of data",
+      "Their higher cost per gigabyte"
+    ],
+    "answer": "Their mechanical parts cause slow performance and susceptibility to damage"
+  },
+  {
+    "question": "In personal computing, why have HDDs been phased out as primary drives?",
+    "options": [
+      "They are incompatible with modern operating systems",
+      "They have smaller storage capacities",
+      "They are more expensive than SSDs",
+      "Their mechanical parts cause slow performance and susceptibility to damage"
+    ],
+    "answer": "Their mechanical parts cause slow performance and susceptibility to damage"
+  },
+  {
+    "question": "What is a major reason for the rising popularity of NVMe SSDs in AI workloads?",
+    "options": [
+      "They provide ultra-fast data transfer speeds necessary for high-performance computing",
+      "They are cheaper than HDDs",
+      "They are more durable than HDDs",
+      "They use more power, which is beneficial for AI processing"
+    ],
+    "answer": "They provide ultra-fast data transfer speeds necessary for high-performance computing"
+  },
+  {
+    "question": "Which storage medium is most suitable for large media repositories in hyperscale data centers?",
+    "options": [
+      "RAM modules because of their speed",
+      "NVMe SSDs because of their speed",
+      "Optical discs because of their durability",
+      "HDDs because of their high capacity and low cost"
+    ],
+    "answer": "HDDs because of their high capacity and low cost"
+  },
+  {
+    "question": "What is a key consideration when choosing storage for edge devices?",
+    "options": [
+      "Using only HDDs for all storage needs",
+      "Energy efficiency and durability",
+      "Cost per gigabyte being the lowest possible",
+      "Maximum storage capacity regardless of power consumption"
+    ],
+    "answer": "Energy efficiency and durability"
+  },
+  {
+    "question": "How does the physical nature of HDDs affect their use in data centers?",
+    "options": [
+      "Their physical size limits their capacity",
+      "Their mechanical parts make them slower and more susceptible to physical damage",
+      "Their mechanical parts improve their durability",
+      "Their physical nature makes them more energy-efficient"
+    ],
+    "answer": "Their mechanical parts make them slower and more susceptible to physical damage"
+  },
+  {
+    "question": "What is a primary advantage of using an SSD as the main boot drive in a hybrid PC setup?",
+    "options": [
+      "It eliminates the need for secondary storage.",
+      "It provides faster system responsiveness.",
+      "It is cheaper than using an HDD for the boot drive.",
+      "It significantly reduces the overall storage capacity."
+    ],
+    "answer": "It provides faster system responsiveness."
+  },
+  {
+    "question": "Which feature is essential for SSDs used in harsh environmental conditions to prevent data corruption during power failures?",
+    "options": [
+      "Noise Reduction Technology",
+      "Mechanical Shock Absorption",
+      "Power-Loss Protection (PLP)",
+      "High Capacity Storage"
+    ],
+    "answer": "Power-Loss Protection (PLP)"
+  },
+  {
+    "question": "What is a key reason electro-mechanical HDDs are unsuitable for edge computing environments?",
+    "options": [
+      "They are more durable than SSDs.",
+      "They are vulnerable to shock and vibration.",
+      "They consume less power than SSDs.",
+      "They are too fast for edge applications."
+    ],
+    "answer": "They are vulnerable to shock and vibration."
+  },
+  {
+    "question": "Which type of storage technology offers the highest random IOPS according to the comparison?",
+    "options": [
+      "Electro-Mechanical Disks (HDDs)",
+      "Non-Volatile Memory (NVMs)",
+      "Optical Discs",
+      "Tape Storage"
+    ],
+    "answer": "Non-Volatile Memory (NVMs)"
+  },
+  {
+    "question": "In the context of storage solutions, what does wear leveling technology do?",
+    "options": [
+      "It speeds up data transfer rates.",
+      "It increases the storage capacity of SSDs.",
+      "It distributes read/write cycles evenly across NAND flash cells.",
+      "It reduces power consumption."
+    ],
+    "answer": "It distributes read/write cycles evenly across NAND flash cells."
+  },
+  {
+    "question": "Which storage solution is most suitable for a data center with high-performance workloads?",
+    "options": [
+      "Only HDDs for all data storage",
+      "Optical storage for primary data",
+      "Tiered hybrid architecture with SSDs and HDDs",
+      "Only SSDs for all data storage"
+    ],
+    "answer": "Tiered hybrid architecture with SSDs and HDDs"
+  },
+  {
+    "question": "What is the primary benefit of using NVMe SSDs in high-performance consumer applications?",
+    "options": [
+      "They have the largest storage capacity.",
+      "They are the most cost-effective storage option.",
+      "They are the most durable storage solution.",
+      "They offer extremely high read/write speeds."
+    ],
+    "answer": "They offer extremely high read/write speeds."
+  },
+  {
+    "question": "Which feature is crucial for SSDs used in industrial edge environments to ensure data integrity during power failures?",
+    "options": [
+      "Mechanical Shock Absorption",
+      "Optical Data Encoding",
+      "High Noise Levels",
+      "Power-Loss Protection (PLP)"
+    ],
+    "answer": "Power-Loss Protection (PLP)"
+  },
+  {
+    "question": "Why are electro-mechanical HDDs unsuitable for use in harsh environmental conditions like industrial or mobile deployments?",
+    "options": [
+      "They are immune to environmental factors.",
+      "They are vulnerable to shock and vibration.",
+      "They are too fast for such environments.",
+      "They consume less power than SSDs."
+    ],
+    "answer": "They are vulnerable to shock and vibration."
+  },
+  {
+    "question": "What is a key advantage of hybrid PC models over pure SSD setups for consumers?",
+    "options": [
+      "They eliminate the need for secondary storage.",
+      "They provide the highest possible storage capacity.",
+      "They combine fast SSD boot drives with large-capacity HDDs for storage.",
+      "They are cheaper than all other storage options."
+    ],
+    "answer": "They combine fast SSD boot drives with large-capacity HDDs for storage."
+  },
+  {
+    "question": "Which storage technology is most suitable for real-time data processing and temporary caching in edge devices?",
+    "options": [
+      "Optical storage",
+      "Solid-state storage (NVMs)",
+      "Magnetic tape storage",
+      "Mechanical HDDs"
+    ],
+    "answer": "Solid-state storage (NVMs)"
+  },
+  {
+    "question": "What is the main reason for the continued relevance of hybrid PC models in consumer markets?",
+    "options": [
+      "They are the cheapest option available.",
+      "They provide the highest storage capacity regardless of cost.",
+      "They offer a balance of speed and cost-effectiveness for different storage needs.",
+      "They eliminate the need for SSDs."
+    ],
+    "answer": "They offer a balance of speed and cost-effectiveness for different storage needs."
+  },
+  {
+    "question": "Which of the following is an example of a high-performance NVMe SSD designed for gamers and creative professionals?",
+    "options": [
+      "Premio IoT Gateways",
+      "Siemens SIMATIC Industrial Edge Devices",
+      "Crucial P3",
+      "WD Black SN850X"
+    ],
+    "answer": "WD Black SN850X"
+  },
+  {
+    "question": "In edge computing environments, why is SSD firmware resilience important?",
+    "options": [
+      "To ensure data survives power failures and environmental stresses.",
+      "To make the SSD compatible with optical drives.",
+      "To increase storage capacity.",
+      "To reduce manufacturing costs."
+    ],
+    "answer": "To ensure data survives power failures and environmental stresses."
+  },
+  {
+    "question": "What is the typical capacity range of industrial-grade storage devices used in edge environments?",
+    "options": [
+      "10 GB to 100 GB",
+      "1 TB to 10 TB",
+      "100 GB to 1 TB",
+      "5 GB to 900 GB"
+    ],
+    "answer": "5 GB to 900 GB"
+  },
+  {
+    "question": "Which of the following is a strategic recommendation for data centers regarding storage architecture?",
+    "options": [
+      "Use only HDDs for all data storage.",
+      "Use only SSDs for all data storage.",
+      "Use tiered hybrid storage with HDDs for cold data and SSDs for hot data.",
+      "Opt for optical storage for primary data."
+    ],
+    "answer": "Use tiered hybrid storage with HDDs for cold data and SSDs for hot data."
+  },
+  {
+    "question": "What is one potential future technology for data storage mentioned in the text?",
+    "options": [
+      "Magnetic tape storage",
+      "3D holographic storage",
+      "Cloud storage",
+      "Optical disc storage"
+    ],
+    "answer": "3D holographic storage"
+  },
+  {
+    "question": "Which storage technology is noted for its high speed and durability for personal computers?",
+    "options": [
+      "HDDs (Hard Disk Drives)",
+      "Optical discs",
+      "NVMs (Non-Volatile Memories)",
+      "Magnetic tapes"
+    ],
+    "answer": "NVMs (Non-Volatile Memories)"
+  },
+  {
+    "question": "What is a key characteristic of storage solutions used in demanding, unsupervised edge environments?",
+    "options": [
+      "High capacity only",
+      "Ease of access",
+      "Low cost only",
+      "Reliability and survivability"
+    ],
+    "answer": "Reliability and survivability"
+  },
+  {
+    "question": "What is driving the need for a distributed computing model at the edge?",
+    "options": [
+      "Demand for low-latency, real-time insights",
+      "Decreased data generation",
+      "Increase in cloud storage costs",
+      "Simplification of data management"
+    ],
+    "answer": "Demand for low-latency, real-time insights"
+  },
+  {
+    "question": "According to the text, what is a major concern with the power needs of large-scale data centers?",
+    "options": [
+      "Excessive cooling requirements",
+      "Limited internet bandwidth",
+      "Lack of sufficient hardware",
+      "Strain on Earth's resources"
+    ],
+    "answer": "Strain on Earth's resources"
+  },
+  {
+    "question": "What is a proposed unconventional solution for data center security and sustainability?",
+    "options": [
+      "Reducing data storage capacity",
+      "More centralized data centers",
+      "Off-world data centers",
+      "Increased use of magnetic tapes"
+    ],
+    "answer": "Off-world data centers"
+  },
+  {
+    "question": "What is a primary advantage of NVMe SSDs for personal computers?",
+    "options": [
+      "Higher capacity than all other drives",
+      "Lower cost than HDDs",
+      "Easier to recover data from",
+      "Superior speed and durability"
+    ],
+    "answer": "Superior speed and durability"
+  },
+  {
+    "question": "Why are specialized industrial-grade NVMs important for edge devices?",
+    "options": [
+      "Because they have higher capacity than SSDs",
+      "Because they are cheaper than other storage types",
+      "Because they are easier to install",
+      "Because of their reliability and survivability in demanding environments"
+    ],
+    "answer": "Because of their reliability and survivability in demanding environments"
+  },
+  {
+    "question": "What does the future of storage involve according to the text?",
+    "options": [
+      "Reducing the diversity of storage solutions",
+      "Moving all data to cloud storage only",
+      "A highly specialized and deeply integrated ecosystem",
+      "A single dominant storage technology"
+    ],
+    "answer": "A highly specialized and deeply integrated ecosystem"
+  },
+  {
+    "question": "Which emerging technology aims to increase data storage density by converting digital data into biological material?",
+    "options": [
+      "Quantum storage",
+      "DNA data storage",
+      "Magnetic tape storage",
+      "Optical data storage"
+    ],
+    "answer": "DNA data storage"
+  },
+  {
+    "question": "What is the main advantage of 3D holographic storage over traditional storage methods?",
+    "options": [
+      "Faster data retrieval in seconds",
+      "Lower cost of production",
+      "Less energy consumption",
+      "Higher data density in three-dimensional space"
+    ],
+    "answer": "Higher data density in three-dimensional space"
+  },
+  {
+    "question": "How is artificial intelligence expected to improve storage management in the future?",
+    "options": [
+      "Automating data tiering, migration, and provisioning",
+      "Eliminating the need for data backups",
+      "Replacing all physical storage devices",
+      "Reducing storage capacity requirements"
+    ],
+    "answer": "Automating data tiering, migration, and provisioning"
+  },
+  {
+    "question": "What is a key characteristic of storage solutions used in demanding edge environments?",
+    "options": [
+      "Low cost only",
+      "High capacity only",
+      "Reliability and survivability",
+      "Ease of access"
+    ],
+    "answer": "Reliability and survivability"
+  },
+  {
+    "question": "Why is there a growing interest in off-world data centers?",
+    "options": [
+      "Because of lower costs in space",
+      "To avoid Earth's gravity",
+      "For security and sustainability reasons",
+      "To access extraterrestrial resources"
+    ],
+    "answer": "For security and sustainability reasons"
+  },
+  {
+    "question": "Why are specialized industrial-grade NVMs crucial for edge devices?",
+    "options": [
+      "Because they have higher capacity than SSDs",
+      "Because of their reliability and survivability in demanding environments",
+      "Because they are easier to install",
+      "Because they are cheaper than other storage types"
+    ],
+    "answer": "Because of their reliability and survivability in demanding environments"
+  },
+  {
+    "question": "What emerging technology is mentioned as a way to significantly increase data storage density?",
+    "options": [
+      "Magnetic tape storage",
+      "Cloud storage",
+      "Optical disc storage",
+      "DNA data storage"
+    ],
+    "answer": "DNA data storage"
+  },
+  {
+    "question": "What type of storage architecture do hyperscale data centers typically use?",
+    "options": [
+      "Single-tier architecture",
+      "All SSDs",
+      "Tiered, hybrid architecture",
+      "All HDDs"
+    ],
+    "answer": "Tiered, hybrid architecture"
+  },
+  {
+    "question": "Which three factors primarily drive the 'digital deluge'?",
+    "options": [
+      "Traditional radio, TV, and print",
+      "Cloud computing, AI, and IoT devices",
+      "Manual data entry and paper archives",
+      "Slower internet speeds"
+    ],
+    "answer": "Cloud computing, AI, and IoT devices"
+  },
+  {
+    "question": "What are the two primary technologies in modern storage planning?",
+    "options": [
+      "CD-ROMs and Floppy Disks",
+      "HDDs and SSDs (Non-volatile memories)",
+      "RAM and CPU cache only",
+      "Paper and magnetic tape"
+    ],
+    "answer": "HDDs and SSDs (Non-volatile memories)"
+  },
+  {
+    "question": "Which technology offers immense capacity at a low cost per gigabyte?",
+    "options": [
+      "SSD",
+      "NVMe",
+      "HDD",
+      "DRAM"
+    ],
+    "answer": "HDD"
+  },
+  {
+    "question": "What are the key advantages of SSDs over HDDs?",
+    "options": [
+      "Higher noise levels and lower speed",
+      "Superior performance, durability, and energy efficiency",
+      "Larger physical size and mechanical parts",
+      "Lower cost per gigabyte"
+    ],
+    "answer": "Superior performance, durability, and energy efficiency"
+  },
+  {
+    "question": "Storage media specifications are now highly dependent on:",
+    "options": [
+      "The color of the hardware",
+      "Its intended use case",
+      "The year it was invented",
+      "The brand name only"
+    ],
+    "answer": "Its intended use case"
+  },
+  {
+    "question": "Hyperscale data centers are primarily defined by:",
+    "options": [
+      "Their small, portable nature",
+      "Their immense scale and extreme scalability",
+      "Their use of only one server",
+      "Their lack of network infrastructure"
+    ],
+    "answer": "Their immense scale and extreme scalability"
+  },
+  {
+    "question": "What is a central challenge in managing hyperscale environments?",
+    "options": [
+      "Finding enough paper for archives",
+      "Effective capacity planning (hardware, performance, energy)",
+      "Increasing latency as much as possible",
+      "Using only mechanical disks"
+    ],
+    "answer": "Effective capacity planning (hardware, performance, energy)"
+  },
+  {
+    "question": "Why are HDDs the 'undisputed choice' for 'cold' data?",
+    "options": [
+      "They are faster than SSDs",
+      "They are the most economical solution for petabytes of data",
+      "They consume less power than SSDs",
+      "They have no moving parts"
+    ],
+    "answer": "They are the most economical solution for petabytes of data"
+  },
+  {
+    "question": "What is 'cold data'?",
+    "options": [
+      "Data that is accessed every second",
+      "Information stored long-term but accessed infrequently",
+      "Data that requires liquid cooling",
+      "Temporary internet files"
+    ],
+    "answer": "Information stored long-term but accessed infrequently"
+  },
+  {
+    "question": "Which workload is well-suited for HDDs due to sequential data blocks?",
+    "options": [
+      "Real-time gaming",
+      "Data archiving and warehousing",
+      "Operating system boot-up",
+      "Virtualization"
+    ],
+    "answer": "Data archiving and warehousing"
+  },
+  {
+    "question": "What is a major risk associated with the mechanical nature of HDDs?",
+    "options": [
+      "They are too quiet",
+      "Susceptibility to damage from shock or vibration",
+      "They generate zero heat",
+      "They are too fast for modern cables"
+    ],
+    "answer": "Susceptibility to damage from shock or vibration"
+  },
+  {
+    "question": "What is the maximum data transfer speed mentioned for PCIe Gen5 NVMe SSDs?",
+    "options": [
+      "550 MB/s",
+      "1,000 MB/s",
+      "14,000 MB/s",
+      "200 MB/s"
+    ],
+    "answer": "14,000 MB/s"
+  },
+  {
+    "question": "Why is NVMe performance critical for AI and Machine Learning?",
+    "options": [
+      "It uses more power",
+      "It handles high IOPS and offers ultra-low latency",
+      "It is cheaper than HDD for mass storage",
+      "It is only compatible with old servers"
+    ],
+    "answer": "It handles high IOPS and offers ultra-low latency"
+  },
+  {
+    "question": "How do SSDs contribute to a lower Total Cost of Ownership (TCO)?",
+    "options": [
+      "By requiring more cooling fans",
+      "By using less power and generating less heat",
+      "By having a higher initial purchase price",
+      "By breaking more frequently"
+    ],
+    "answer": "By using less power and generating less heat"
+  },
+  {
+    "question": "What is driving the transition to liquid cooling solutions in data centers?",
+    "options": [
+      "The use of fewer GPUs",
+      "Increased thermal density from compute-intensive AI workloads",
+      "The decrease in global temperatures",
+      "A desire to use more water"
+    ],
+    "answer": "Increased thermal density from compute-intensive AI workloads"
+  },
+  {
+    "question": "What new energy solution is being explored for data centers?",
+    "options": [
+      "Coal-only power plants",
+      "Small Modular Reactors (SMRs)",
+      "AA batteries",
+      "Kinetic energy from fans"
+    ],
+    "answer": "Small Modular Reactors (SMRs)"
+  },
+  {
+    "question": "What are the primary performance indicators for a PC user?",
+    "options": [
+      "Weight of the power cable",
+      "Responsiveness, boot times, and application loading",
+      "The number of stickers on the case",
+      "The color of the HDD platter"
+    ],
+    "answer": "Responsiveness, boot times, and application loading"
+  },
+  {
+    "question": "How much faster can a SATA SSD be compared to an HDD?",
+    "options": [
+      "2 times",
+      "Over 10 times",
+      "It is actually slower",
+      "1000 times"
+    ],
+    "answer": "Over 10 times"
+  },
+  {
+    "question": "In a hybrid PC model, what is the role of the SSD?",
+    "options": [
+      "Storing large movie collections",
+      "Serving as the primary boot drive for the OS and apps",
+      "Acting as a backup for the HDD",
+      "Reducing the overall speed of the computer"
+    ],
+    "answer": "Serving as the primary boot drive for the OS and apps"
+  },
+  {
+    "question": "Why is electro-mechanical storage (HDD) NOT viable at the edge?",
+    "options": [
+      "It is too fast",
+      "Fragility of moving parts in harsh conditions",
+      "It is too cheap",
+      "It uses too much internet bandwidth"
+    ],
+    "answer": "Fragility of moving parts in harsh conditions"
+  },
+  {
+    "question": "What does Power-Loss Protection (PLP) do?",
+    "options": [
+      "Charges the laptop battery",
+      "Transfers data from DRAM to NAND during a power failure",
+      "Increases the speed of the internet",
+      "Deletes corrupted files"
+    ],
+    "answer": "Transfers data from DRAM to NAND during a power failure"
+  },
+  {
+    "question": "What is the purpose of 'wear leveling'?",
+    "options": [
+      "To make the SSD look new",
+      "To evenly distribute write/erase cycles across NAND cells",
+      "To increase the weight of the device",
+      "To prevent the device from getting hot"
+    ],
+    "answer": "To evenly distribute write/erase cycles across NAND cells"
+  },
+  {
+    "question": "What is the principle of operation for an HDD?",
+    "options": [
+      "Electronic circuits",
+      "Spinning magnetic platters with a mechanical arm",
+      "Chemical reactions",
+      "Laser beams only"
+    ],
+    "answer": "Spinning magnetic platters with a mechanical arm"
+  },
+  {
+    "question": "What is the random IOPS capacity of a typical HDD?",
+    "options": [
+      "500,000 IOPS",
+      "Up to 200 IOPS",
+      "1,000,000 IOPS",
+      "0 IOPS"
+    ],
+    "answer": "Up to 200 IOPS"
+  },
+  {
+    "question": "What is the random IOPS capacity of an NVM?",
+    "options": [
+      "A) 100 IOPS",
+      "B) Up to 500,000 IOPS or more",
+      "C) Lower than an HDD",
+      "D) It cannot handle random IOPS"
+    ],
+    "answer": "B) Up to 500,000 IOPS or more"
+  },
+  {
+    "question": "Which technology has 'very low' latency?",
+    "options": [
+      "HDD",
+      "NVM",
+      "Floppy Disk",
+      "Magnetic Tape"
+    ],
+    "answer": "NVM"
+  },
+  {
+    "question": "Which technology consumes more power due to spinning parts?",
+    "options": [
+      "SSD",
+      "HDD",
+      "NVMe",
+      "SD Card"
+    ],
+    "answer": "HDD"
+  },
+  {
+    "question": "What is the ideal workload for HDDs?",
+    "options": [
+      "AI/ML training",
+      "Cold storage and data archives",
+      "OS boot drives",
+      "Virtualization"
+    ],
+    "answer": "Cold storage and data archives"
+  },
+  {
+    "question": "What is the ideal workload for NVMs?",
+    "options": [
+      "Long-term throughput-intensive backups",
+      "High-performance databases and AI/ML",
+      "Bulk storage of unused 1990s files",
+      "Low-speed archival"
+    ],
+    "answer": "High-performance databases and AI/ML"
+  },
+  {
+    "question": "For data centers, the optimal approach is to embrace a:",
+    "options": [
+      "HDD-only model",
+      "Tiered, hybrid storage model",
+      "Cloud-free model",
+      "SSD-only model for archives"
+    ],
+    "answer": "Tiered, hybrid storage model"
+  },
+  {
+    "question": "In personal computers, an NVMe SSD for the primary boot drive is:",
+    "options": [
+      "Optional",
+      "Non-negotiable for a modern user experience",
+      "Prohibited",
+      "Only for experts"
+    ],
+    "answer": "Non-negotiable for a modern user experience"
+  },
+  {
+    "question": "What is 'DNA and Molecular Storage'?",
+    "options": [
+      "Storing data in a tree",
+      "Encoding digital data into synthetic DNA strands",
+      "Using humans as servers",
+      "A new type of magnetic tape"
+    ],
+    "answer": "Encoding digital data into synthetic DNA strands"
+  },
+  {
+    "question": "3D Holographic Storage uses what to store data?",
+    "options": [
+      "Water",
+      "Laser beams",
+      "Sound waves",
+      "Magnets"
+    ],
+    "answer": "Laser beams"
+  },
+  {
+    "question": "The demand for low-latency insights is driving a:",
+    "options": [
+      "Centralized-only model",
+      "Distributed computing model",
+      "Model without storage",
+      "Model based on paper"
+    ],
+    "answer": "Distributed computing model"
+  }
+]

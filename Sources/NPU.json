@@ -1,0 +1,562 @@
+[
+  {
+    "question": "What is the primary role of a Central Processing Unit (CPU)?",
+    "options": [
+      "Large-scale AI training",
+      "General-purpose computing",
+      "Parallel graphics rendering",
+      "On-device AI inference"
+    ],
+    "answer": "General-purpose computing"
+  },
+  {
+    "question": "Which processor is specialized as an accelerator for repetitive and massively parallel AI workloads?",
+    "options": [
+      "CPU",
+      "GPU",
+      "NPU",
+      "DSP"
+    ],
+    "answer": "NPU"
+  },
+  {
+    "question": "The CPU is often referred to as the ________ of a computer.",
+    "options": [
+      "Engine",
+      "Heart",
+      "Brain",
+      "Memory"
+    ],
+    "answer": "Brain"
+  },
+  {
+    "question": "What architectural model has defined computing for over half a century by sharing a common memory space for data and instructions?",
+    "options": [
+      "Systolic Array",
+      "Dataflow paradigm",
+      "Von Neumann architecture",
+      "Harvard architecture"
+    ],
+    "answer": "Von Neumann architecture"
+  },
+  {
+    "question": "What is the \"Von Neumann bottleneck\"?",
+    "options": [
+      "The lack of parallel cores in modern CPUs",
+      "The limited data transfer rate between the CPU and memory",
+      "The inability of CPUs to perform floating-point operations",
+      "The high power consumption of graphics units"
+    ],
+    "answer": "The limited data transfer rate between the CPU and memory"
+  },
+  {
+    "question": "Which processor type introduced massive parallelism to accelerate graphics rendering?",
+    "options": [
+      "NPU",
+      "CPU",
+      "GPU",
+      "TPU"
+    ],
+    "answer": "GPU"
+  },
+  {
+    "question": "What execution model is fundamentally used by a CPU?",
+    "options": [
+      "Dataflow-driven",
+      "Instruction-stream-driven",
+      "Analog-wavefront-driven",
+      "Memory-centric-driven"
+    ],
+    "answer": "Instruction-stream-driven"
+  },
+  {
+    "question": "In a dataflow model, what triggers computation?",
+    "options": [
+      "A program counter increment",
+      "The arrival of an instruction fetch",
+      "The arrival of data",
+      "A clock cycle pulse"
+    ],
+    "answer": "The arrival of data"
+  },
+  {
+    "question": "Which processor is designed to handle \"unpredictable branches and varied instructions\"?",
+    "options": [
+      "NPU",
+      "GPU",
+      "TPU",
+      "CPU"
+    ],
+    "answer": "CPU"
+  },
+  {
+    "question": "The NPU design philosophy prioritizes ________ over versatility.",
+    "options": [
+      "Sequential speed",
+      "Broad compatibility",
+      "Extreme efficiency",
+      "Complex control logic"
+    ],
+    "answer": "Extreme efficiency"
+  },
+  {
+    "question": "What is the standard performance metric for an NPU?",
+    "options": [
+      "Hertz (Hz)",
+      "FLOPS",
+      "TOPS (Tera Operations per Second)",
+      "IPC"
+    ],
+    "answer": "TOPS (Tera Operations per Second)"
+  },
+  {
+    "question": "Which metric is primarily used to measure GPU performance?",
+    "options": [
+      "TOPS",
+      "FLOPS (Floating-point Operations per Second)",
+      "MIPS",
+      "Hz"
+    ],
+    "answer": "FLOPS (Floating-point Operations per Second)"
+  },
+  {
+    "question": "CPU performance is typically measured in ________.",
+    "options": [
+      "Tera Operations per Second",
+      "Floating-point Operations per Second",
+      "Hertz and Instructions per Cycle (IPC)",
+      "Data blocks per second"
+    ],
+    "answer": "Hertz and Instructions per Cycle (IPC)"
+  },
+  {
+    "question": "Based on 45nm technology calculations, transferring data from memory can take how many times more energy than a logic operation?",
+    "options": [
+      "2 times",
+      "5 times",
+      "10 times",
+      "50 times"
+    ],
+    "answer": "50 times"
+  },
+  {
+    "question": "Approximately how many picojoules (pJ) might a data transfer from memory to a processor consume compared to a logic operation?",
+    "options": [
+      "1 pJ vs 10 pJ",
+      "10 pJ vs 80-100 pJ",
+      "50 pJ vs 200 pJ",
+      "100 pJ vs 1000 pJ"
+    ],
+    "answer": "100 pJ vs 1000 pJ"
+  },
+  {
+    "question": "How much time might a CPU take to fetch data from memory or cache?",
+    "options": [
+      "1 to 5 clock cycles",
+      "10 to 30 clock cycles",
+      "50 to 100 clock cycles",
+      "1000 clock cycles"
+    ],
+    "answer": "50 to 100 clock cycles"
+  },
+  {
+    "question": "What is a major advantage of on-device AI facilitated by NPUs?",
+    "options": [
+      "Increased reliance on cloud servers",
+      "Enhanced data privacy",
+      "Higher power consumption for better accuracy",
+      "Versatility for general software"
+    ],
+    "answer": "Enhanced data privacy"
+  },
+  {
+    "question": "The NPU aims to reduce the energy consumed by ________.",
+    "options": [
+      "Clock speed",
+      "Sequential branching",
+      "Data movement",
+      "Operating system idle time"
+    ],
+    "answer": "Data movement"
+  },
+  {
+    "question": "What is a \"systolic array\" in the context of NPUs?",
+    "options": [
+      "A multi-level cache hierarchy",
+      "A homogeneous network of data processing units in a grid",
+      "A branch prediction algorithm",
+      "A type of DRAM technology"
+    ],
+    "answer": "A homogeneous network of data processing units in a grid"
+  },
+  {
+    "question": "In a systolic array, how is the result of one operation handled?",
+    "options": [
+      "It is written back to the L3 cache",
+      "It is passed directly to the next processing unit",
+      "It is sent to the CPU for verification",
+      "It triggers a new instruction fetch"
+    ],
+    "answer": "It is passed directly to the next processing unit"
+  },
+  {
+    "question": "Why is complex branch prediction largely unnecessary for NPUs?",
+    "options": [
+      "NPUs have very short pipelines",
+      "Neural network computations are highly deterministic",
+      "NPUs do not use clock cycles",
+      "Branching is handled by the GPU"
+    ],
+    "answer": "Neural network computations are highly deterministic"
+  },
+  {
+    "question": "What happens during a \"misprediction\" in a CPU pipeline?",
+    "options": [
+      "The processor speeds up to compensate",
+      "The speculative work is discarded, and the pipeline restarts",
+      "The data is automatically moved to the NPU",
+      "The clock frequency is lowered"
+    ],
+    "answer": "The speculative work is discarded, and the pipeline restarts"
+  },
+  {
+    "question": "NPUs typically use ________ as their primary on-chip memory instead of speculative caches.",
+    "options": [
+      "L1 and L2 caches",
+      "Software-managed scratchpad SRAM",
+      "External DRAM",
+      "Virtual memory"
+    ],
+    "answer": "Software-managed scratchpad SRAM"
+  },
+  {
+    "question": "How is data pre-loaded into an NPU's scratchpad memory?",
+    "options": [
+      "Speculative fetching",
+      "Direct Memory Access (DMA) engines",
+      "Instruction-stream-driven loading",
+      "Manual user input"
+    ],
+    "answer": "Direct Memory Access (DMA) engines"
+  },
+  {
+    "question": "What manages the contents of an NPU's scratchpad memory?",
+    "options": [
+      "Hardware-based cache protocols",
+      "The compiler or host CPU",
+      "The branch predictor",
+      "The operating system kernel"
+    ],
+    "answer": "The compiler or host CPU"
+  },
+  {
+    "question": "Which processor has a broad and intricate Instruction Set Architecture (ISA)?",
+    "options": [
+      "NPU",
+      "GPU",
+      "CPU",
+      "DSP"
+    ],
+    "answer": "CPU"
+  },
+  {
+    "question": "A single NPU instruction can perform a complex operation that might require ________ of CPU instructions.",
+    "options": [
+      "Tens",
+      "Hundreds",
+      "Thousands",
+      "Millions"
+    ],
+    "answer": "Thousands"
+  },
+  {
+    "question": "What type of logic unit is specifically mentioned as being inside an NPU?",
+    "options": [
+      "Floating Point Unit (FPU)",
+      "Matrix Multiplication Unit (MXU)",
+      "Branch Target Buffer (BTB)",
+      "Arithmetic Logic Unit (ALU) only"
+    ],
+    "answer": "Matrix Multiplication Unit (MXU)"
+  },
+  {
+    "question": "What is the difference between \"training\" and \"inference\"?",
+    "options": [
+      "Training is using the model; Inference is teaching the model",
+      "Training is teaching the model; Inference is using the model",
+      "Training happens on NPUs; Inference happens on CPUs",
+      "There is no difference"
+    ],
+    "answer": "Training is teaching the model; Inference is using the model"
+  },
+  {
+    "question": "Which learning method involves a reward function and punishment?",
+    "options": [
+      "Supervised learning",
+      "Unsupervised learning",
+      "Reinforcement learning",
+      "Transfer learning"
+    ],
+    "answer": "Reinforcement learning"
+  },
+  {
+    "question": "In supervised learning, data must be ________.",
+    "options": [
+      "Randomly generated",
+      "Tagged or labeled",
+      "Deleted after use",
+      "Analog only"
+    ],
+    "answer": "Tagged or labeled"
+  },
+  {
+    "question": "What are \"parameters\" in a neural network?",
+    "options": [
+      "The number of CPU cores",
+      "The weights and connections between neurons",
+      "The speed of the system bus",
+      "The amount of DRAM available"
+    ],
+    "answer": "The weights and connections between neurons"
+  },
+  {
+    "question": "Large Language Models (LLMs) like ChatGPT can have ________ of parameters.",
+    "options": [
+      "Hundreds",
+      "Thousands",
+      "Millions",
+      "Billions"
+    ],
+    "answer": "Billions"
+  },
+  {
+    "question": "What is \"pruning\" in the context of neural networks?",
+    "options": [
+      "Adding more layers to increase accuracy",
+      "Removing unnecessary weights or neurons to save energy",
+      "Increasing the clock speed of the NPU",
+      "Connecting the NPU to the cloud"
+    ],
+    "answer": "Removing unnecessary weights or neurons to save energy"
+  },
+  {
+    "question": "During training, which format is often preferred for high precision?",
+    "options": [
+      "8-bit Integer",
+      "1-bit Binary",
+      "Floating-point",
+      "Analog signal"
+    ],
+    "answer": "Floating-point"
+  },
+  {
+    "question": "What is \"quantization\"?",
+    "options": [
+      "Increasing the number of bits for better accuracy",
+      "Reducing the precision of weights (e.g., float to integer)",
+      "Moving data from the NPU to the CPU",
+      "Training a model on a GPU"
+    ],
+    "answer": "Reducing the precision of weights (e.g., float to integer)"
+  },
+  {
+    "question": "What mathematical operation is the primary building block of neural networks?",
+    "options": [
+      "Division and Subtraction",
+      "Matrix Multiplication and Convolution",
+      "Branching and If-Then-Else",
+      "Sorting and Searching"
+    ],
+    "answer": "Matrix Multiplication and Convolution"
+  },
+  {
+    "question": "What is a \"ReLU\" in the context of NPUs?",
+    "options": [
+      "A type of memory",
+      "An activation function",
+      "A communication protocol",
+      "A branch predictor"
+    ],
+    "answer": "An activation function"
+  },
+  {
+    "question": "What is \"Cloud Computing\" in the context of the sources?",
+    "options": [
+      "Computing done on a local device",
+      "Sending data to a remote server for processing",
+      "Computation performed in the atmosphere",
+      "A type of storage technology"
+    ],
+    "answer": "Sending data to a remote server for processing"
+  },
+  {
+    "question": "What does \"On-premises\" (On-prem) computing mean?",
+    "options": [
+      "Using Google's data centers",
+      "Running software and storing data on local, internal servers",
+      "Using a smartphone for all tasks",
+      "Publicly sharing all data"
+    ],
+    "answer": "Running software and storing data on local, internal servers"
+  },
+  {
+    "question": "Define \"Edge AI.\"",
+    "options": [
+      "AI that is only used for high-end gaming",
+      "AI processing performed on the terminal device itself",
+      "AI that requires a constant internet connection",
+      "AI developed by startup companies"
+    ],
+    "answer": "AI processing performed on the terminal device itself"
+  },
+  {
+    "question": "Why is Edge AI essential for autonomous vehicles?",
+    "options": [
+      "To allow the car to connect to social media",
+      "To reduce the cost of the engine",
+      "To provide real-time processing and avoid latency delays",
+      "To store music files locally"
+    ],
+    "answer": "To provide real-time processing and avoid latency delays"
+  },
+  {
+    "question": "Which unit acts as the \"control plane\" in a heterogeneous system?",
+    "options": [
+      "NPU",
+      "GPU",
+      "CPU",
+      "TPU"
+    ],
+    "answer": "CPU"
+  },
+  {
+    "question": "What is \"In-Memory Computing\" (IMC)?",
+    "options": [
+      "Storing more data in RAM",
+      "Performing computations directly within the memory array",
+      "Replacing DRAM with SRAM",
+      "Using the CPU to manage the memory"
+    ],
+    "answer": "Performing computations directly within the memory array"
+  },
+  {
+    "question": "What is the \"Memory Wall Problem\"?",
+    "options": [
+      "The physical size of RAM sticks",
+      "The cost of buying more memory",
+      "The bottleneck caused by the energy and latency cost of moving data",
+      "The inability of memory to store AI models"
+    ],
+    "answer": "The bottleneck caused by the energy and latency cost of moving data"
+  },
+  {
+    "question": "Which of these is an emerging nonvolatile memory technology mentioned?",
+    "options": [
+      "DDR5",
+      "ReRAM (Resistive RAM)",
+      "SRAM",
+      "L3 Cache"
+    ],
+    "answer": "ReRAM (Resistive RAM)"
+  },
+  {
+    "question": "What characteristic of emerging memories makes them suitable for neuromorphic computing?",
+    "options": [
+      "They are much larger than DRAM",
+      "They can emulate analog synaptic behavior",
+      "They only store 0s and 1s",
+      "They require more power to operate"
+    ],
+    "answer": "They can emulate analog synaptic behavior"
+  },
+  {
+    "question": "Which company developed the TPU (Tensor Processing Unit)?",
+    "options": [
+      "Intel",
+      "Apple",
+      "Google",
+      "Nvidia"
+    ],
+    "answer": "Google"
+  },
+  {
+    "question": "What is a \"Tensor\"?",
+    "options": [
+      "A type of CPU core",
+      "A high-dimensional data structure (generalization of vectors/matrices)",
+      "A measurement of energy efficiency",
+      "A branch prediction method"
+    ],
+    "answer": "A high-dimensional data structure (generalization of vectors/matrices)"
+  },
+  {
+    "question": "What is \"Apple's Neural Engine\"?",
+    "options": [
+      "A new operating system",
+      "An NPU integrated into M-series chips",
+      "A cloud storage service",
+      "A programming language"
+    ],
+    "answer": "An NPU integrated into M-series chips"
+  },
+  {
+    "question": "What does the \"G\" in GPT stand for?",
+    "options": [
+      "General",
+      "Global",
+      "Generative",
+      "Grid"
+    ],
+    "answer": "Generative"
+  },
+  {
+    "question": "The \"T\" in GPT stands for ________.",
+    "options": [
+      "Tensor",
+      "Technical",
+      "Transformer",
+      "Terminal"
+    ],
+    "answer": "Transformer"
+  },
+  {
+    "question": "Which company originally developed the \"Transformer\" implementation?",
+    "options": [
+      "OpenAI",
+      "Google",
+      "Microsoft",
+      "Meta"
+    ],
+    "answer": "Google"
+  },
+  {
+    "question": "Why might a system use analog computing for AI?",
+    "options": [
+      "Because it is a new invention from 2024",
+      "It can be energy efficient for certain tasks and was used in early computers",
+      "It is required for cloud connections",
+      "To increase the number of bits in a word"
+    ],
+    "answer": "It can be energy efficient for certain tasks and was used in early computers"
+  },
+  {
+    "question": "\"Heterogeneous computing\" refers to ________.",
+    "options": [
+      "Using only CPUs for all tasks",
+      "A system with multiple specialized processors (CPU, GPU, NPU) working together",
+      "Connecting multiple computers in a cloud",
+      "Using different types of power supplies"
+    ],
+    "answer": "A system with multiple specialized processors (CPU, GPU, NPU) working together"
+  },
+  {
+    "question": "What is the purpose of the software compiler for an NPU?",
+    "options": [
+      "To increase the NPU's clock speed",
+      "To map neural network graphs onto the NPU's specialized instruction set",
+      "To provide a user interface for AI",
+      "To connect the NPU to the internet"
+    ],
+    "answer": "To map neural network graphs onto the NPU's specialized instruction set"
+  }
+]
