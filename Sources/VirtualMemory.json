@@ -1,0 +1,472 @@
+[
+    {
+      "id": 81,
+      "question": "What is 'Virtual Memory'?",
+      "options": ["Memory used for VR games", "An illusion of a large memory using the hard disk", "A temporary RAM", "A read-only storage"],
+      "answer": "An illusion of a large memory using the hard disk",
+      "citation": ","
+    },
+    {
+      "id": 82,
+      "question": "What is a 'Page Fault'?",
+      "options": ["A hardware error in the RAM", "When the required virtual page is not in the physical memory", "A scratch on the disk", "A tag mismatch"],
+      "answer": "When the required virtual page is not in the physical memory",
+      "citation": ","
+    },
+    {
+      "id": 83,
+      "question": "What are the two main benefits of Virtual Memory in multiprogramming?",
+      "options": ["Speed and Cost", "Relocation and Protection", "Density and Volatility", "Reading and Writing"],
+      "answer": "Relocation and Protection",
+      "citation": ",,"
+    },
+    {
+      "id": 84,
+      "question": "What is 'Relocation'?",
+      "options": ["Moving the computer", "Loading a process into any physical frame of memory", "Renaming the files", "Erasing the disk"],
+      "answer": "Loading a process into any physical frame of memory",
+      "citation": ",,"
+    },
+    {
+      "id": 85,
+      "question": "What is 'Protection' in Virtual Memory?",
+      "options": ["Anti-virus software", "Isolating processes so they cannot access each other's physical addresses", "Using a password", "Encryption of the disk"],
+      "answer": "Isolating processes so they cannot access each other's physical addresses",
+      "citation": ","
+    },
+    {
+      "id": 86,
+      "question": "How is the mapping of Virtual addresses to Physical addresses stored?",
+      "options": ["In the Cache", "In the Page Table", "In the Register File", "In the BIOS"],
+      "answer": "In the Page Table",
+      "citation": ","
+    },
+    {
+      "id": 87,
+      "question": "Why is 'Fully Associative' mapping used for Virtual Memory?",
+      "options": ["Because it is the cheapest", "To minimize high-penalty page faults by placing blocks anywhere in memory", "Because disks are fast", "To reduce hit time"],
+      "answer": "To minimize high-penalty page faults by placing blocks anywhere in memory",
+      "citation": ","
+    },
+    {
+      "id": 88,
+      "question": "What is the typical size of a 'Page' in Virtual Memory?",
+      "options": ["4 bytes", "128 bytes", "4 kB to 16 kB", "1 GB"],
+      "answer": "4 kB to 16 kB",
+      "citation": ","
+    },
+    {
+      "id": 89,
+      "question": "What is 'Seek Time' in a hard disk?",
+      "options": ["Time for the disk to rotate", "Time for the arm to reach the correct track", "Time to transfer data to the bus", "Time to find a file in a folder"],
+      "answer": "Time for the arm to reach the correct track",
+      "citation": ","
+    },
+    {
+      "id": 90,
+      "question": "What is the 'Average Rotational Latency' for a disk?",
+      "options": ["Time for a full rotation", "Time for half a rotation", "1 second", "Fixed 10 ms"],
+      "answer": "Time for half a rotation",
+      "citation": ","
+    },
+    {
+      "id": 91,
+      "question": "What is a 'Cylinder' in a hard disk?",
+      "options": ["The disk motor", "The set of tracks at the same distance from the center on all platters", "The power supply", "A storage sector"],
+      "answer": "The set of tracks at the same distance from the center on all platters",
+      "citation": ","
+    },
+    {
+      "id": 92,
+      "question": "Which writing policy is EXCLUSIVELY used in Virtual Memory and why?",
+      "options": ["Write-Through (to keep disk consistent)", "Write-Back (because disks are extremely slow)", "No-Write Allocate", "Sequential Write"],
+      "answer": "Write-Back (because disks are extremely slow)",
+      "citation": ",,"
+    },
+    {
+      "id": 93,
+      "question": "What is an 'Inverted Page Table'?",
+      "options": ["A table that stores addresses backwards", "A table with entries equal to the number of physical pages only", "A table stored on the disk", "A table used only for write operations"],
+      "answer": "A table with entries equal to the number of physical pages only",
+      "citation": ","
+    },
+    {
+      "id": 94,
+      "question": "What does a 'Valid Bit' in the Page Table indicate?",
+      "options": ["The disk is spinning", "The page is currently present in physical memory", "The address is even", "The page is read-only"],
+      "answer": "The page is currently present in physical memory",
+      "citation": ","
+    },
+    {
+      "id": 95,
+      "question": "How does the OS handle a Page Fault (Miss)?",
+      "options": ["Restarts the computer", "Retrieves the page from disk and updates the Page Table", "Deletes the process", "Allocates more RAM sticks"],
+      "answer": "Retrieves the page from disk and updates the Page Table",
+      "citation": ",,"
+    },
+    {
+      "id": 96,
+      "question": "What is 'Segmentation' in memory models?",
+      "options": ["Dividing the disk into tracks", "A model where memory grows in segments like Heap and Stack", "Breaking the CPU into stages", "Using multiple buses"],
+      "answer": "A model where memory grows in segments like Heap and Stack",
+      "citation": ","
+    },
+    {
+      "id": 97,
+      "question": "What are 'Limit Registers' used for in Virtual Memory?",
+      "options": ["To limit the CPU speed", "To limit the size of the Page Table to the actual process needs", "To limit power consumption", "To limit the number of users"],
+      "answer": "To limit the size of the Page Table to the actual process needs",
+      "citation": ",,"
+    },
+    {
+      "id": 98,
+      "question": "What is the 'Disk Controller Overhead'?",
+      "options": ["The weight of the disk", "Time taken to resolve queuing delays and connect to the bus", "The power consumed by the disk", "The cost of the disk"],
+      "answer": "Time taken to resolve queuing delays and connect to the bus",
+      "citation": ","
+    },
+    {
+      "id": 99,
+      "question": "Which part of a modern disk has more data: Outer or Inner tracks?",
+      "options": ["Inner (they are denser)", "Outer (they are physically longer with constant linear density)", "They have the same amount", "Only the middle tracks have data"],
+      "answer": "Outer (they are physically longer with constant linear density)",
+      "citation": ","
+    },
+    {
+      "id": 100,
+      "question": "What is 'Transfer Time' for a disk?",
+      "options": ["Time to find the track", "Time to read/write data as the sector passes the head", "Time to ship the disk", "Time to format the disk"],
+      "answer": "Time to read/write data as the sector passes the head",
+      "citation": ","
+    },
+    {
+      "id": 101,
+      "question": "What is the 'Swap Space' on a disk?",
+      "options": ["The area for temporary variables", "The part of the disk used for Virtual Memory (paging)", "A backup of the BIOS", "The disk's internal cache"],
+      "answer": "The part of the disk used for Virtual Memory (paging)",
+      "citation": ""
+    },
+    {
+      "id": 102,
+      "question": "A 'Precise Exception' like a page fault ensures what?",
+      "options": ["The computer stops immediately", "Instructions before the fault finish; instructions after it can be restarted", "All data is saved to a USB", "The screen turns blue"],
+      "answer": "Instructions before the fault finish; instructions after it can be restarted",
+      "citation": ","
+    },
+    {
+      "id": 103,
+      "question": "If a Page Table entry is 4 bytes and there are 1M entries, how much memory is the table?",
+      "options": ["4 kB", "1 MB", "4 MB", "40 MB"],
+      "answer": "4 MB",
+      "citation": ","
+    },
+    {
+      "id": 104,
+      "question": "The 'Physical Address' is also called?",
+      "options": ["Virtual Address", "Real Address", "Logical Address", "Tag Address"],
+      "answer": "Real Address",
+      "citation": ","
+    },
+    {
+      "id": 105,
+      "question": "Why is 'Marketing' misleading about CPU performance?",
+      "options": ["CPUs are actually slower", "A faster clock or lower CPI doesn't help much if memory stalls are the bottleneck", "Memory is always faster than advertised", "Engineers don't know how to measure speed"],
+      "answer": "A faster clock or lower CPI doesn't help much if memory stalls are the bottleneck",
+      "citation": ","
+    },
+    {
+      "id": 106,
+      "question": "In the 'Paper/Note' analogy, what is the Page Table?",
+      "options": ["A small note in your pocket", "The massive library catalog", "A single book", "The librarian"],
+      "answer": "The massive library catalog",
+      "citation": ""
+    },
+    {
+      "id": 107,
+      "question": "What is the average 'Seek Time' usually published as?",
+      "options": ["Max + Min / 2", "A range based on disk characteristics (published by companies)", "Fixed 1 ms", "Rotational time / 2"],
+      "answer": "A range based on disk characteristics (published by companies)",
+      "citation": ","
+    },
+    {
+      "id": 108,
+      "question": "What is 'Fragmentation' in paging?",
+      "options": ["When the disk breaks", "Internal space wasted when a process doesn't use a full page", "When the page table is too small", "Memory is non-volatile"],
+      "answer": "Internal space wasted when a process doesn't use a full page",
+      "citation": ""
+    },
+    {
+      "id": 109,
+      "question": "Which level of the hierarchy is between Main Memory and Hard Disk?",
+      "options": ["L1 Cache", "Registers", "Virtual Memory (Paging)", "L2 Cache"],
+      "answer": "Virtual Memory (Paging)",
+      "citation": ","
+    },
+    {
+      "id": 110,
+      "question": "What does 'IC' stand for in the CPU Time formula?",
+      "options": ["Integrated Circuit", "Instruction Count", "Internal Clock", "Instant Command"],
+      "answer": "Instruction Count",
+      "citation": ","
+    },
+    {
+      "id": 111,
+      "question": "What is the 'RPM' of a disk?",
+      "options": ["Read Per Minute", "Rotations Per Minute", "Real Performance Measure", "Random Power Mode"],
+      "answer": "Rotations Per Minute",
+      "citation": ","
+    },
+    {
+      "id": 112,
+      "question": "If a disk has 7200 RPM, what is its full rotation time?",
+      "options": ["1 ms", "8.33 ms", "120 ms", "60 s"],
+      "answer": "8.33 ms",
+      "citation": ","
+    },
+    {
+      "id": 113,
+      "question": "Which part of the OS manages the virtual memory tables?",
+      "options": ["The Scheduler", "The Kernel", "The File Explorer", "The Command Line"],
+      "answer": "The Kernel",
+      "citation": ","
+    },
+    {
+      "id": 114,
+      "question": "How many times is memory accessed for data without a TLB?",
+      "options": ["Once", "Twice (once for page table, once for data)", "Three times", "Zero times"],
+      "answer": "Twice (once for page table, once for data)",
+      "citation": ","
+    },
+    {
+      "id": 115,
+      "question": "What is 'Relocation's' purpose?",
+      "options": ["To hide files", "To allow programs to be placed anywhere in the physical RAM", "To speed up the disk", "To make RAM non-volatile"],
+      "answer": "To allow programs to be placed anywhere in the physical RAM",
+      "citation": ",,"
+    },
+    {
+      "id": 116,
+      "question": "What does 'Stall Cycles' in CPU time account for?",
+      "options": ["The arithmetic operations", "Time lost waiting for memory (hits or misses)", "The cooling fan", "The OS booting"],
+      "answer": "Time lost waiting for memory (hits or misses)",
+      "citation": ","
+    },
+    {
+      "id": 117,
+      "question": "In Virtual Memory, does the 'Offset' change during translation?",
+      "options": ["Yes, always", "No, it remains exactly the same", "Only if the page is dirty", "Only if there is a miss"],
+      "answer": "No, it remains exactly the same",
+      "citation": ",,"
+    },
+    {
+      "id": 118,
+      "question": "What is 'Thrashing'?",
+      "options": ["Cleaning the disk", "When the system spends more time paging than executing due to many page faults", "A fast read operation", "Formatting the BIOS"],
+      "answer": "When the system spends more time paging than executing due to many page faults",
+      "citation": ""
+    },
+    {
+      "id": 119,
+      "question": "Which component is the 'engine' that does logic work in the Datapath?",
+      "options": ["ALU", "Cache", "Bus", "Register"],
+      "answer": "ALU",
+      "citation": ""
+    },
+    {
+      "id": 120,
+      "question": "What is the primary goal of the memory hierarchy?",
+      "options": ["To make everything non-volatile", "To provide the illusion of large and fast memory at a low price", "To remove the need for disks", "To use the least number of transistors"],
+      "answer": "To provide the illusion of large and fast memory at a low price",
+      "citation": ","
+    },
+    {
+      "question": "If a system uses a 32-bit virtual address and a 4 KB page size, how many entries are required in the page table?",
+      "options": ["2^12 entries", "2^20 entries", "2^32 entries", "4,096 entries"],
+      "answer": "2^20 entries",
+      "calculation": "Page size 4 KB = 2^12 bytes. Page offset = 12 bits. Virtual Page Number (VPN) = 32 - 12 = 20 bits. Entries = 2^VPN = 2^20.",
+      "citation": ""
+    },
+    {
+      "question": "For a disk spinning at 7200 RPM, what is the average rotational latency?",
+      "options": ["8.33 ms", "4.17 ms", "12 ms", "2 ms"],
+      "answer": "4.17 ms",
+      "calculation": "Full rotation = 60s / 7200 = 8.33 ms. Average latency = 0.5 * 8.33 ms = 4.17 ms.",
+      "citation": ""
+    },
+    {
+      "question": "What is the total size of a page table if it has 2^20 entries and each entry is 4 bytes?",
+      "options": ["1 MB", "2 MB", "4 MB", "8 MB"],
+      "answer": "4 MB",
+      "calculation": "Size = 2^20 entries * 4 bytes/entry = 1,048,576 * 4 = 4,194,304 bytes = 4 MB.",
+      "citation": ""
+    },
+    {
+      "question": "Which mapping technique is used for Virtual Memory to minimize the high penalty of page faults?",
+      "options": ["Direct Mapped", "Set Associative", "Fully Associative", "Sequential Mapping"],
+      "answer": "Fully Associative",
+      "citation": ""
+    },
+    {
+      "question": "What is the primary write policy used in Virtual Memory because of disk slowness?",
+      "options": ["Write-Through", "Write-Back (Copy-Back)", "No-Write Allocate", "Immediate Write"],
+      "answer": "Write-Back (Copy-Back)",
+      "citation": ""
+    },
+    {
+      "question": "A program has an IC of 1 million, a perfect CPI of 1.0, and a memory stall of 1 cycle per instruction. What is the total CPU cycles?",
+      "options": ["1 million", "2 million", "0.5 million", "1.5 million"],
+      "answer": "2 million",
+      "calculation": "Total Cycles = IC * (CPI + Stalls) = 1M * (1 + 1) = 2M.",
+      "citation": ""
+    },
+    {
+      "question": "What happens to the page offset during the translation from a virtual address to a physical address?",
+      "options": ["It is doubled", "It is translated using the page table", "It remains unchanged", "It is discarded"],
+      "answer": "It remains unchanged",
+      "citation": ""
+    },
+    {
+      "question": "In a 32-bit system with a 16 KB page size, how many bits are used for the page offset?",
+      "options": ["10 bits", "12 bits", "14 bits", "16 bits"],
+      "answer": "14 bits",
+      "calculation": "16 KB = 2^4 * 2^10 = 2^14. Therefore, offset = 14 bits.",
+      "citation": ""
+    },
+    {
+      "question": "What is the purpose of the 'Dirty Bit' in a page table entry?",
+      "options": ["To check if the page is valid", "To indicate if the page has been modified in memory", "To count references", "To protect the page from reading"],
+      "answer": "To indicate if the page has been modified in memory",
+      "citation": ""
+    },
+    {
+      "question": "Why does a larger page size (e.g., 16 KB instead of 4 KB) reduce the page table size?",
+      "options": ["It increases the number of pages", "It decreases the number of virtual pages for the same address space", "It increases the offset bits", "Both B and C"],
+      "answer": "Both B and C",
+      "calculation": "Entries = Total Address Space / Page Size. Increasing Page Size reduces Entries.",
+      "citation": ""
+    },
+    {
+      "question": "What is 'Thrashing' in a virtual memory system?",
+      "options": ["Deleting old files", "Excessive paging where the system spends more time moving pages than executing", "A fast disk access", "A hardware fault in RAM"],
+      "answer": "Excessive paging where the system spends more time moving pages than executing",
+      "citation": ""
+    },
+    {
+      "question": "The 'Seek Time' of a disk is defined as:",
+      "options": ["Time to rotate the sector", "Time to move the arm to the correct track", "Time to transfer data to memory", "Controller overhead"],
+      "answer": "Time to move the arm to the correct track",
+      "citation": ""
+    },
+    {
+      "question": "If the miss penalty for a disk is 10 ms and the clock cycle is 1 ns, how many clock cycles are lost in a page fault?",
+      "options": ["1,000", "10,000", "1,000,000", "10,000,000"],
+      "answer": "10,000,000",
+      "calculation": "Cycles = 10ms / 1ns = 10^-2 / 10^-9 = 10^7 cycles.",
+      "citation": ""
+    },
+    {
+      "question": "Which register is used to limit the size of a program's page table in memory?",
+      "options": ["Base Register", "Limit Register", "Cause Register", "PC Register"],
+      "answer": "Limit Register",
+      "citation": ""
+    },
+    {
+      "question": "What is 'Relocation' as a benefit of Virtual Memory?",
+      "options": ["Moving the PC to a new room", "Placing a program in any physical frame regardless of its virtual addresses", "Swapping the hard drive", "Encrypting data"],
+      "answer": "Placing a program in any physical frame regardless of its virtual addresses",
+      "citation": ""
+    },
+    {
+      "question": "An 'Inverted Page Table' size is determined by:",
+      "options": ["Virtual address space", "Number of physical pages in RAM", "Disk size", "Number of active users"],
+      "answer": "Number of physical pages in RAM",
+      "citation": ""
+    },
+    {
+      "question": "What is the 'Transfer Time' for a sector on a disk?",
+      "options": ["0.5/RPM", "Seek + Rotational time", "Sector Size / Transfer Rate", "Controller delay"],
+      "answer": "Sector Size / Transfer Rate",
+      "citation": ""
+    },
+    {
+      "question": "Why must page faults be 'Precise Exceptions'?",
+      "options": ["To stop the computer forever", "To allow the instruction that caused the fault to be restarted after the page is loaded", "To format the disk", "To increase bandwidth"],
+      "answer": "To allow the instruction that caused the fault to be restarted after the page is loaded",
+      "citation": ""
+    },
+    {
+      "question": "If a system has 16 GB of physical RAM and 4 KB pages, how many physical page frames exist?",
+      "options": ["1 million", "4 million", "8 million", "16 million"],
+      "answer": "4 million",
+      "calculation": "16 GB / 4 KB = (16 * 2^30) / (4 * 2^10) = 4 * 2^20 = 4 million.",
+      "citation": ""
+    },
+    {
+      "question": "What is the typical average rotational latency for a 5400 RPM disk?",
+      "options": ["11.1 ms", "5.56 ms", "2.78 ms", "1 ms"],
+      "answer": "5.56 ms",
+      "calculation": "1 rev = 60/5400 = 11.1 ms. Avg = 11.1 / 2 = 5.56 ms.",
+      "citation": ""
+    },
+    {
+      "question": "Which component is responsible for translating Virtual Addresses to Physical Addresses in hardware?",
+      "options": ["ALU", "MMU (Memory Management Unit)", "DMA", "Bus Controller"],
+      "answer": "MMU (Memory Management Unit)",
+      "citation": ""
+    },
+    {
+      "question": "In the CPU Time formula, 'Memory Stalls' include time lost during:",
+      "options": ["Only cache misses", "Only disk page faults", "Both cache misses and page faults", "Only context switches"],
+      "answer": "Both cache misses and page faults",
+      "citation": ""
+    },
+    {
+      "question": "How many times does the processor access memory for a single 'Load' instruction WITHOUT a TLB?",
+      "options": ["1 time", "2 times", "3 times", "0 times"],
+      "answer": "2 times",
+      "citation": ""
+    },
+    {
+      "question": "What is the 'Reference Bit' used for in Virtual Memory?",
+      "options": ["To identify if the page is read-only", "To track page usage for the LRU replacement algorithm", "To store the disk address", "To count errors"],
+      "answer": "To track page usage for the LRU replacement algorithm",
+      "citation": ""
+    },
+    {
+      "question": "A disk 'Cylinder' consists of:",
+      "options": ["A single sector", "All tracks at the same radius across multiple platters", "The disk motor", "The external cache"],
+      "answer": "All tracks at the same radius across multiple platters",
+      "citation": ""
+    },
+    {
+      "question": "Which of the following is a 'Non-Volatile' storage used for Virtual Memory overflow?",
+      "options": ["L2 Cache", "DRAM", "Magnetic Hard Disk", "SRAM"],
+      "answer": "Magnetic Hard Disk",
+      "citation": ""
+    },
+    {
+      "question": "What happens when the 'Valid Bit' in a Page Table entry is 0?",
+      "options": ["The page is in RAM", "The page is not in RAM (Page Fault)", "The page is read-only", "The page is dirty"],
+      "answer": "The page is not in RAM (Page Fault)",
+      "citation": ""
+    },
+    {
+      "question": "If a program requires 100 pages and each page table entry is 4 bytes, how much memory does this part of the page table take?",
+      "options": ["100 bytes", "400 bytes", "4,000 bytes", "16,000 bytes"],
+      "answer": "400 bytes",
+      "calculation": "100 entries * 4 bytes = 400 bytes.",
+      "citation": ""
+    },
+    {
+      "question": "What is the main reason for using multiple levels of page tables (Paging the Page Table)?",
+      "options": ["To speed up translation", "To reduce the amount of physical memory used for the page table itself", "To increase hit rate", "To replace the TLB"],
+      "answer": "To reduce the amount of physical memory used for the page table itself",
+      "citation": ""
+    },
+    {
+      "question": "The total 'Miss Time' in Virtual Memory is equal to:",
+      "options": ["Hit Time + Miss Penalty", "Hit Time * Miss Penalty", "Miss Penalty - Hit Time", "Miss Rate * Hit Time"],
+      "answer": "Hit Time + Miss Penalty",
+      "citation": ""
+    }
+  ]

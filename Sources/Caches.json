@@ -1,0 +1,282 @@
+[
+    {
+      "id": 41,
+      "question": "What is the primary principle behind using a cache?",
+      "options": ["Capacity", "Locality (Spatial and Temporal)", "Volatility", "Sequential Access"],
+      "answer": "Locality (Spatial and Temporal)",
+      "citation": ",,"
+    },
+    {
+      "id": 42,
+      "question": "What is 'Temporal Locality'?",
+      "options": ["Accessing items near a recently accessed item", "Accessing an item again soon after it was accessed", "Accessing memory in a specific time of day", "The delay on a wire over time"],
+      "answer": "Accessing an item again soon after it was accessed",
+      "citation": ","
+    },
+    {
+      "id": 43,
+      "question": "What is a 'Unified' cache?",
+      "options": ["A cache shared by all CPUs", "A cache that stores both instructions and data", "A cache that only stores instructions", "A cache made of both SRAM and DRAM"],
+      "answer": "A cache that stores both instructions and data",
+      "citation": ",,"
+    },
+    {
+      "id": 44,
+      "question": "What is the main benefit of a 'Split' I$ and D$ at Level 1?",
+      "options": ["It is cheaper", "It has more capacity", "It allows simultaneous access to instructions and data (prevents Structural Hazards)", "It reduces miss penalty"],
+      "answer": "It allows simultaneous access to instructions and data (prevents Structural Hazards)",
+      "citation": ","
+    },
+    {
+      "id": 45,
+      "question": "Define 'Hit Time'.",
+      "options": ["Time to access the disk", "Time to determine if data is in cache and deliver it to the CPU", "Time spent waiting for a miss", "Time to refresh DRAM"],
+      "answer": "Time to determine if data is in cache and deliver it to the CPU",
+      "citation": ","
+    },
+    {
+      "id": 46,
+      "question": "What is the formula for 'AMAT' (Average Memory Access Time)?",
+      "options": ["Hit Rate + Miss Rate", "Hit Time + (Miss Rate * Miss Penalty)", "Miss Rate / Hit Rate", "Hit Time * Miss Penalty"],
+      "answer": "Hit Time + (Miss Rate * Miss Penalty)",
+      "citation": ",,"
+    },
+    {
+      "id": 47,
+      "question": "In 'Direct Mapping', how is the cache index calculated?",
+      "options": ["Random selection", "Block Address mod (Number of blocks in cache)", "Last Recently Used", "Tag * Valid bit"],
+      "answer": "Block Address mod (Number of blocks in cache)",
+      "citation": ",,"
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of the 'Tag' in a cache?",
+      "options": ["To store the data", "To identify if the block in the cache is the one requested", "To count the number of hits", "To refresh the memory"],
+      "answer": "To identify if the block in the cache is the one requested",
+      "citation": ",,"
+    },
+    {
+      "id": 49,
+      "question": "What does the 'Valid Bit' indicate?",
+      "options": ["The data is non-volatile", "The data in the cache block is meaningful and current", "The cache is full", "The power is on"],
+      "answer": "The data in the cache block is meaningful and current",
+      "citation": ","
+    },
+    {
+      "id": 50,
+      "question": "What is the 'Write-Through' policy?",
+      "options": ["Writing only to the cache", "Writing to the cache and main memory simultaneously", "Writing to memory only on replacement", "Skipping the cache entirely"],
+      "answer": "Writing to the cache and main memory simultaneously",
+      "citation": ","
+    },
+    {
+      "id": 51,
+      "question": "Which bit is used in 'Write-Back' to show data has been modified?",
+      "options": ["Valid bit", "Reference bit", "Dirty bit", "Stall bit"],
+      "answer": "Dirty bit",
+      "citation": ","
+    },
+    {
+      "id": 52,
+      "question": "What is 'Spatial Locality'?",
+      "options": ["Accessing data again", "Accessing data at nearby addresses", "Accessing data on a different disk", "The physical size of the cache"],
+      "answer": "Accessing data at nearby addresses",
+      "citation": ","
+    },
+    {
+      "id": 53,
+      "question": "What is the 'Miss Penalty'?",
+      "options": ["The time to deliver a hit", "Additional time to retrieve data from lower memory levels", "The cost of the hardware", "The power consumed by a miss"],
+      "answer": "Additional time to retrieve data from lower memory levels",
+      "citation": ","
+    },
+    {
+      "id": 54,
+      "question": "How can you increase bandwidth without changing access time?",
+      "options": ["Increase clock frequency", "Use wider or interleaved memories", "Decrease cache size", "Use slower DRAM"],
+      "answer": "Use wider or interleaved memories",
+      "citation": ","
+    },
+    {
+      "id": 55,
+      "question": "In 'Interleaved Memory', how is the bank number determined?",
+      "options": ["(Word Address) mod (Number of banks)", "Randomly", "Based on the tag", "It is fixed for all addresses"],
+      "answer": "(Word Address) mod (Number of banks)",
+      "citation": ","
+    },
+    {
+      "id": 56,
+      "question": "What happens if a 'Write Buffer' is full in a Write-Through system?",
+      "options": ["The data is lost", "The processor must stall until there is space", "The cache is cleared", "The data is written to the register"],
+      "answer": "The processor must stall until there is space",
+      "citation": ","
+    },
+    {
+      "id": 57,
+      "question": "What is 'Write Allocate'?",
+      "options": ["Writing to memory on a miss", "Bringing the block into the cache after a write miss", "Allocating a new cache for every write", "Only writing to the tag"],
+      "answer": "Bringing the block into the cache after a write miss",
+      "citation": ","
+    },
+    {
+      "id": 58,
+      "question": "If a cache has 8 blocks, where does memory address 26 go (Direct Mapped)?",
+      "options": ["Block 0", "Block 2", "Block 4", "Block 26"],
+      "answer": "Block 2",
+      "citation": ","
+    },
+    {
+      "id": 59,
+      "question": "Which architectural model uses a single unified memory for data and instructions?",
+      "options": ["Harvard", "Von Neumann", "Rambus", "RISC-V"],
+      "answer": "Von Neumann",
+      "citation": ""
+    },
+    {
+      "id": 60,
+      "question": "Why is 'Random' replacement sometimes used over 'LRU'?",
+      "options": ["It is more accurate", "It is simpler and cheaper to implement in hardware", "It always has a higher hit rate", "It uses more bits"],
+      "answer": "It is simpler and cheaper to implement in hardware",
+      "citation": ",,"
+    },
+    {
+      "id": 61,
+      "question": "How does increasing the 'Block Size' affect spatial locality?",
+      "options": ["It makes it worse", "It improves it by bringing in more nearby data", "It has no effect", "It increases conflict misses"],
+      "answer": "It improves it by bringing in more nearby data",
+      "citation": ","
+    },
+    {
+      "id": 62,
+      "question": "What is 'Aliasing' in a virtually addressed cache?",
+      "options": ["Two tags for one block", "Two different virtual addresses mapping to the same physical address", "A hit in both L1 and L2", "A power failure in the cache"],
+      "answer": "Two different virtual addresses mapping to the same physical address",
+      "citation": ","
+    },
+    {
+      "id": 63,
+      "question": "In a 32-bit address with 12-bit offset and 10-bit index, how many bits is the Tag?",
+      "options": ["10", "12", "32", "10"],
+      "answer": "10",
+      "citation": ","
+    },
+    {
+      "id": 64,
+      "question": "What is the 'AMAT' for a hit time of 1 cycle, miss rate of 10%, and miss penalty of 20 cycles?",
+      "options": ["1 cycle", "2 cycles", "3 cycles", "21 cycles"],
+      "answer": "3 cycles",
+      "citation": ","
+    },
+    {
+      "id": 65,
+      "question": "Which of the following reduces 'Compulsory' misses?",
+      "options": ["Larger cache size", "Higher associativity", "Larger block size", "Faster bus"],
+      "answer": "Larger block size",
+      "citation": ","
+    },
+    {
+      "id": 66,
+      "question": "Where is Level 1 cache usually located?",
+      "options": ["On the motherboard", "Inside the CPU chip", "In the RAM stick", "Near the BIOS"],
+      "answer": "Inside the CPU chip",
+      "citation": ","
+    },
+    {
+      "id": 67,
+      "question": "What does a 'Cache Miss' trigger?",
+      "options": ["An immediate reboot", "Retrieving the block from a lower level of memory", "A disk format", "Refreshing the DRAM"],
+      "answer": "Retrieving the block from a lower level of memory",
+      "citation": ","
+    },
+    {
+      "id": 68,
+      "question": "What is 'LRU' replacement?",
+      "options": ["Longest Running Unit", "Least Recently Used", "Logic Rate Utility", "Linear Row Unit"],
+      "answer": "Least Recently Used",
+      "citation": ","
+    },
+    {
+      "id": 69,
+      "question": "What is the 'Library' analogy for a cache?",
+      "options": ["The books on your desk", "The entire campus library", "A bookstore", "A digital database"],
+      "answer": "The books on your desk",
+      "citation": ","
+    },
+    {
+      "id": 70,
+      "question": "If a cache block is 16 bytes, how many bits are used for the 'Offset'?",
+      "options": ["2", "4", "8", "16"],
+      "answer": "4",
+      "citation": ","
+    },
+    {
+      "id": 71,
+      "question": "What does 'AMAT' stand for?",
+      "options": ["All Memory Access Time", "Average Memory Access Time", "Address Mapping And Timing", "Advanced Memory Access Technology"],
+      "answer": "Average Memory Access Time",
+      "citation": ","
+    },
+    {
+      "id": 72,
+      "question": "Which policy keeps cache and memory consistent at all times?",
+      "options": ["Write-Back", "Write-Through", "No-Write Allocate", "Fully Associative"],
+      "answer": "Write-Through",
+      "citation": ","
+    },
+    {
+      "id": 73,
+      "question": "What is the disadvantage of 'Direct Mapping'?",
+      "options": ["It is too complex", "Multiple memory locations compete for the same cache slot (Conflict misses)", "It is very slow", "It requires too much power"],
+      "answer": "Multiple memory locations compete for the same cache slot (Conflict misses)",
+      "citation": ",,"
+    },
+    {
+      "id": 74,
+      "question": "Why is the cache often referred to as '$'?",
+      "options": ["It is expensive", "It sounds like 'Cash' (money)", "It is a banking term", "It is the symbol for speed"],
+      "answer": "It sounds like 'Cash' (money)",
+      "citation": ""
+    },
+    {
+      "id": 75,
+      "question": "What is the 'Memory Hierarchy'?",
+      "options": ["A list of all users", "The arrangement of memory levels from fastest/smallest to slowest/largest", "The BIOS settings", "The data path in the ALU"],
+      "answer": "The arrangement of memory levels from fastest/smallest to slowest/largest",
+      "citation": ","
+    },
+    {
+      "id": 76,
+      "question": "What is 'Hit Rate'?",
+      "options": ["The fraction of memory accesses found in the cache", "The speed of the CPU", "The number of blocks in the cache", "The size of a DRAM cell"],
+      "answer": "The fraction of memory accesses found in the cache",
+      "citation": ""
+    },
+    {
+      "id": 77,
+      "question": "In a 2-level cache, if L1 misses, where does the CPU look next?",
+      "options": ["Main Memory", "L2 Cache", "Hard Disk", "Register File"],
+      "answer": "L2 Cache",
+      "citation": ","
+    },
+    {
+      "id": 78,
+      "question": "How does 'Interleaving' utilize parallel memory banks?",
+      "options": ["By doubling the bus width", "By starting multiple memory operations with small time offsets", "By making memory non-volatile", "By removing the decoder"],
+      "answer": "By starting multiple memory operations with small time offsets",
+      "citation": ","
+    },
+    {
+      "id": 79,
+      "question": "Which type of locality is utilized by 'Sequential Access' of instructions?",
+      "options": ["Temporal", "Spatial", "Both", "Neither"],
+      "answer": "Spatial",
+      "citation": ","
+    },
+    {
+      "id": 80,
+      "question": "What is a 'Stall Cycle' in the context of memory?",
+      "options": ["A fast clock cycle", "A cycle where the CPU waits for memory to deliver data", "The refresh cycle of a disk", "A write-through operation"],
+      "answer": "A cycle where the CPU waits for memory to deliver data",
+      "citation": ","
+    }
+  ]

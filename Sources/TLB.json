@@ -1,0 +1,470 @@
+[
+    {
+      "id": 121,
+      "question": "What does 'TLB' stand for?",
+      "options": ["Total Logic Buffer", "Translation Look-aside Buffer", "Temporary Link Block", "Time Limit Binary"],
+      "answer": "Translation Look-aside Buffer",
+      "citation": ","
+    },
+    {
+      "id": 122,
+      "question": "What is the purpose of a TLB?",
+      "options": ["To store actual data", "To act as a small cache for the most recent address translations", "To speed up arithmetic", "To refresh DRAM"],
+      "answer": "To act as a small cache for the most recent address translations",
+      "citation": ",,"
+    },
+    {
+      "id": 123,
+      "question": "What is the typical size of a TLB?",
+      "options": ["2 to 4 entries", "32 to 1024 entries", "1M entries", "Same size as RAM"],
+      "answer": "32 to 1024 entries",
+      "citation": ","
+    },
+    {
+      "id": 124,
+      "question": "Where is the TLB located?",
+      "options": ["Inside the Hard Disk", "In the RAM sticks", "Within the Processor (CPU)", "In the Southbridge"],
+      "answer": "Within the Processor (CPU)",
+      "citation": ","
+    },
+    {
+      "id": 125,
+      "question": "What happens on a 'TLB Hit'?",
+      "options": ["The CPU restarts", "The physical address is immediately available for the cache", "The Page Table is accessed", "A page fault occurs"],
+      "answer": "The physical address is immediately available for the cache",
+      "citation": ","
+    },
+    {
+      "id": 126,
+      "question": "What mapping is commonly used in a TLB?",
+      "options": ["Direct Mapped", "Set Associative", "Fully Associative", "Sequential"],
+      "answer": "Fully Associative",
+      "citation": ","
+    },
+    {
+      "id": 127,
+      "question": "What are the two operation modes of a CPU for protection?",
+      "options": ["Fast and Slow", "User and System (Privileged)", "Read and Write", "DRAM and SRAM"],
+      "answer": "User and System (Privileged)",
+      "citation": ","
+    },
+    {
+      "id": 128,
+      "question": "Which mode has the highest authority and can modify Page Tables?",
+      "options": ["User Mode", "System/Kernel Mode", "Safe Mode", "Admin Mode"],
+      "answer": "System/Kernel Mode",
+      "citation": ","
+    },
+    {
+      "id": 129,
+      "question": "What are 'Privileged Instructions'?",
+      "options": ["Instructions for math", "Instructions that only execute in System Mode", "Secret instructions", "Instructions in the BIOS"],
+      "answer": "Instructions that only execute in System Mode",
+      "citation": ","
+    },
+    {
+      "id": 130,
+      "question": "How does a user program request an OS service?",
+      "options": ["By writing to a disk", "Using a system call (exception that switches mode)", "By restarting the CPU", "By changing the clock frequency"],
+      "answer": "Using a system call (exception that switches mode)",
+      "citation": ","
+    },
+    {
+      "id": 131,
+      "question": "What is 'Context Switching'?",
+      "options": ["Changing the light in the room", "Switching the CPU from one process to another", "Replacing the RAM", "Updating the BIOS"],
+      "answer": "Switching the CPU from one process to another",
+      "citation": ",,"
+    },
+    {
+      "id": 132,
+      "question": "What is 'ASID' or Process ID in the TLB used for?",
+      "options": ["To speed up calculations", "To distinguish between translations of different programs without flushing the TLB", "To count hits", "To secure the BIOS"],
+      "answer": "To distinguish between translations of different programs without flushing the TLB",
+      "citation": ",,"
+    },
+    {
+      "id": 133,
+      "question": "Describe a 'Compulsory Miss' in the 4 C's.",
+      "options": ["First time a word is referenced", "Cache is too small", "Multiple blocks mapping to same slot", "Invalidation by another CPU"],
+      "answer": "First time a word is referenced",
+      "citation": ","
+    },
+    {
+      "id": 134,
+      "question": "Describe a 'Capacity Miss' in the 4 C's.",
+      "options": ["First access", "The cache cannot hold all required blocks", "Conflict in a direct map", "Another processor changed data"],
+      "answer": "The cache cannot hold all required blocks",
+      "citation": ","
+    },
+    {
+      "id": 135,
+      "question": "Describe a 'Conflict Miss' in the 4 C's.",
+      "options": ["Full cache", "Multiple blocks map to same location in non-fully associative caches", "Reading data first time", "Bus error"],
+      "answer": "Multiple blocks map to same location in non-fully associative caches",
+      "citation": ","
+    },
+    {
+      "id": 136,
+      "question": "Describe a 'Coherence Miss' in the 4 C's.",
+      "options": ["Disk error", "Another system component (like I/O or CPU) invalidates a cache location", "First time access", "Large block size"],
+      "answer": "Another system component (like I/O or CPU) invalidates a cache location",
+      "citation": ","
+    },
+    {
+      "id": 137,
+      "question": "How can you reduce 'Compulsory' misses?",
+      "options": ["Larger cache", "Larger block size", "Better replacement policy", "Higher associativity"],
+      "answer": "Larger block size",
+      "citation": ","
+    },
+    {
+      "id": 138,
+      "question": "How can you reduce 'Capacity' misses?",
+      "options": ["Increase cache size", "Smaller block size", "Faster clock", "Wider bus"],
+      "answer": "Increase cache size",
+      "citation": ","
+    },
+    {
+      "id": 139,
+      "question": "How can you reduce 'Conflict' misses?",
+      "options": ["Smaller cache", "Increase associativity", "Sequential access", "Lower voltage"],
+      "answer": "Increase associativity",
+      "citation": ","
+    },
+    {
+      "id": 140,
+      "question": "Which of these is a typical TLB entry?",
+      "options": ["Data + Checksum", "VPN, PPN, Valid, Dirty, Reference bits", "Tag + Instruction", "Address + Bus ID"],
+      "answer": "VPN, PPN, Valid, Dirty, Reference bits",
+      "citation": ","
+    },
+    {
+      "id": 141,
+      "question": "Why is 'Parallel' TLB and Cache access faster?",
+      "options": ["It uses two CPUs", "It overlaps address translation with cache indexing", "It eliminates the tag", "It makes disks faster"],
+      "answer": "It overlaps address translation with cache indexing",
+      "citation": ","
+    },
+    {
+      "id": 142,
+      "question": "What is the 'Cause' register in the CPU used for?",
+      "options": ["Storing the result of an addition", "Recording the reason for an exception (like page fault)", "Clock timing", "Memory capacity"],
+      "answer": "Recording the reason for an exception (like page fault)",
+      "citation": ","
+    },
+    {
+      "id": 143,
+      "question": "In the 'Librarian' analogy, what is the TLB?",
+      "options": ["The whole library", "A small note in your pocket with shelf numbers", "The books on the desk", "The exit door"],
+      "answer": "A small note in your pocket with shelf numbers",
+      "citation": ""
+    },
+    {
+      "id": 144,
+      "question": "What is the penalty for a 'TLB Miss'?",
+      "options": ["A full reboot", "Accessing the Page Table in memory (slow)", "Deleting the process", "Formatting the disk"],
+      "answer": "Accessing the Page Table in memory (slow)",
+      "citation": ","
+    },
+    {
+      "id": 145,
+      "question": "If the whole cache index falls within the page offset, what can happen?",
+      "options": ["A crash", "Parallel TLB and Cache access", "Memory corruption", "Sequential access only"],
+      "answer": "Parallel TLB and Cache access",
+      "citation": ","
+    },
+    {
+      "id": 146,
+      "question": "What is 'Kernel Mode' also known as?",
+      "options": ["User mode", "System/Privileged mode", "Safe mode", "BIOS mode"],
+      "answer": "System/Privileged mode",
+      "citation": ","
+    },
+    {
+      "id": 147,
+      "question": "Which replacement policy is common for TLB because of its simplicity?",
+      "options": ["LRU", "Random", "FIFO", "LIFO"],
+      "answer": "Random",
+      "citation": ","
+    },
+    {
+      "id": 148,
+      "question": "When does the CPU switch to 'System Mode'?",
+      "options": ["During an instruction fetch", "When an exception (like page fault or syscall) occurs", "Every 1 second", "On every cache hit"],
+      "answer": "When an exception (like page fault or syscall) occurs",
+      "citation": ",,"
+    },
+    {
+      "id": 149,
+      "question": "What happens on a 'Page Fault' while a disk is reading?",
+      "options": ["The CPU stays idle", "The CPU switches to another process (multitasking)", "The RAM is erased", "The user is logged out"],
+      "answer": "The CPU switches to another process (multitasking)",
+      "citation": ",,"
+    },
+    {
+      "id": 150,
+      "question": "What is the 'Reference Bit' used for?",
+      "options": ["Calculating math", "Tracking recently accessed pages for the replacement algorithm (LRU)", "Checking the bus speed", "Resetting the CPU"],
+      "answer": "Tracking recently accessed pages for the replacement algorithm (LRU)",
+      "citation": ","
+    },
+    {
+      "id": 151,
+      "question": "What is 'Aliasing'?",
+      "options": ["Using two names for one person", "Two virtual addresses pointing to one physical location", "Two disks in one PC", "A cache hit in L1 and L2"],
+      "answer": "Two virtual addresses pointing to one physical location",
+      "citation": ","
+    },
+    {
+      "id": 152,
+      "question": "Why is the TLB effective in reducing translation time?",
+      "options": ["It is very large", "Because of locality; programs stay on the same page for many instructions", "It uses magnetic storage", "It skips the CPU"],
+      "answer": "Because of locality; programs stay on the same page for many instructions",
+      "citation": ","
+    },
+    {
+      "id": 153,
+      "question": "What does 'Dirty Bit' in the TLB signify?",
+      "options": ["The memory needs cleaning", "The page has been modified and must be written back to disk", "The CPU is overheating", "The data is invalid"],
+      "answer": "The page has been modified and must be written back to disk",
+      "citation": ",,"
+    },
+    {
+      "id": 154,
+      "question": "A system with millions of users (like a Data Center) depends on what?",
+      "options": ["Sequential access", "Load Balancing and efficient memory hierarchy", "Having only one CPU", "Using only ROM"],
+      "answer": "Load Balancing and efficient memory hierarchy",
+      "citation": ","
+    },
+    {
+      "id": 155,
+      "question": "What happens if a privileged instruction is run in User Mode?",
+      "options": ["It runs normally", "The CPU blocks it and triggers an exception (protection fault)", "The PC explodes", "The instruction is deleted"],
+      "answer": "The CPU blocks it and triggers an exception (protection fault)",
+      "citation": ""
+    },
+    {
+      "id": 156,
+      "question": "What is the purpose of the 'Valid' bit in the TLB?",
+      "options": ["Power is on", "The translation entry is current and valid", "The address is real", "The disk is formatted"],
+      "answer": "The translation entry is current and valid",
+      "citation": ","
+    },
+    {
+      "id": 157,
+      "question": "What is the role of 'Sense Amps' again?",
+      "options": ["To decode addresses", "To amplify small signals to logic levels (0 and 1)", "To cool the chip", "To store BIOS"],
+      "answer": "To amplify small signals to logic levels (0 and 1)",
+      "citation": ","
+    },
+    {
+      "id": 158,
+      "question": "Which mode bit setting (e.g., 0 or 1) typically indicates System Mode?",
+      "options": ["It is arbitrary, but one bit identifies the current privilege level", "It is always 0", "It is 8 bits", "It is stored on the disk"],
+      "answer": "It is arbitrary, but one bit identifies the current privilege level",
+      "citation": ","
+    },
+    {
+      "id": 159,
+      "question": "Can a system have a TLB hit but a Cache miss?",
+      "options": ["Yes (translation known, data not in L1)", "No", "Only on Thursdays", "Only in ROM"],
+      "answer": "Yes (translation known, data not in L1)",
+      "citation": ""
+    },
+    {
+      "id": 160,
+      "question": "The Four C's are used to categorize what?",
+      "options": ["Memory capacity", "Cache/TLB misses", "CPU Speed", "Disk types"],
+      "answer": "Cache/TLB misses",
+      "citation": ","
+    },
+    {
+      "question": "What is the typical size of a TLB in modern processors?",
+      "options": ["1 - 4 entries", "32 - 1,024 entries", "1 million entries", "Same as RAM"],
+      "answer": "32 - 1,024 entries",
+      "citation": ""
+    },
+    {
+      "question": "What is the primary function of the TLB?",
+      "options": ["To store instructions", "To cache recent virtual-to-physical address translations", "To manage disk sectors", "To perform arithmetic"],
+      "answer": "To cache recent virtual-to-physical address translations",
+      "citation": ""
+    },
+    {
+      "question": "If the TLB hit rate is 99%, the TLB hit time is 1 cycle, and the TLB miss penalty is 20 cycles, what is the effective translation time?",
+      "options": ["1 cycle", "1.19 cycles", "1.2 cycles", "21 cycles"],
+      "answer": "1.2 cycles",
+      "calculation": "AMAT_translation = 1 + (0.01 * 20) = 1.2 cycles.",
+      "citation": ""
+    },
+    {
+      "question": "Which mapping technique is commonly used for the TLB for maximum flexibility and performance?",
+      "options": ["Direct Mapped", "Set Associative", "Fully Associative", "Skewed Mapping"],
+      "answer": "Fully Associative",
+      "citation": ""
+    },
+    {
+      "question": "What replacement policy is often chosen for TLBs to keep hardware simple and fast?",
+      "options": ["LRU", "Random", "FIFO", "LIFO"],
+      "answer": "Random",
+      "citation": ""
+    },
+    {
+      "question": "What is a 'TLB Miss'?",
+      "options": ["When the data is not in the cache", "When the page translation is not in the TLB", "When the page is not on the disk", "When the CPU loses power"],
+      "answer": "When the page translation is not in the TLB",
+      "citation": ""
+    },
+    {
+      "question": "In a 32-bit address system, if the TLB stores 64 entries and is fully associative, how many bits are in the 'Tag'?",
+      "options": ["6 bits", "20 bits (assuming 12-bit offset)", "26 bits", "32 bits"],
+      "answer": "20 bits (assuming 12-bit offset)",
+      "calculation": "Fully Associative means Tag = Virtual Page Number. VPN = 32 - 12 offset = 20 bits.",
+      "citation": ""
+    },
+    {
+      "question": "How many memory accesses are required for a data fetch if the translation is found in the TLB (TLB Hit)?",
+      "options": ["0", "1", "2", "3"],
+      "answer": "1",
+      "citation": ""
+    },
+    {
+      "question": "Why is it possible to access the TLB and the Cache in parallel?",
+      "options": ["If the cache is very large", "If the cache index fits within the page offset bits", "If the disk is fast", "If there is only one processor"],
+      "answer": "If the cache index fits within the page offset bits",
+      "citation": ""
+    },
+    {
+      "question": "What is the 'ASID' (Address Space ID) in a TLB entry used for?",
+      "options": ["To speed up disk access", "To identify which process owns the translation and avoid TLB flushes on context switches", "To count the number of hits", "To protect the cache from heat"],
+      "answer": "To identify which process owns the translation and avoid TLB flushes on context switches",
+      "citation": ""
+    },
+    {
+      "question": "If a TLB has 128 entries and each page is 8 KB, what is the total memory 'coverage' of the TLB?",
+      "options": ["128 KB", "1 MB", "1,024 KB", "Both B and C"],
+      "answer": "Both B and C",
+      "calculation": "Coverage = 128 * 8 KB = 1024 KB = 1 MB.",
+      "citation": ""
+    },
+    {
+      "question": "What is the consequence of a TLB miss where the entry IS present in the Page Table?",
+      "options": ["A Page Fault exception", "The hardware or OS must fetch the entry from the Page Table into the TLB", "The disk must be accessed", "The computer crashes"],
+      "answer": "The hardware or OS must fetch the entry from the Page Table into the TLB",
+      "citation": ""
+    },
+    {
+      "question": "In the 'Paper/Note' analogy, the TLB is represented by:",
+      "options": ["The whole library catalog", "The librarian", "A small piece of paper in your pocket with recent notes", "The library bookshelves"],
+      "answer": "A small piece of paper in your pocket with recent notes",
+      "citation": ""
+    },
+    {
+      "question": "Which bit in the TLB is updated every time a page is successfully accessed?",
+      "options": ["Valid Bit", "Dirty Bit", "Reference Bit", "Mode Bit"],
+      "answer": "Reference Bit",
+      "citation": ""
+    },
+    {
+      "question": "What is the 'System Mode' (Kernel Mode)?",
+      "options": ["A mode where user programs run", "A privileged mode for the OS to access all hardware resources", "A power-saving mode", "A mode for games only"],
+      "answer": "A privileged mode for the OS to access all hardware resources",
+      "citation": ""
+    },
+    {
+      "question": "The TLB is usually made of which type of memory?",
+      "options": ["DRAM", "SRAM", "Flash", "Magnetic"],
+      "answer": "SRAM",
+      "citation": ""
+    },
+    {
+      "question": "If the TLB is 2-way set associative with 64 sets, how many total entries does it have?",
+      "options": ["64", "128", "256", "32"],
+      "answer": "128",
+      "calculation": "Total entries = 64 sets * 2 entries/set = 128.",
+      "citation": ""
+    },
+    {
+      "question": "Which of the following describes a 'TLB Hit' sequence?",
+      "options": ["VA -> Page Table -> TLB -> RAM", "VA -> TLB -> PA -> Cache", "VA -> Disk -> TLB -> Cache", "PA -> TLB -> VA -> Cache"],
+      "answer": "VA -> TLB -> PA -> Cache",
+      "citation": ""
+    },
+    {
+      "question": "What is a 'Privileged Instruction'?",
+      "options": ["An instruction used for addition", "An instruction that can only run in System Mode (e.g., modifying Page Tables)", "A very fast instruction", "A read-only instruction"],
+      "answer": "An instruction that can only run in System Mode (e.g., modifying Page Tables)",
+      "citation": ""
+    },
+    {
+      "question": "If a context switch occurs and ASIDs are NOT used, what must happen to the TLB?",
+      "options": ["Nothing", "All entries must be invalidated (flushed)", "It must be saved to the disk", "It must be doubled in size"],
+      "answer": "All entries must be invalidated (flushed)",
+      "citation": ""
+    },
+    {
+      "question": "What is 'Aliasing' in a Virtually Addressed Cache?",
+      "options": ["One name for two people", "Two different virtual addresses mapping to the same physical location", "A disk error", "A TLB miss"],
+      "answer": "Two different virtual addresses mapping to the same physical location",
+      "citation": ""
+    },
+    {
+      "question": "How does increasing the TLB size (e.g., from 32 to 256 entries) affect the hit rate?",
+      "options": ["Decreases it", "Increases it", "Has no effect", "Makes it zero"],
+      "answer": "Increases it",
+      "citation": ""
+    },
+    {
+      "question": "Which 'C' category of misses is reduced by having more entries in the TLB?",
+      "options": ["Compulsory", "Capacity", "Conflict", "Coherence"],
+      "answer": "Capacity",
+      "citation": ""
+    },
+    {
+      "question": "The 'Valid Bit' in the TLB indicates:",
+      "options": ["The processor is on", "The translation entry is current and valid", "The page is dirty", "The address is even"],
+      "answer": "The translation entry is current and valid",
+      "citation": ""
+    },
+    {
+      "question": "If a system has a 48-bit Virtual Address and 4 KB pages, what is the VPN size stored in the TLB?",
+      "options": ["12 bits", "24 bits", "36 bits", "48 bits"],
+      "answer": "36 bits",
+      "calculation": "4 KB = 2^12. VPN = 48 - 12 = 36 bits.",
+      "citation": ""
+    },
+    {
+      "question": "What is the primary advantage of a 'Split TLB' (Instruction TLB and Data TLB)?",
+      "options": ["It is cheaper", "It allows simultaneous translation of instruction and data addresses", "It reduces power", "It prevents disk errors"],
+      "answer": "It allows simultaneous translation of instruction and data addresses",
+      "citation": ""
+    },
+    {
+      "question": "Which event is more frequent: a TLB miss or a Page Fault?",
+      "options": ["TLB miss", "Page Fault", "They are equally frequent", "Neither ever happens"],
+      "answer": "TLB miss",
+      "citation": ""
+    },
+    {
+      "question": "How many TLB entries are needed to cover a 1 MB loop if the page size is 4 KB?",
+      "options": ["64 entries", "128 entries", "256 entries", "512 entries"],
+      "answer": "256 entries",
+      "calculation": "Entries = 1 MB / 4 KB = 1024 / 4 = 256 entries.",
+      "citation": ""
+    },
+    {
+      "question": "Which bit must be checked in the TLB to see if a page can be WRITTEN to?",
+      "options": ["Valid Bit", "Reference Bit", "Write-Permission/Dirty Bit", "Mode Bit"],
+      "answer": "Write-Permission/Dirty Bit",
+      "citation": ""
+    },
+    {
+      "question": "The TLB is technically a:",
+      "options": ["Type of DRAM", "Register File", "Cache for the Page Table", "Hard drive"],
+      "answer": "Cache for the Page Table",
+      "citation": ""
+    }
+  
+
+  ]

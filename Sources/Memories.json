@@ -1,0 +1,282 @@
+[
+    {
+      "id": 1,
+      "question": "What are the four basic components of any large digital integrated circuit?",
+      "options": ["CPU, RAM, Hard Disk, Bus", "Memories, Control logic, Datapath, Communications", "ALU, Registers, Cache, I/O", "Logic gates, Transistors, Wires, Capacitors"],
+      "answer": "Memories, Control logic, Datapath, Communications",
+      "citation": ","
+    },
+    {
+      "id": 2,
+      "question": "Which component is often forgotten by students but is critical for efficiency in modern systems?",
+      "options": ["Control logic", "Datapath", "Communications (Interconnects)", "Memories"],
+      "answer": "Communications (Interconnects)",
+      "citation": ""
+    },
+    {
+      "id": 3,
+      "question": "According to the sources, why is the 'Communication' component currently critical?",
+      "options": ["It is cheaper to manufacture", "Wire delay is now greater than logic delay", "It uses less power than logic", "Buses are becoming smaller"],
+      "answer": "Wire delay is now greater than logic delay",
+      "citation": ""
+    },
+    {
+      "id": 4,
+      "question": "Moving data from external memory to the processor can consume how much more power compared to the calculation itself?",
+      "options": ["2 times", "10 times", "50 times", "100 times"],
+      "answer": "100 times",
+      "citation": ""
+    },
+    {
+      "id": 5,
+      "question": "Which analogy did the doctor use for 'Random Access'?",
+      "options": ["Walking to a specific spot in a room", "Turning your eyes to look at a spot in a room", "Listening to a music tape", "Writing on a classboard"],
+      "answer": "Turning your eyes to look at a spot in a room",
+      "citation": ","
+    },
+    {
+      "id": 6,
+      "question": "What happens to information in 'Volatile' memory when power is turned off?",
+      "options": ["It is saved to the disk", "It remains unchanged", "It is lost", "It becomes read-only"],
+      "answer": "It is lost",
+      "citation": ","
+    },
+    {
+      "id": 7,
+      "question": "Which memory technology is described as 'sand on the beach' in terms of volatility?",
+      "options": ["ROM", "RAM", "Flash", "Pottery"],
+      "answer": "RAM",
+      "citation": ","
+    },
+    {
+      "id": 8,
+      "question": "How does memory capacity usually relate to access time?",
+      "options": ["Higher capacity leads to faster access", "Higher capacity leads to slower access", "There is no relationship", "Small capacity is always slower"],
+      "answer": "Higher capacity leads to slower access",
+      "citation": ","
+    },
+    {
+      "id": 9,
+      "question": "What is the formula for memory capacity?",
+      "options": ["2 * (Address lines) + Data lines", "Address lines * Data lines", "2^(Address lines) * Data lines", "Address lines^2 * Data lines"],
+      "answer": "2^(Address lines) * Data lines",
+      "citation": ","
+    },
+    {
+      "id": 10,
+      "question": "Why does a large memory take more access time than a small one?",
+      "options": ["It has fewer transistors", "Decoders are larger and internal wires have more RC load", "The power consumption is lower", "It uses a serial bus"],
+      "answer": "Decoders are larger and internal wires have more RC load",
+      "citation": ",,"
+    },
+    {
+      "id": 11,
+      "question": "A DRAM cell is composed of which of the following?",
+      "options": ["6 Transistors", "1 Transistor and 1 Capacitor", "A Latch", "A Fuse"],
+      "answer": "1 Transistor and 1 Capacitor",
+      "citation": ","
+    },
+    {
+      "id": 12,
+      "question": "Which memory type requires a 'Refresh' circuit to maintain data?",
+      "options": ["SRAM", "ROM", "DRAM", "EEPROM"],
+      "answer": "DRAM",
+      "citation": ","
+    },
+    {
+      "id": 13,
+      "question": "SRAM is commonly used in which part of the computer?",
+      "options": ["Main Memory", "Hard Disk", "Caches", "BIOS"],
+      "answer": "Caches",
+      "citation": ","
+    },
+    {
+      "id": 14,
+      "question": "What is the main advantage of DRAM over SRAM?",
+      "options": ["Speed", "Power consumption per cell", "Density and size", "Retention without power"],
+      "answer": "Density and size",
+      "citation": ","
+    },
+    {
+      "id": 15,
+      "question": "What does 'RAS' stand for in DRAM addressing?",
+      "options": ["Random Access Storage", "Row Address Strobing", "Read Access Signal", "Real Address System"],
+      "answer": "Row Address Strobing",
+      "citation": ","
+    },
+    {
+      "id": 16,
+      "question": "Which DRAM enhancement transfers data on both rising and falling edges of the clock?",
+      "options": ["SDRAM", "Fast Page Mode", "DDR", "RDRAM"],
+      "answer": "DDR",
+      "citation": ","
+    },
+    {
+      "id": 17,
+      "question": "What is the typical lifetime of data retention in Flash memory?",
+      "options": ["1 year", "10 years", "50 years", "Indefinite"],
+      "answer": "10 years",
+      "citation": ""
+    },
+    {
+      "id": 18,
+      "question": "In the context of ROM, what does 'PROM' allow?",
+      "options": ["Multiple writes and erasures", "A single writing by the user", "Only reading from the factory", "Erasing with UV light"],
+      "answer": "A single writing by the user",
+      "citation": ","
+    },
+    {
+      "id": 19,
+      "question": "How is an EPROM chip erased?",
+      "options": ["Electrical signals", "Magnetic fields", "Ultra-Violet (UV) light", "High voltage"],
+      "answer": "Ultra-Violet (UV) light",
+      "citation": ","
+    },
+    {
+      "id": 20,
+      "question": "What technology is used in 'Solid State Disks' (SSD)?",
+      "options": ["Magnetic platters", "SRAM", "Flash memory", "DRAM"],
+      "answer": "Flash memory",
+      "citation": ","
+    },
+    {
+      "id": 21,
+      "question": "What does the 'Clay' analogy represent in memory classification?",
+      "options": ["Volatile memory", "Write-once memory", "Rewriteable memory where new writing overrides the old", "Read-only memory"],
+      "answer": "Rewriteable memory where new writing overrides the old",
+      "citation": ","
+    },
+    {
+      "id": 22,
+      "question": "Which component in a DRAM chip amplifies weak signals from the storage cells?",
+      "options": ["X-decoder", "Sense Amps", "Y-selector", "Write buffer"],
+      "answer": "Sense Amps",
+      "citation": ","
+    },
+    {
+      "id": 23,
+      "question": "What is 'Sequential Access'?",
+      "options": ["Accessing any location in equal time", "Access time depends on the distance from the current position", "Accessing memory in alphabetical order", "Memory accessed via a parallel bus"],
+      "answer": "Access time depends on the distance from the current position",
+      "citation": ","
+    },
+    {
+      "id": 24,
+      "question": "Which memory provides the highest bandwidth by stacking chips?",
+      "options": ["DDR4", "SRAM", "HBM (High Bandwidth Memory)", "Flash"],
+      "answer": "HBM (High Bandwidth Memory)",
+      "citation": ","
+    },
+    {
+      "id": 25,
+      "question": "The doctor compared reaching a room (e.g., 8208) to which process?",
+      "options": ["Data transfer", "Memory decoding in levels", "Cache hitting", "Bus arbitration"],
+      "answer": "Memory decoding in levels",
+      "citation": ","
+    },
+    {
+      "id": 26,
+      "question": "What is the primary engine of a digital circuit that performs arithmetic operations?",
+      "options": ["Control logic", "Memories", "Datapath", "Buses"],
+      "answer": "Datapath",
+      "citation": ","
+    },
+    {
+      "id": 27,
+      "question": "Which of these is a non-volatile memory?",
+      "options": ["SRAM", "DRAM", "Flash", "L1 Cache"],
+      "answer": "Flash",
+      "citation": ","
+    },
+    {
+      "id": 28,
+      "question": "What determines if a 'PROM' bit is a 0 or 1 during manufacturing/programming?",
+      "options": ["Charging a capacitor", "Blowing a fuse", "Flipping a latch", "Magnetic orientation"],
+      "answer": "Blowing a fuse",
+      "citation": ","
+    },
+    {
+      "id": 29,
+      "question": "How many transistors are typically in an SRAM cell?",
+      "options": ["1", "2", "6", "12"],
+      "answer": "6",
+      "citation": ","
+    },
+    {
+      "id": 30,
+      "question": "Why is 'Write-Back' used in some memories?",
+      "options": ["To increase hit rate", "To minimize traffic and power by only writing when necessary", "To make the memory non-volatile", "To simplify the decoder"],
+      "answer": "To minimize traffic and power by only writing when necessary",
+      "citation": ","
+    },
+    {
+      "id": 31,
+      "question": "What is the main limitation of using UV-erased EPROM?",
+      "options": ["It is too fast", "It requires removing the chip and 20 minutes of exposure", "It is volatile", "It uses too much power"],
+      "answer": "It requires removing the chip and 20 minutes of exposure",
+      "citation": ""
+    },
+    {
+      "id": 32,
+      "question": "Which memory type is used for BIOS and serial numbers?",
+      "options": ["SRAM", "DRAM", "ROM/Flash", "L2 Cache"],
+      "answer": "ROM/Flash",
+      "citation": ","
+    },
+    {
+      "id": 33,
+      "question": "What happens to the decoder as address lines increase?",
+      "options": ["It becomes simpler", "It becomes a tree of gates and gets slower", "It disappears", "It becomes faster"],
+      "answer": "It becomes a tree of gates and gets slower",
+      "citation": ","
+    },
+    {
+      "id": 34,
+      "question": "In a 16-bit memory organized as 4x4, how many address bits are needed?",
+      "options": ["2", "4", "8", "16"],
+      "answer": "2",
+      "citation": ""
+    },
+    {
+      "id": 35,
+      "question": "What is 'EEPROM'?",
+      "options": ["Electrically Erasable PROM", "Easy Erasable PROM", "External Erasable PROM", "Electronic Engine PROM"],
+      "answer": "Electrically Erasable PROM",
+      "citation": ","
+    },
+    {
+      "id": 36,
+      "question": "Which property allows DRAM to have high density?",
+      "options": ["Large cell size", "Having only 1 transistor and 1 capacitor", "No refresh needed", "Using 6 transistors"],
+      "answer": "Having only 1 transistor and 1 capacitor",
+      "citation": ","
+    },
+    {
+      "id": 37,
+      "question": "What does 'Volatility' mean in engineering?",
+      "options": ["The speed of the memory", "The cost of the memory", "Losing data when power is off", "The ability to erase data"],
+      "answer": "Losing data when power is off",
+      "citation": ","
+    },
+    {
+      "id": 38,
+      "question": "Which component manages the flow of information according to the user's desire?",
+      "options": ["Memory", "Control logic", "Datapath", "Bus"],
+      "answer": "Control logic",
+      "citation": ","
+    },
+    {
+      "id": 39,
+      "question": "What is the average number of read/write cycles a Flash memory can handle?",
+      "options": ["1,000", "10,000", "100,000 to 200,000", "Unlimited"],
+      "answer": "100,000 to 200,000",
+      "citation": ""
+    },
+    {
+      "id": 40,
+      "question": "What is the 'Pottery' analogy for ROM?",
+      "options": ["Data can be changed easily", "Once 'fired' (written), the data is permanent and cannot be reshaped", "Data is lost when dry", "It is only for temporary storage"],
+      "answer": "Once 'fired' (written), the data is permanent and cannot be reshaped",
+      "citation": ","
+    }
+  ]
