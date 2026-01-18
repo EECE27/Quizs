@@ -886,17 +886,6 @@
     ],
     "answer": "Write Back",
     "citation": "[60], [21]"
-  },
-  {
-    "id": 75,
-    "question": "What will be the topic of the next 4 lectures after Lecture 4?",
-    "options": [
-      "Advanced ALUs",
-      "Memory Systems",
-      "Operating Systems",
-      "External I/O"
-    ],
-    "answer": "Memory Systems",
-    "citation": "[43], [44]"
   }
+
 ]
