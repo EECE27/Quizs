@@ -1,0 +1,752 @@
+[
+  {
+    "question": "What is the primary reason for the transition from shared buses to Network-on-Chip (NoC) in modern SoCs?",
+    "options": [
+      "To reduce the number of physical CPU cores",
+      "Shared buses represent a single point of congestion as integration density increases",
+      "To move from digital to purely analog signaling",
+      "To eliminate the need for memory controllers"
+    ],
+    "answer": "Shared buses represent a single point of congestion as integration density increases"
+  },
+  {
+    "question": "The Network-on-Chip (NoC) paradigm is based on which foundational concept?",
+    "options": [
+      "Shared-medium broadcasting",
+      "Mechanical switching",
+      "Router-based, packet-switched architecture",
+      "Monolithic crossbar arbitration"
+    ],
+    "answer": "Router-based, packet-switched architecture"
+  },
+  {
+    "question": "In a NoC fabric, what is the role of a 'Router'?",
+    "options": [
+      "To store the entire system BIOS",
+      "To select the path for data packets between source and destination",
+      "To increase the voltage of the signal for long distances",
+      "To act as the primary arithmetic unit"
+    ],
+    "answer": "To select the path for data packets between source and destination"
+  },
+  {
+    "question": "Which ARM AMBA protocol is prioritised for high-performance and high-frequency system designs?",
+    "options": [
+      "Advanced Peripheral Bus (APB)",
+      "Advanced eXtensible Interface (AXI)",
+      "SATA 3.0",
+      "MQTT"
+    ],
+    "answer": "Advanced eXtensible Interface (AXI)"
+  },
+  {
+    "question": "What is the primary use of the Advanced Peripheral Bus (APB)?",
+    "options": [
+      "High-speed data bursting for GPUs",
+      "Low-bandwidth control access for system peripherals",
+      "Inter-data centre synchronisation",
+      "Die-to-die chiplet communication"
+    ],
+    "answer": "Low-bandwidth control access for system peripherals"
+  },
+  {
+    "question": "What does 'Cache Coherency' ensure in multi-core architectures?",
+    "options": [
+      "The cache is always kept empty",
+      "Multiple processors have a consistent view of shared data",
+      "Data is always encrypted before storage",
+      "The CPU clock speed is synchronised with the GPU"
+    ],
+    "answer": "Multiple processors have a consistent view of shared data"
+  },
+  {
+    "question": "Which AMBA protocol extension is specifically designed for system-wide cache coherency?",
+    "options": [
+      "AXI Coherency Extensions (ACE)",
+      "Advanced Peripheral Bus (APB)",
+      "PCIe 5.0",
+      "NVMe"
+    ],
+    "answer": "AXI Coherency Extensions (ACE)"
+  },
+  {
+    "question": "The 'Reticle Limit' in semiconductor manufacturing refers to:",
+    "options": [
+      "The maximum speed of a processor",
+      "The maximum physical size a single die can be printed by a lithography machine",
+      "The maximum number of bits in a packet",
+      "The cooling capacity of the package"
+    ],
+    "answer": "The maximum physical size a single die can be printed by a lithography machine"
+  },
+  {
+    "question": "How does manufacturing yield typically change as the area of a monolithic die increases?",
+    "options": [
+      "Yield increases linearly",
+      "Yield decreases exponentially",
+      "Yield remains constant",
+      "Yield depends only on the number of transistors"
+    ],
+    "answer": "Yield decreases exponentially"
+  },
+  {
+    "question": "What is a 'Chiplet'?",
+    "options": [
+      "A small computer for IoT devices",
+      "A modular die designed for a specific function, integrated into a single package",
+      "A type of high-speed copper wire",
+      "A software protocol for memory mapping"
+    ],
+    "answer": "A modular die designed for a specific function, integrated into a single package"
+  },
+  {
+    "question": "What is the primary advantage of 'Heterogeneous Integration' using chiplets?",
+    "options": [
+      "It makes the chip larger and heavier",
+      "It allows using different process nodes optimised for specific functions (e.g., analog vs. digital)",
+      "It eliminates the need for any on-chip interconnects",
+      "It reduces the total number of pins on the package"
+    ],
+    "answer": "It allows using different process nodes optimised for specific functions (e.g., analog vs. digital)"
+  },
+  {
+    "question": "Which open standard is designed to facilitate die-to-die communication between chiplets?",
+    "options": [
+      "Universal Chiplet Interconnect Express (UCIe)",
+      "SATA",
+      "USB 2.0",
+      "InfiniBand"
+    ],
+    "answer": "Universal Chiplet Interconnect Express (UCIe)"
+  },
+  {
+    "question": "PCIe is best described as which type of interconnect?",
+    "options": [
+      "Parallel shared bus",
+      "Point-to-point serial link",
+      "Wireless broadcasting network",
+      "Mechanical storage interface"
+    ],
+    "answer": "Point-to-point serial link"
+  },
+  {
+    "question": "In the producer-consumer model, how does a CPU signal a GPU to start executing command buffers?",
+    "options": [
+      "By restarting the entire system",
+      "By 'ringing a doorbell' through a register write via PCIe",
+      "By sending an email to the driver",
+      "By physical sound waves"
+    ],
+    "answer": "By 'ringing a doorbell' through a register write via PCIe"
+  },
+  {
+    "question": "What does memory-mapped I/O allow the CPU to do regarding a GPU?",
+    "options": [
+      "Increase the GPU's cooling efficiency",
+      "Map the GPU's registers and memory into the CPU's address space",
+      "Delete the GPU driver automatically",
+      "Convert GPU signals to light"
+    ],
+    "answer": "Map the GPU's registers and memory into the CPU's address space"
+  },
+  {
+    "question": "Why did the industry move from Serial ATA (SATA) to Non-Volatile Memory Express (NVMe) for SSDs?",
+    "options": [
+      "SATA was too expensive",
+      "SATA's sequential nature bottlenecked the parallel architecture of NAND flash",
+      "NVMe is designed for mechanical spinning hard drives",
+      "SATA is a parallel bus"
+    ],
+    "answer": "SATA's sequential nature bottlenecked the parallel architecture of NAND flash"
+  },
+  {
+    "question": "How does Double Data Rate (DDR) memory increase throughput?",
+    "options": [
+      "By doubling the clock frequency every cycle",
+      "By transferring data on both the rising and falling edges of the clock",
+      "By using twice as many wires",
+      "By using optical signals instead of electricity"
+    ],
+    "answer": "By transferring data on both the rising and falling edges of the clock"
+  },
+  {
+    "question": "The MIPI Alliance primarily defines standards for which environment?",
+    "options": [
+      "Mainframe data centres",
+      "Mobile and embedded edge devices",
+      "Undersea cables",
+      "Desktop PC power supplies"
+    ],
+    "answer": "Mobile and embedded edge devices"
+  },
+  {
+    "question": "Which MIPI physical layer uses a unique three-phase symbol encoding to reduce pin count?",
+    "options": [
+      "D-PHY",
+      "C-PHY",
+      "M-PHY",
+      "PCIe"
+    ],
+    "answer": "C-PHY"
+  },
+  {
+    "question": "For IoT devices, what are the primary design constraints for interconnects?",
+    "options": [
+      "Maximum bandwidth and high weight",
+      "Low power consumption and low cost",
+      "Maximum physical size",
+      "Infinite latency tolerance"
+    ],
+    "answer": "Low power consumption and low cost"
+  },
+  {
+    "question": "MQTT and CoAP are lightweight protocols designed for:",
+    "options": [
+      "High-speed GPU communication",
+      "Constrained edge and IoT devices",
+      "Inter-data centre backbone",
+      "Monolithic chip design"
+    ],
+    "answer": "Constrained edge and IoT devices"
+  },
+  {
+    "question": "What is the primary function of Remote Direct Memory Access (RDMA)?",
+    "options": [
+      "To increase the size of the hard drive",
+      "To allow one computer to access another's memory without remote CPU involvement",
+      "To provide wireless power to the CPU",
+      "To manage cooling in a laptop"
+    ],
+    "answer": "To allow one computer to access another's memory without remote CPU involvement"
+  },
+  {
+    "question": "Which protocol brings RDMA efficiency to standard Ethernet networks?",
+    "options": [
+      "InfiniBand",
+      "RDMA over Converged Ethernet (RoCE)",
+      "SATA",
+      "USB 3.0"
+    ],
+    "answer": "RDMA over Converged Ethernet (RoCE)"
+  },
+  {
+    "question": "NVLink is an interconnect specifically designed to solve bottlenecks between:",
+    "options": [
+      "Keyboards and Mice",
+      "GPUs and CPUs in AI/HPC workloads",
+      "Printers and Laptops",
+      "Mobile phones and chargers"
+    ],
+    "answer": "GPUs and CPUs in AI/HPC workloads"
+  },
+  {
+    "question": "What is the purpose of Compute Express Link (CXL)?",
+    "options": [
+      "Replacing Wi-Fi in server rooms",
+      "Memory pooling, expansion, and sharing across heterogeneous devices",
+      "Connecting mobile cameras to sensors",
+      "Managing satellite communication"
+    ],
+    "answer": "Memory pooling, expansion, and sharing across heterogeneous devices"
+  },
+  {
+    "question": "Why is serial communication generally faster than parallel at high frequencies?",
+    "options": [
+      "It uses more wires to transmit data",
+      "It eliminates signal skew and reduces crosstalk",
+      "It requires no electrical power",
+      "It uses mechanical switches"
+    ],
+    "answer": "It eliminates signal skew and reduces crosstalk"
+  },
+  {
+    "question": "What is 'Signal Skew' in parallel interconnects?",
+    "options": [
+      "Interference from the user",
+      "Differences in arrival time of bits due to wire length or property variations",
+      "The change of colour of the LED",
+      "A software error in the BIOS"
+    ],
+    "answer": "Differences in arrival time of bits due to wire length or property variations"
+  },
+  {
+    "question": "What is 'Crosstalk' in electrical interconnects?",
+    "options": [
+      "Two people talking over a link",
+      "Electromagnetic interference between adjacent wires",
+      "A protocol for error correction",
+      "The physical weight of the cable"
+    ],
+    "answer": "Electromagnetic interference between adjacent wires"
+  },
+  {
+    "question": "What is a major advantage of optical interconnects over copper?",
+    "options": [
+      "Lower cost",
+      "Immunity to EMI and lower attenuation over long distances",
+      "Ability to transmit electrical power",
+      "Simpler to manufacture for short distances"
+    ],
+    "answer": "Immunity to EMI and lower attenuation over long distances"
+  },
+  {
+    "question": "Silicon Photonics aims to achieve which of the following?",
+    "options": [
+      "Replace silicon with plastic",
+      "Integrate optical and electronic components on a single silicon chip",
+      "Make chips that only work with sound",
+      "Eliminate the need for light-based communication"
+    ],
+    "answer": "Integrate optical and electronic components on a single silicon chip"
+  },
+  {
+    "question": "Why is silicon an inefficient light emitter?",
+    "options": [
+      "It is too expensive",
+      "It is an indirect bandgap material",
+      "It has no electrons",
+      "It is too heavy"
+    ],
+    "answer": "It is an indirect bandgap material"
+  },
+  {
+    "question": "Which material is better for lasers due to its direct bandgap?",
+    "options": [
+      "Silicon",
+      "Gallium Arsenide (GaAs)",
+      "Copper",
+      "Plastic"
+    ],
+    "answer": "Gallium Arsenide (GaAs)"
+  },
+  {
+    "question": "In on-chip communication, 'Latency' refers to:",
+    "options": [
+      "The total weight of the chip",
+      "The time delay for a message to travel from source to destination",
+      "The amount of data successfully transferred",
+      "The price of the silicon"
+    ],
+    "answer": "The time delay for a message to travel from source to destination"
+  },
+  {
+    "question": "What happens during a 'Deadlock' in a NoC design?",
+    "options": [
+      "The chip explodes",
+      "Packets wait for each other in a cycle, halting communication",
+      "The power consumption drops to zero",
+      "The frequency increases infinitely"
+    ],
+    "answer": "Packets wait for each other in a cycle, halting communication"
+  },
+  {
+    "question": "What do 'Virtual Channels' mitigate in interconnect fabrics?",
+    "options": [
+      "Physical heat",
+      "Deadlocks and performance bottlenecks",
+      "The number of pins",
+      "The cost of the software license"
+    ],
+    "answer": "Deadlocks and performance bottlenecks"
+  },
+  {
+    "question": "Which protocol layer defines physical voltages and bit signaling?",
+    "options": [
+      "Transaction Layer",
+      "Physical (PHY) Layer",
+      "Application Layer",
+      "Operating System"
+    ],
+    "answer": "Physical (PHY) Layer"
+  },
+  {
+    "question": "The 'Transaction Layer' in a protocol typically manages:",
+    "options": [
+      "Physical voltages",
+      "High-level requests like Memory Read or Memory Write",
+      "The colour of the status LED",
+      "The manufacturing temperature"
+    ],
+    "answer": "High-level requests like Memory Read or Memory Write"
+  },
+  {
+    "question": "Why is 'Impedance Matching' critical?",
+    "options": [
+      "To make the chip look better",
+      "To prevent signal reflections and ensure maximum power transfer",
+      "To reduce the number of routers",
+      "To increase the physical thickness of the die"
+    ],
+    "answer": "To prevent signal reflections and ensure maximum power transfer"
+  },
+  {
+    "question": "What is the 'Bandwidth Wall'?",
+    "options": [
+      "A security feature in a data centre",
+      "The limit where I/O speed cannot keep up with processing power",
+      "A physical wall used for cooling",
+      "The cost of the internet"
+    ],
+    "answer": "The limit where I/O speed cannot keep up with processing power"
+  },
+  {
+    "question": "What is a 'Burst-based Transaction' in AXI?",
+    "options": [
+      "A transaction that fails immediately",
+      "Multiple data transfers following a single address request",
+      "A transaction that uses only light",
+      "A way to restart the processor"
+    ],
+    "answer": "Multiple data transfers following a single address request"
+  },
+  {
+    "question": "The term 'Disaggregated Computing' in data centres refers to:",
+    "options": [
+      "Removing all computers from the facility",
+      "Pooling resources (CPU, Memory, Storage) linked by high-speed fabrics",
+      "Using only one giant monolithic computer",
+      "Turning off the internet at night"
+    ],
+    "answer": "Pooling resources (CPU, Memory, Storage) linked by high-speed fabrics"
+  },
+  {
+    "question": "In PCIe, what does 'x16' refer to?",
+    "options": [
+      "16 separate CPUs",
+      "16 serial lanes used in parallel to increase bandwidth",
+      "16 times the voltage",
+      "A 16-metre long cable"
+    ],
+    "answer": "16 serial lanes used in parallel to increase bandwidth"
+  },
+  {
+    "question": "What is 'Attenuation' in an electrical link?",
+    "options": [
+      "Increasing the volume of the signal",
+      "The loss of signal strength as it travels through a medium",
+      "Adding more data to the packet",
+      "A protocol for cloud storage"
+    ],
+    "answer": "The loss of signal strength as it travels through a medium"
+  },
+  {
+    "question": "InfiniBand is an interconnect fabric primarily used in:",
+    "options": [
+      "Consumer smartphones",
+      "High-Performance Computing (HPC) and AI clusters",
+      "Home smart bulbs",
+      "Digital cameras"
+    ],
+    "answer": "High-Performance Computing (HPC) and AI clusters"
+  },
+  {
+    "question": "In-package optical I/O allows for:",
+    "options": [
+      "Mailing chips via post",
+      "Massive bandwidth by integrating optical links directly into the chip package",
+      "Replacing all silicon with copper",
+      "Eliminating the need for a power supply"
+    ],
+    "answer": "Massive bandwidth by integrating optical links directly into the chip package"
+  },
+  {
+    "question": "What is the primary role of a 'Memory Controller'?",
+    "options": [
+      "Managing files on the desktop",
+      "Managing data flow between the CPU and system memory",
+      "Managing the internet connection",
+      "Managing the cooling fan speed"
+    ],
+    "answer": "Managing data flow between the CPU and system memory"
+  },
+  {
+    "question": "The 'Physical Layer' of UCIe leverages which existing standard?",
+    "options": [
+      "USB 2.0",
+      "PCIe",
+      "Ethernet",
+      "VGA"
+    ],
+    "answer": "PCIe"
+  },
+  {
+    "question": "Why is 'Scalability' essential for NoC architectures?",
+    "options": [
+      "To measure the chip's weight",
+      "To handle more components without performance collapse as complexity grows",
+      "To make the chip smaller every day",
+      "To work at different altitudes"
+    ],
+    "answer": "To handle more components without performance collapse as complexity grows"
+  },
+  {
+    "question": "What is 'EMI' in the context of interconnect design?",
+    "options": [
+      "Electronic Memory Interface",
+      "Electromagnetic Interference",
+      "Enhanced Mobile Interconnect",
+      "Every Message Inverted"
+    ],
+    "answer": "Electromagnetic Interference"
+  },
+  {
+    "question": "What is a 'Differential Pair'?",
+    "options": [
+      "Two CPUs working together",
+      "Two wires used to transmit a signal and its complement to reduce noise",
+      "A serial and a parallel port",
+      "An electric and a magnetic field"
+    ],
+    "answer": "Two wires used to transmit a signal and its complement to reduce noise"
+  },
+  {
+    "question": "In high-speed links, 'Throughput' refers to:",
+    "options": [
+      "The total time to boot the computer",
+      "The amount of data successfully transferred over a specific period of time",
+      "The physical length of the wire",
+      "The number of pins on the chip"
+    ],
+    "answer": "The amount of data successfully transferred over a specific period of time"
+  },
+  {
+    "question": "Which ARM protocol is designed for coherency between processor clusters?",
+    "options": [
+      "CHI",
+      "APB",
+      "SATA",
+      "USB"
+    ],
+    "answer": "CHI"
+  },
+  {
+    "question": "The primary benefit of 'Short Local Wires' in a NoC is:",
+    "options": [
+      "They are easier to see",
+      "They reduce power consumption per bit and improve signal predictability",
+      "They increase the physical weight of the die",
+      "They allow for more noise"
+    ],
+    "answer": "They reduce power consumption per bit and improve signal predictability"
+  },
+  {
+    "question": "Why is 'Heterogeneous Computing' relevant to interconnects?",
+    "options": [
+      "Because all processors are identical",
+      "Because diverse processors (CPU, GPU, AI) must communicate efficiently",
+      "Because it only uses mechanical parts",
+      "Because it is a type of software"
+    ],
+    "answer": "Because diverse processors (CPU, GPU, AI) must communicate efficiently"
+  },
+  {
+    "question": "What does a 'Cache-Coherent Hub' do?",
+    "options": [
+      "Manages power supply",
+      "Centralises data consistency management across multiple processing elements",
+      "Acts as a hard drive",
+      "Connects to the monitor"
+    ],
+    "answer": "Centralises data consistency management across multiple processing elements"
+  },
+  {
+    "question": "The MIPI M-PHY is intended for which type of application?",
+    "options": [
+      "Low-speed keyboard links",
+      "High-performance storage and chip-to-chip links in mobile systems",
+      "Undersea long-haul cables",
+      "Desktop PC power cables"
+    ],
+    "answer": "High-performance storage and chip-to-chip links in mobile systems"
+  },
+  {
+    "question": "What happens if an interconnect is 'not matched' to its load impedance?",
+    "options": [
+      "Data travels faster",
+      "Signal reflections occur, potentially corrupting data",
+      "The chip turns off",
+      "The wire changes colour"
+    ],
+    "answer": "Signal reflections occur, potentially corrupting data"
+  },
+  {
+    "question": "In an SoC, a 'Crossbar Switch' is used for:",
+    "options": [
+      "Connecting everything to everything simultaneously at the cost of high complexity",
+      "Connecting only the mouse",
+      "Reducing the system's power to zero",
+      "Managing Wi-Fi passwords"
+    ],
+    "answer": "Connecting everything to everything simultaneously at the cost of high complexity"
+  },
+  {
+    "question": "What is 'Modulation' in a communication link?",
+    "options": [
+      "Varying a property of a carrier signal to represent data",
+      "Changing the software version",
+      "Adjusting the volume",
+      "Cleaning the hardware"
+    ],
+    "answer": "Varying a property of a carrier signal to represent data"
+  },
+  {
+    "question": "What is 'Burst Based' data transfer?",
+    "options": [
+      "Randomly sending bits",
+      "Sending a block of data after establishing a connection or address",
+      "Continuous never-ending stream",
+      "High-voltage pulses to destroy memory"
+    ],
+    "answer": "Sending a block of data after establishing a connection or address"
+  },
+  {
+    "question": "Why is cooling critical for data centre interconnects?",
+    "options": [
+      "Optics only work in the cold",
+      "High-speed signaling generates significant heat that can damage hardware",
+      "Servers need to be frozen to work",
+      "To prevent the fibre from melting"
+    ],
+    "answer": "High-speed signaling generates significant heat that can damage hardware"
+  },
+  {
+    "question": "A 'Point-to-Point' link implies:",
+    "options": [
+      "All devices share the same wire",
+      "The connection is dedicated between exactly two devices",
+      "The link goes through the internet",
+      "The connection is wireless"
+    ],
+    "answer": "The connection is dedicated between exactly two devices"
+  },
+  {
+    "question": "The 'Nexus' of modern computing architectures refers to:",
+    "options": [
+      "The monitor",
+      "The Interconnect fabric",
+      "The battery",
+      "The mouse"
+    ],
+    "answer": "The Interconnect fabric"
+  },
+  {
+    "question": "In data centres, VXLAN and EVPN are used to:",
+    "options": [
+      "Cool the servers",
+      "Create virtualised Layer 2 networks over physical Layer 3 networks",
+      "Convert light to electricity",
+      "Manage BIOS settings"
+    ],
+    "answer": "Create virtualised Layer 2 networks over physical Layer 3 networks"
+  },
+  {
+    "question": "InfiniBand is known for:",
+    "options": [
+      "High latency and low cost",
+      "Ultra-low latency and high bandwidth in HPC/AI clusters",
+      "Connecting mobile phone screens",
+      "Being a mechanical storage protocol"
+    ],
+    "answer": "Ultra-low latency and high bandwidth in HPC/AI clusters"
+  },
+  {
+    "question": "What is the 'I/O Bottleneck'?",
+    "options": [
+      "A physical tube in the chip",
+      "The limit where data movement cannot keep up with processor speed",
+      "A software bug in the mouse",
+      "The price of the USB cable"
+    ],
+    "answer": "The limit where data movement cannot keep up with processor speed"
+  },
+  {
+    "question": "What is the role of 'Error Correction Codes' (ECC)?",
+    "options": [
+      "To make the chip cheaper",
+      "To detect and fix data corruption during transmission",
+      "To increase clock speed",
+      "To allow for longer wires"
+    ],
+    "answer": "To detect and fix data corruption during transmission"
+  },
+  {
+    "question": "Which material is 'indirect bandgap'?",
+    "options": [
+      "Gallium Arsenide",
+      "Silicon",
+      "Copper",
+      "Indium Phosphide"
+    ],
+    "answer": "Silicon"
+  },
+  {
+    "question": "What is 'DCI' in data centre networking?",
+    "options": [
+      "Direct Current Interconnect",
+      "Data Centre Interconnect",
+      "Digital Chip Integration",
+      "Dual Channel Interface"
+    ],
+    "answer": "Data Centre Interconnect"
+  },
+  {
+    "question": "Heterogeneous integration involves integration of:",
+    "options": [
+      "Only identical CPUs",
+      "Modular dies (chiplets) with different functions or process nodes",
+      "Only mechanical parts",
+      "Only copper wires"
+    ],
+    "answer": "Modular dies (chiplets) with different functions or process nodes"
+  },
+  {
+    "question": "Which layer handles error detection and flow control between nodes?",
+    "options": [
+      "Physical Layer",
+      "Data Link Layer",
+      "Application Layer",
+      "Transaction Layer"
+    ],
+    "answer": "Data Link Layer"
+  },
+  {
+    "question": "What is a 'Burst' in high-speed protocols?",
+    "options": [
+      "A device failure",
+      "A block of data sent after a single address phase",
+      "A flash of light",
+      "A high-voltage reset"
+    ],
+    "answer": "A block of data sent after a single address phase"
+  },
+  {
+    "question": "What is the goal of 'Silicon Photonics'?",
+    "options": [
+      "Replacing all silicon with glass",
+      "Bringing light-speed communication directly to the semiconductor die",
+      "Making chips that only use solar power",
+      "Eliminating the need for interconnects"
+    ],
+    "answer": "Bringing light-speed communication directly to the semiconductor die"
+  },
+  {
+    "question": "The 'Out-of-Order Response' feature in AXI allows:",
+    "options": [
+      "Random data errors",
+      "Faster memory access to complete before a slower one requested earlier",
+      "The CPU to stop working",
+      "Encryption of data"
+    ],
+    "answer": "Faster memory access to complete before a slower one requested earlier"
+  },
+  {
+    "question": "Which type of bandgap allows for the most efficient conversion of electrons to photons?",
+    "options": [
+      "Indirect bandgap",
+      "Direct bandgap",
+      "Wide bandgap",
+      "Narrow bandgap"
+    ],
+    "answer": "Direct bandgap"
+  }
+]
