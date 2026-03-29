@@ -1,0 +1,220 @@
+[
+  {
+    "id": 1,
+    "question": "What happens to the average queuing delay as traffic intensity (La/R) approaches 1?",
+    "options": [
+      "It decreases linearly.",
+      "It stays constant at zero.",
+      "It increases exponentially toward infinity.",
+      "It becomes equal to the propagation delay."
+    ],
+    "answer": "It increases exponentially toward infinity."
+  },
+  {
+    "id": 2,
+    "question": "If the packet arrival process is perfectly periodic and La/R < 1, what is the average queuing delay?",
+    "options": [
+      "Zero",
+      "Infinite",
+      "L/R",
+      "d/s"
+    ],
+    "answer": "Zero"
+  },
+  {
+    "id": 3,
+    "question": "Which delay component is defined as the time needed to push all of a packet's bits into the wire?",
+    "options": [
+      "Propagation Delay",
+      "Transmission Delay",
+      "Nodal Processing Delay",
+      "Queuing Delay"
+    ],
+    "answer": "Transmission Delay"
+  },
+  {
+    "id": 4,
+    "question": "If a packet of 1000 bits is sent over a 1 Mbps link, what is the transmission delay?",
+    "options": [
+      "1 microsecond",
+      "10 milliseconds",
+      "1 millisecond",
+      "0.1 seconds"
+    ],
+    "answer": "1 millisecond"
+  },
+  {
+    "id": 5,
+    "question": "Propagation delay (d_prop) is mathematically expressed as:",
+    "options": [
+      "L/R",
+      "R/L",
+      "d/s",
+      "s/d"
+    ],
+    "answer": "d/s"
+  },
+  {
+    "id": 6,
+    "question": "What is the typical propagation speed (s) of a signal in a physical medium like fiber or copper?",
+    "options": [
+      "3 x 10^8 m/s",
+      "Approximately 2 x 10^8 m/s",
+      "340 m/s",
+      "1 x 10^6 m/s"
+    ],
+    "answer": "Approximately 2 x 10^8 m/s"
+  },
+  {
+    "id": 7,
+    "question": "How is the End-to-End (E2E) delay calculated for a path with multiple links?",
+    "options": [
+      "Taking the average delay of all links.",
+      "Taking the maximum delay encountered at any single node.",
+      "Summing all delay components for every hop.",
+      "Only considering the transmission delay of the first link."
+    ],
+    "answer": "Summing all delay components for every hop."
+  },
+  {
+    "id": 8,
+    "question": "Throughput is most accurately defined as:",
+    "options": [
+      "The total number of bits in the transmitted file.",
+      "The rate (bits/time) at which bits are transferred between sender and receiver.",
+      "The speed of the signal in the wire.",
+      "The time it takes for the first bit to reach the destination."
+    ],
+    "answer": "The rate (bits/time) at which bits are transferred between sender and receiver."
+  },
+  {
+    "id": 9,
+    "question": "In a path with two links (Rs and Rc), what is the end-to-end throughput?",
+    "options": [
+      "Rs + Rc",
+      "max(Rs, Rc)",
+      "min(Rs, Rc)",
+      "(Rs x Rc) / 2"
+    ],
+    "answer": "min(Rs, Rc)"
+  },
+  {
+    "id": 10,
+    "question": "What is a 'Bottleneck Link'?",
+    "options": [
+      "The link with the highest propagation speed.",
+      "The link on an end-to-end path that constrains the total throughput.",
+      "The first link in the network.",
+      "A link that uses wireless technology."
+    ],
+    "answer": "The link on an end-to-end path that constrains the total throughput."
+  },
+  {
+    "id": 11,
+    "question": "If 10 users fairly share a backbone link of rate R, what is the fair-share throughput per connection?",
+    "options": [
+      "R",
+      "R/10",
+      "10R",
+      "R - 10"
+    ],
+    "answer": "R/10"
+  },
+  {
+    "id": 12,
+    "question": "In practical Internet scenarios, which links are usually the bottleneck?",
+    "options": [
+      "The core backbone routers.",
+      "The high-speed fiber under the ocean.",
+      "The access links (at the server or client side).",
+      "The internal memory of the switch."
+    ],
+    "answer": "The access links (at the server or client side)."
+  },
+  {
+    "id": 13,
+    "question": "True or False: High throughput always results in low end-to-end delay.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": 14,
+    "question": "What happens if a packet arrives at a router and the buffer is already full?",
+    "options": [
+      "The packet is saved to a hard drive.",
+      "The packet is compressed to fit.",
+      "The packet is dropped (lost).",
+      "The router speeds up to catch up."
+    ],
+    "answer": "The packet is dropped (lost)."
+  },
+  {
+    "id": 15,
+    "question": "The time spent checking bit errors and reading the packet header is:",
+    "options": [
+      "Queuing Delay",
+      "Nodal Processing Delay",
+      "Transmission Delay",
+      "Propagation Delay"
+    ],
+    "answer": "Nodal Processing Delay"
+  },
+  {
+    "id": 16,
+    "question": "If you double the length of a physical cable, which delay doubles?",
+    "options": [
+      "Transmission Delay",
+      "Nodal Processing Delay",
+      "Propagation Delay",
+      "Queuing Delay"
+    ],
+    "answer": "Propagation Delay"
+  },
+  {
+    "id": 17,
+    "question": "Why is the queuing delay graph (Delay vs. Utilization) non-linear?",
+    "options": [
+      "Because routers shut down during peak hours.",
+      "Because packet arrivals are typically random/stochastic.",
+      "Because the speed of light changes with traffic.",
+      "Because transmission delay gets larger as more packets arrive."
+    ],
+    "answer": "Because packet arrivals are typically random/stochastic."
+  },
+  {
+    "id": 18,
+    "question": "What is the primary function of the traceroute tool?",
+    "options": [
+      "To measure the size of a packet.",
+      "To provide delay measurements from the source to every router along a path.",
+      "To speed up the internet connection.",
+      "To delete lost packets."
+    ],
+    "answer": "To provide delay measurements from the source to every router along a path."
+  },
+  {
+    "id": 19,
+    "question": "Which delay component is almost negligible (often < 1 microsecond) in modern routers?",
+    "options": [
+      "Queuing Delay",
+      "Nodal Processing Delay",
+      "Propagation Delay",
+      "Transmission Delay"
+    ],
+    "answer": "Nodal Processing Delay"
+  },
+  {
+    "id": 20,
+    "question": "If L=2000 bits, a=10 pkts/sec, and R=100 kbps, what is the traffic intensity?",
+    "options": [
+      "0.02",
+      "2.0",
+      "0.2",
+      "20.0"
+    ],
+    "answer": "0.2"
+  }
+]

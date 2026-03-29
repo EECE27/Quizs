@@ -1,0 +1,220 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary reason the Transport Layer performs segmentation?",
+    "options": [
+      "To encrypt data for secure transmission.",
+      "To fit data within the Maximum Transmission Unit (MTU) of the underlying network.",
+      "To convert analog signals into digital bits.",
+      "To bypass the need for an IP address."
+    ],
+    "answer": "To fit data within the Maximum Transmission Unit (MTU) of the underlying network."
+  },
+  {
+    "id": 2,
+    "question": "Which protocol provides a 'reliable, connection-oriented byte stream' service?",
+    "options": [
+      "UDP",
+      "IP",
+      "TCP",
+      "HTTP"
+    ],
+    "answer": "TCP"
+  },
+  {
+    "id": 3,
+    "question": "What is 'Reassembly' in the context of network layering?",
+    "options": [
+      "The process of a router choosing a path.",
+      "Putting fragmented data units back together in the correct order at the destination.",
+      "Compressing multiple files into one ZIP folder.",
+      "Translating domain names into IP addresses."
+    ],
+    "answer": "Putting fragmented data units back together in the correct order at the destination."
+  },
+  {
+    "id": 4,
+    "question": "Which address is used to identify a specific process or application on a host?",
+    "options": [
+      "IP Address",
+      "MAC Address",
+      "Port Number",
+      "URL"
+    ],
+    "answer": "Port Number"
+  },
+  {
+    "id": 5,
+    "question": "In the Internet architecture, where does the 'intelligence' typically reside according to the End-to-End Principle?",
+    "options": [
+      "In the routers at the core of the network.",
+      "In the hosts at the edges of the network.",
+      "In the physical cables.",
+      "Only in DNS servers."
+    ],
+    "answer": "In the hosts at the edges of the network."
+  },
+  {
+    "id": 6,
+    "question": "What is a 'Socket'?",
+    "options": [
+      "A physical plug on the back of a computer.",
+      "The combination of an IP address and a Port number.",
+      "A type of network cable.",
+      "A protocol for sending emails."
+    ],
+    "answer": "The combination of an IP address and a Port number."
+  },
+  {
+    "id": 7,
+    "question": "Which protocol would be best for a live video stream where speed is more important than missing a few frames?",
+    "options": [
+      "TCP",
+      "UDP",
+      "IP",
+      "HTTP"
+    ],
+    "answer": "UDP"
+  },
+  {
+    "id": 8,
+    "question": "True or False: If the Network Layer (IP) fragments a packet, the destination's Network Layer must reassemble it before passing it to the Transport Layer.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "id": 9,
+    "question": "What happens if a single fragment of an IP packet is lost during transmission?",
+    "options": [
+      "Only that fragment is retransmitted by the router.",
+      "The entire original packet is usually dropped and must be retransmitted by the source Transport layer.",
+      "The receiver's network layer ignores the missing part and continues.",
+      "The Physical layer fixes the error."
+    ],
+    "answer": "The entire original packet is usually dropped and must be retransmitted by the source Transport layer."
+  },
+  {
+    "id": 10,
+    "question": "Which of these is a valid 'Well-Known' port for the HTTP service?",
+    "options": [
+      "Port 21",
+      "Port 53",
+      "Port 80",
+      "Port 443"
+    ],
+    "answer": "Port 80"
+  },
+  {
+    "id": 11,
+    "question": "What is the primary difference between Connection-Oriented (CO) and Connectionless (CL) services?",
+    "options": [
+      "CO services are always wireless.",
+      "CO requires a 'handshake' or setup phase before data is sent; CL does not.",
+      "CL services are always faster and more reliable.",
+      "There is no difference."
+    ],
+    "answer": "CO requires a 'handshake' or setup phase before data is sent; CL does not."
+  },
+  {
+    "id": 12,
+    "question": "Which identifier is used by the Data Link layer to move a frame between two nodes on the same local network?",
+    "options": [
+      "IP Address",
+      "MAC Address",
+      "Port Number",
+      "Domain Name"
+    ],
+    "answer": "MAC Address"
+  },
+  {
+    "id": 13,
+    "question": "What is the purpose of 'Congestion Control' in the Transport Layer?",
+    "options": [
+      "To prevent the sender from overwhelming the receiver's buffer.",
+      "To prevent the sender from overwhelming the network infrastructure.",
+      "To speed up the network by adding more bandwidth.",
+      "To encrypt data packets."
+    ],
+    "answer": "To prevent the sender from overwhelming the network infrastructure."
+  },
+  {
+    "id": 14,
+    "question": "Which protocol is used by the Domain Name System (DNS) for most queries?",
+    "options": [
+      "TCP",
+      "UDP",
+      "IP",
+      "Ethernet"
+    ],
+    "answer": "UDP"
+  },
+  {
+    "id": 15,
+    "question": "A 'Best-Effort' service means:",
+    "options": [
+      "The network guarantees 100% delivery.",
+      "The network will try its best to deliver, but packets may be lost, delayed, or reordered.",
+      "The network only sends data to the best computers.",
+      "The user must pay for better service."
+    ],
+    "answer": "The network will try its best to deliver, but packets may be lost, delayed, or reordered."
+  },
+  {
+    "id": 16,
+    "question": "What does a 'Byte Stream' service mean in TCP?",
+    "options": [
+      "Data is sent exactly 8 bits at a time.",
+      "The application sees the data as a continuous flow of bytes, without worrying about packet boundaries.",
+      "The network only accepts binary data.",
+      "Data is limited to 1 Megabyte."
+    ],
+    "answer": "The application sees the data as a continuous flow of bytes, without worrying about packet boundaries."
+  },
+  {
+    "id": 17,
+    "question": "In the summary of Lec 7, which protocol builds on top of TCP?",
+    "options": [
+      "DNS",
+      "IP",
+      "HTTP",
+      "Ethernet"
+    ],
+    "answer": "HTTP"
+  },
+  {
+    "id": 18,
+    "question": "Why is IP called a 'Universal' service?",
+    "options": [
+      "Because it works in outer space.",
+      "Because it allows different types of networks to communicate using a common packet format.",
+      "Because everyone in the world uses the same IP address.",
+      "Because it is the only protocol in existence."
+    ],
+    "answer": "Because it allows different types of networks to communicate using a common packet format."
+  },
+  {
+    "id": 19,
+    "question": "Which of the following is NOT a characteristic of UDP?",
+    "options": [
+      "Connectionless",
+      "Ordered delivery",
+      "Low overhead",
+      "Best-effort service"
+    ],
+    "answer": "Ordered delivery"
+  },
+  {
+    "id": 20,
+    "question": "When a message is too large for a network's MTU, which layer is responsible for breaking it into 'fragments' inside the network core?",
+    "options": [
+      "Transport Layer",
+      "Network Layer (IP)",
+      "Data Link Layer",
+      "Application Layer"
+    ],
+    "answer": "Network Layer (IP)"
+  }
+]

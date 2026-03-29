@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following is NOT listed as a core topic in the course syllabus?",
+    "options": [
+      "Routing in the Internet",
+      "Local Area Networks",
+      "Physical Layer Signal Processing",
+      "The Transport Layer: UDP and TCP"
+    ],
+    "answer": "Physical Layer Signal Processing"
+  },
+  {
+    "id": 2,
+    "question": "According to the 'What is a Network?' slide, what is the primary purpose of a communication network?",
+    "options": [
+      "To increase the speed of a single computer",
+      "To share resources and facilitate communication between distributed entities",
+      "To provide a centralized storage for all data",
+      "To replace the need for physical hardware"
+    ],
+    "answer": "To share resources and facilitate communication between distributed entities"
+  },
+  {
+    "id": 3,
+    "question": "What does 'Heterogeneity' refer to in the context of network challenges?",
+    "options": [
+      "Using only one type of cable",
+      "Different types of hardware, software, and transmission speeds",
+      "The process of encrypting data",
+      "The distance between the sender and receiver"
+    ],
+    "answer": "Different types of hardware, software, and transmission speeds"
+  },
+  {
+    "id": 4,
+    "question": "In a Broadcast network, how is information typically sent?",
+    "options": [
+      "From one node to a specific single node only",
+      "To a subset of nodes based on a secret key",
+      "Information is shared by all; any node can hear what any other node sends",
+      "Information is only sent to the central administrator"
+    ],
+    "answer": "Information is shared by all; any node can hear what any other node sends"
+  },
+  {
+    "id": 5,
+    "question": "A 'Point-to-Point' network is characterized by:",
+    "options": [
+      "A shared medium where everyone listens",
+      "Messages being sent to a single destination through intermediate nodes",
+      "Wireless signals that reach everyone in range",
+      "A system where no routing is required"
+    ],
+    "answer": "Messages being sent to a single destination through intermediate nodes"
+  },
+  {
+    "id": 6,
+    "question": "Which network scale typically covers a city or a large campus?",
+    "options": [
+      "LAN",
+      "PAN",
+      "MAN",
+      "WAN"
+    ],
+    "answer": "MAN"
+  },
+  {
+    "id": 7,
+    "question": "Which switching technique requires a dedicated communication path to be established before data transfer?",
+    "options": [
+      "Packet Switching",
+      "Circuit Switching",
+      "Message Switching",
+      "Datagram Switching"
+    ],
+    "answer": "Circuit Switching"
+  },
+  {
+    "id": 8,
+    "question": "What is a major disadvantage of Circuit Switching?",
+    "options": [
+      "High overhead per packet",
+      "Potential for out-of-order delivery",
+      "Inefficient use of bandwidth (resources are busy even when silent)",
+      "High processing delay at each switch"
+    ],
+    "answer": "Inefficient use of bandwidth (resources are busy even when silent)"
+  },
+  {
+    "id": 9,
+    "question": "In Circuit Switching, what is the 'Setup Time'?",
+    "options": [
+      "The time to encrypt the message",
+      "The time required to establish a connection before data is sent",
+      "The time it takes for a packet to reach the destination",
+      "The time to reboot the router"
+    ],
+    "answer": "The time required to establish a connection before data is sent"
+  },
+  {
+    "id": 10,
+    "question": "'Statistical Multiplexing' is a key feature of which technology?",
+    "options": [
+      "Circuit Switching",
+      "Packet Switching",
+      "Fixed TDM",
+      "Analog Radio"
+    ],
+    "answer": "Packet Switching"
+  },
+  {
+    "id": 11,
+    "question": "What happens in 'Message Switching' that differentiates it from Packet Switching?",
+    "options": [
+      "The message is divided into small fixed-size packets",
+      "The entire message is stored and forwarded at each node",
+      "No storage is required at the switches",
+      "It uses a dedicated physical circuit"
+    ],
+    "answer": "The entire message is stored and forwarded at each node"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following is an advantage of Packet Switching over Message Switching?",
+    "options": [
+      "Lower end-to-end delay due to pipelining",
+      "No need for headers",
+      "It requires more buffer space at routers",
+      "It is only used for voice traffic"
+    ],
+    "answer": "Lower end-to-end delay due to pipelining"
+  },
+  {
+    "id": 13,
+    "question": "In 'Datagram Packet Switching,' how are packets routed?",
+    "options": [
+      "All packets follow a pre-established path",
+      "Each packet is treated independently and contains the full destination address",
+      "Packets are only sent when the receiver sends an ACK",
+      "Packets are broadcast to all users in the network"
+    ],
+    "answer": "Each packet is treated independently and contains the full destination address"
+  },
+  {
+    "id": 14,
+    "question": "What is 'Virtual Circuit Packet Switching'?",
+    "options": [
+      "A physical wire between two computers",
+      "A hybrid approach where a route is established, but resources are shared",
+      "A network that only exists in software simulations",
+      "Another name for the public telephone network"
+    ],
+    "answer": "A hybrid approach where a route is established, but resources are shared"
+  },
+  {
+    "id": 15,
+    "question": "Which metric defines the number of bits that can be transmitted per unit of time?",
+    "options": [
+      "Latency",
+      "Bandwidth (Throughput)",
+      "Jitter",
+      "Propagation Delay"
+    ],
+    "answer": "Bandwidth (Throughput)"
+  },
+  {
+    "id": 16,
+    "question": "The formula Latency = Propagation + Transmit + Queue describes:",
+    "options": [
+      "The total time to send a message from source to destination",
+      "The width of the cable",
+      "The number of users on a network",
+      "The signal-to-noise ratio"
+    ],
+    "answer": "The total time to send a message from source to destination"
+  },
+  {
+    "id": 17,
+    "question": " 'Propagation Delay' depends on which of the following?",
+    "options": [
+      "The size of the packet",
+      "The transmission rate (bps)",
+      "The distance and the speed of light in the medium",
+      "The number of packets in the queue"
+    ],
+    "answer": "The distance and the speed of light in the medium"
+  },
+  {
+    "id": 18,
+    "question": "'Transmission Delay' for a packet of size L bits on a link with rate R bps is calculated as:",
+    "options": [
+      "R/L",
+      "L/R",
+      "L",
+      "Distance/Speed"
+    ],
+    "answer": "L/R"
+  },
+  {
+    "id": 19,
+    "question": "What does 'Jitter' measure in a network?",
+    "options": [
+      "The average speed of the network",
+      "The variation in delay between packets",
+      "The total amount of data lost",
+      "The thickness of the fiber optic cable"
+    ],
+    "answer": "The variation in delay between packets"
+  },
+  {
+    "id": 20,
+    "question": "Which switch type is more robust to node failures?",
+    "options": [
+      "Circuit Switching",
+      "Virtual Circuit Switching",
+      "Datagram Packet Switching",
+      "All are equally robust"
+    ],
+    "answer": "Datagram Packet Switching"
+  }
+]

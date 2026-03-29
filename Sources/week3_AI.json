@@ -1,0 +1,358 @@
+[
+  {
+    "id": 1,
+    "question": "Packets size L arrive every L/R. Link rate R. Queue delay of 2nd packet:",
+    "options": [
+      "0",
+      "L/R",
+      "2L/R",
+      "3L/R",
+      "4L/R"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 2,
+    "question": "Packets size 3L arrive every L/R. Rate R. Queue delay of 3rd packet:",
+    "options": [
+      "0",
+      "L/R",
+      "2L/R",
+      "3L/R",
+      "6L/R"
+    ],
+    "answer": "6L/R"
+  },
+  {
+    "id": 3,
+    "question": "Packets size L arrive every 0.5L/R. Link rate R. What happens to queue?",
+    "options": [
+      "No queue",
+      "Grows indefinitely",
+      "Oscillates",
+      "Remains constant"
+    ],
+    "answer": "Grows indefinitely"
+  },
+  {
+    "id": 4,
+    "question": "12 Mbps link, circuit switching, 3 Mbps per connection. Max users:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "6",
+      "12"
+    ],
+    "answer": "4"
+  },
+  {
+    "id": 5,
+    "question": "10 Mbps link, 2 Mbps per connection, active 25%. Max users at 100% utilization:",
+    "options": [
+      "5",
+      "10",
+      "20",
+      "40"
+    ],
+    "answer": "20"
+  },
+  {
+    "id": 6,
+    "question": "6 Mbps link, 6 users at 1 Mbps, active 50%. Prob link fully utilized:",
+    "options": [
+      "0.0156",
+      "0.03125",
+      "0.125",
+      "0.5"
+    ],
+    "answer": "0.0156"
+  },
+  {
+    "id": 7,
+    "question": "Which delay depends on packet size?",
+    "options": [
+      "Propagation",
+      "Transmission",
+      "Processing",
+      "Queueing"
+    ],
+    "answer": "Transmission"
+  },
+  {
+    "id": 8,
+    "question": "Packets size 2L arrive every L/R. Rate R. Queue delay of 4th packet:",
+    "options": [
+      "L/R",
+      "2L/R",
+      "3L/R",
+      "4L/R",
+      "6L/R"
+    ],
+    "answer": "3L/R"
+  },
+  {
+    "id": 9,
+    "question": "Packet size L, rate 2R. Transmission delay:",
+    "options": [
+      "L/R",
+      "L/2R",
+      "2L/R",
+      "R/L"
+    ],
+    "answer": "L/2R"
+  },
+  {
+    "id": 10,
+    "question": "Packet size 1500 bytes, link rate 10 Mbps. Trans delay approx:",
+    "options": [
+      "1.2 ms",
+      "1.2 μs",
+      "12 ms",
+      "120 μs"
+    ],
+    "answer": "1.2 ms"
+  },
+  {
+    "id": 11,
+    "question": "Propagation speed 2×10^8m/s, length 1000 km. Prop delay:",
+    "options": [
+      "1 ms",
+      "5 ms",
+      "10 ms",
+      "20 ms"
+    ],
+    "answer": "5 ms"
+  },
+  {
+    "id": 12,
+    "question": "Packet size 1000 bytes, rate 1 Mbps. Trans delay:",
+    "options": [
+      "8 ms",
+      "1 ms",
+      "0.8 ms",
+      "80 ms"
+    ],
+    "answer": "8 ms"
+  },
+  {
+    "id": 13,
+    "question": "10 Mbps link, circuit switching, 2 Mbps per user. Max users:",
+    "options": [
+      "2",
+      "5",
+      "10",
+      "20"
+    ],
+    "answer": "5"
+  },
+  {
+    "id": 14,
+    "question": "12 Mbps link, 3 Mbps users, active 25%. Max users (packet switching):",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "answer": "16"
+  },
+  {
+    "id": 15,
+    "question": "5 Mbps link, 1 Mbps users, active 10%. Average users supported:",
+    "options": [
+      "5",
+      "10",
+      "50",
+      "100"
+    ],
+    "answer": "50"
+  },
+  {
+    "id": 16,
+    "question": "If p = 0.2, probability 3 users are active simultaneously:",
+    "options": [
+      "0.008",
+      "0.04",
+      "0.2",
+      "0.6"
+    ],
+    "answer": "0.008"
+  },
+  {
+    "id": 17,
+    "question": "If p = 0.1, probability 5 users transmit simultaneously:",
+    "options": [
+      "10^-3",
+      "10^-5",
+      "10^-7",
+      "10^-10"
+    ],
+    "answer": "10^-5"
+  },
+  {
+    "id": 18,
+    "question": "Which delay depends on distance?",
+    "options": [
+      "Transmission",
+      "Propagation",
+      "Queueing",
+      "Processing"
+    ],
+    "answer": "Propagation"
+  },
+  {
+    "id": 19,
+    "question": "Which delay depends on router load?",
+    "options": [
+      "Propagation",
+      "Transmission",
+      "Queueing",
+      "Processing"
+    ],
+    "answer": "Queueing"
+  },
+  {
+    "id": 20,
+    "question": "If L = 1000 bits, R = 1 Mbps, trans delay:",
+    "options": [
+      "0.1 ms",
+      "1 ms",
+      "10 ms",
+      "100 ms"
+    ],
+    "answer": "1 ms"
+  },
+  {
+    "id": 21,
+    "question": "If L = 8000 bits, R = 2 Mbps, trans delay:",
+    "options": [
+      "4 ms",
+      "2 ms",
+      "1 ms",
+      "0.5 ms"
+    ],
+    "answer": "4 ms"
+  },
+  {
+    "id": 22,
+    "question": "Packets arrive every 2 ms, trans time 1 ms. Queue behavior:",
+    "options": [
+      "Grows",
+      "Stable",
+      "Empty",
+      "Oscillates"
+    ],
+    "answer": "Empty"
+  },
+  {
+    "id": 23,
+    "question": "Packets arrive every 1 ms, trans time 2 ms. Queue behavior:",
+    "options": [
+      "Stable",
+      "Grows",
+      "Empty",
+      "Zero delay"
+    ],
+    "answer": "Grows"
+  },
+  {
+    "id": 24,
+    "question": "Packets size L arrive every L/2R, trans delay L/R. Queue:",
+    "options": [
+      "Stable",
+      "Increasing",
+      "Decreasing",
+      "Constant"
+    ],
+    "answer": "Increasing"
+  },
+  {
+    "id": 25,
+    "question": "Packets size L arrive every 2L/R. Queue delay:",
+    "options": [
+      "Always 0",
+      "Increasing",
+      "Constant",
+      "Infinite"
+    ],
+    "answer": "Always 0"
+  },
+  {
+    "id": 26,
+    "question": "Total delay in networking consists of:",
+    "options": [
+      "2 components",
+      "3 components",
+      "4 components",
+      "5 components"
+    ],
+    "answer": "4 components"
+  },
+  {
+    "id": 27,
+    "question": "Which delay is usually smallest?",
+    "options": [
+      "Propagation",
+      "Processing",
+      "Transmission",
+      "Queueing"
+    ],
+    "answer": "Processing"
+  },
+  {
+    "id": 28,
+    "question": "If link rate is 10 Mbps and 6 Mbps is used, utilization is:",
+    "options": [
+      "40%",
+      "50%",
+      "60%",
+      "80%"
+    ],
+    "answer": "60%"
+  },
+  {
+    "id": 29,
+    "question": "If utilization is 80% on 20 Mbps link, throughput:",
+    "options": [
+      "8 Mbps",
+      "12 Mbps",
+      "16 Mbps",
+      "18 Mbps"
+    ],
+    "answer": "16 Mbps"
+  },
+  {
+    "id": 30,
+    "question": "Which switching technique guarantees bandwidth?",
+    "options": [
+      "Packet",
+      "Circuit",
+      "Datagram",
+      "Random"
+    ],
+    "answer": "Circuit"
+  },
+  {
+    "id": 31,
+    "question": "The Internet mainly uses:",
+    "options": [
+      "Circuit switching",
+      "Packet switching",
+      "Time switching",
+      "Frequency switching"
+    ],
+    "answer": "Packet switching"
+  },
+  {
+    "id": 32,
+    "question": "Queueing delay becomes very large when utilization approaches:",
+    "options": [
+      "0",
+      "0.5",
+      "1",
+      "2"
+    ],
+    "answer": "1"
+  }
+]

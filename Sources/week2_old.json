@@ -1,0 +1,144 @@
+[
+  {
+    "id": 1,
+    "question": "The number of links to interconnect N nodes through a switch is:",
+    "options": [
+      "N^2",
+      "N(N-1)/2",
+      "2N",
+      "N"
+    ],
+    "answer": "N"
+  },
+  {
+    "id": 2,
+    "question": "A virtual circuit:",
+    "options": [
+      "Is the basis for ATM networks",
+      "Forwards packets based on the destination address",
+      "Keeps the same VC number on each of the links along its route",
+      "Is used in telephone networks"
+    ],
+    "answer": "Is the basis for ATM networks"
+  },
+  {
+    "id": 3,
+    "question": "Packet switching:",
+    "options": [
+      "Is based on TDM or FDM",
+      "Allocates dedicated resources",
+      "Uses statistical multiplexing",
+      "Is used in public telephone networks"
+    ],
+    "answer": "Uses statistical multiplexing"
+  },
+  {
+    "id": 4,
+    "question": "Packet-switching can be used for transmission of:",
+    "options": [
+      "Voice/telephony",
+      "Video",
+      "Data (files)",
+      "All of the above"
+    ],
+    "answer": "All of the above"
+  },
+  {
+    "id": 5,
+    "question": "Select the correct statement regarding data transmission efficiency:",
+    "options": [
+      "As data transmission is almost always bursty, it is efficient to use circuit switching for it",
+      "As data transmission has almost always constant rate, it is efficient to use circuit switching for it",
+      "As data transmission is almost always bursty, packet switching is more suitable",
+      "As data transmission has almost always constant rate, it is efficient to use packet switching for it"
+    ],
+    "answer": "As data transmission is almost always bursty, packet switching is more suitable"
+  },
+  {
+    "id": 6,
+    "question": "Time-division multiplexing (TDM) can be used for supporting:",
+    "options": [
+      "Datagram packet switching",
+      "Circuit switching",
+      "Virtual Circuit packet switching",
+      "All of the above"
+    ],
+    "answer": "All of the above"
+  },
+  {
+    "id": 7,
+    "question": "Statistical multiplexing can be used for providing quality of service (QoS) in switched networks:",
+    "options": [
+      "If utilization is low, good QoS can be attained",
+      "With separate connection queues and proper scheduling, QoS can be attained",
+      "Both a and b",
+      "No way statistical multiplexing can provide good QoS"
+    ],
+    "answer": "Both a and b"
+  },
+  {
+    "id": 8,
+    "question": "Which of the following is NOT a characteristic of Virtual Circuit Network?",
+    "options": [
+      "There are setup and teardown phases in addition to the data transfer phase",
+      "Resources can be allocated during setup phase or on demand",
+      "All packets follow the same path established during the connection",
+      "Virtual circuit network is implemented in the application layer"
+    ],
+    "answer": "Virtual circuit network is implemented in the application layer"
+  },
+  {
+    "id": 9,
+    "question": "A forwarding table in a virtual circuit packet switching network:",
+    "options": [
+      "Contains mapping of (input interface, input VCID) and (output VCID, output interface)",
+      "Contains mapping of input VCID and (output VCID, output interface)",
+      "Contains mapping of VCID and output interface",
+      "Contains mapping of destination network address and output interface"
+    ],
+    "answer": "Contains mapping of (input interface, input VCID) and (output VCID, output interface)"
+  },
+  {
+    "id": 10,
+    "question": "Which of the following is NOT a recognized type of networks (coverage-wise)?",
+    "options": [
+      "PAN",
+      "FAN",
+      "LAN",
+      "WAN"
+    ],
+    "answer": "FAN"
+  },
+  {
+    "id": 11,
+    "question": "Circuit-switching can be used for transmission of:",
+    "options": [
+      "Voice/telephony",
+      "Video",
+      "Data (files)",
+      "All of the above"
+    ],
+    "answer": "All of the above"
+  },
+  {
+    "id": 12,
+    "question": "Packet-switching is ALWAYS more efficient than circuit switching for data traffic:",
+    "options": [
+      "Yes",
+      "No",
+      "Depends on the nature of a connection and the number of nodes in the network selected"
+    ],
+    "answer": "Depends on the nature of a connection and the number of nodes in the network selected"
+  },
+  {
+    "id": 13,
+    "question": "In virtual circuit packet switching, we have:",
+    "options": [
+      "Each packet carries a fixed unique identifier along the selected path.",
+      "Each packet can follow different route.",
+      "Resources are reserved for each virtual circuit.",
+      "Both a and c"
+    ],
+    "answer": "Both a and c"
+  }
+]
