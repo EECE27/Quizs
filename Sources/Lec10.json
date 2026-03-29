@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "question": "What are the three core principles mentioned for designing a protocol like IP?",
+    "options": [
+      "Complexity, Speed, and Security",
+      "Simplicity, Adaptability, and Scalability",
+      "Redundancy, Efficiency, and Cost",
+      "Encryption, Compression, and Routing"
+    ],
+    "answer": {
+      "text": "Simplicity, Adaptability, and Scalability",
+      "isCorrect": true,
+      "rationale": "The lecture emphasizes that 'simplicity is the key', the protocol must be adaptive to different data links, and it must think about scalability."
+    }
+  },
+  {
+    "id": 2,
+    "question": "In the IP datagram format, how many bits are allocated for the 'Version' field?",
+    "options": [
+      "2 bits",
+      "4 bits",
+      "8 bits",
+      "16 bits"
+    ],
+    "answer": {
+      "text": "4 bits",
+      "isCorrect": true,
+      "rationale": "The version field (e.g., distinguishing IPv4 from IPv6) uses 4 bits."
+    }
+  },
+  {
+    "id": 3,
+    "question": "What is the typical overhead (header size) for a standard IP packet combined with a TCP segment?",
+    "options": [
+      "20 bytes",
+      "40 bytes",
+      "60 bytes",
+      "1500 bytes"
+    ],
+    "answer": {
+      "text": "40 bytes",
+      "isCorrect": true,
+      "rationale": "20 bytes for IP + 20 bytes for TCP = 40 bytes of total overhead plus app layer overhead."
+    }
+  },
+  {
+    "id": 4,
+    "question": "What happens to the 'Time to Live' (TTL) field as a packet passes through each router?",
+    "options": [
+      "It is incremented by 1",
+      "It remains unchanged",
+      "It is decremented by 1",
+      "It is reset to zero"
+    ],
+    "answer": {
+      "text": "It is decremented by 1",
+      "isCorrect": true,
+      "rationale": "TTL is decremented at each router to prevent packets from looping infinitely."
+    }
+  },
+  {
+    "id": 5,
+    "question": "What is the purpose of the 'Fragment Offset' field in the IP header?",
+    "options": [
+      "To identify the source of the packet",
+      "To determine the priority of the data",
+      "To help the destination reassemble fragments in the correct order",
+      "To calculate the total length of the link"
+    ],
+    "answer": {
+      "text": "To help the destination reassemble fragments in the correct order",
+      "isCorrect": true,
+      "rationale": "The offset tells the receiver where a particular fragment fits within the original datagram."
+    }
+  },
+  {
+    "id": 6,
+    "question": "If a 4000-byte datagram (including a 20-byte header) is fragmented into links with an MTU of 1500 bytes, how many fragments are created?",
+    "options": [
+      "2 fragments",
+      "3 fragments",
+      "4 fragments",
+      "5 fragments"
+    ],
+    "answer": {
+      "text": "3 fragments",
+      "isCorrect": true,
+      "rationale": "The 3980 bytes of data are split into chunks of 1480, 1480, and 1020, resulting in 3 total fragments."
+    }
+  },
+  {
+    "id": 7,
+    "question": "In IP fragmentation, what does a 'More Fragments' (MF) flag of 0 indicate?",
+    "options": [
+      "There are more fragments coming",
+      "This is the first fragment",
+      "This is the last fragment of the original datagram",
+      "The packet was not fragmented"
+    ],
+    "answer": {
+      "text": "This is the last fragment of the original datagram",
+      "isCorrect": true,
+      "rationale": "MF=0 tells the receiver that the current fragment is the final piece of the sequence."
+    }
+  },
+  {
+    "id": 8,
+    "question": "Why must the fragment offset be divided by 8 in the IP header field?",
+    "options": [
+      "Because IP addresses are 32 bits",
+      "To fit the 13-bit field size by using 8-byte units",
+      "To align with the hardware clock speed",
+      "It is a legacy requirement from IPv3"
+    ],
+    "answer": {
+      "text": "To fit the 13-bit field size by using 8-byte units",
+      "isCorrect": true,
+      "rationale": "The offset is measured in units of 8 bytes to save space in the header."
+    }
+  },
+  {
+    "id": 9,
+    "question": "Which field in the IP header remains the same for all fragments of the same original datagram?",
+    "options": [
+      "Fragment Offset",
+      "16-bit Identifier (ID)",
+      "More Fragments (MF) flag",
+      "Total Length"
+    ],
+    "answer": {
+      "text": "16-bit Identifier (ID)",
+      "isCorrect": true,
+      "rationale": "The ID field must be identical for all fragments so the receiver knows they belong to the same datagram."
+    }
+  },
+  {
+    "id": 10,
+    "question": "Where is a fragmented IP datagram reassembled?",
+    "options": [
+      "At each intermediate router",
+      "Only at the final destination host",
+      "At the gateway of the source network",
+      "In the cloud"
+    ],
+    "answer": {
+      "text": "Only at the final destination host",
+      "isCorrect": true,
+      "rationale": "IP reassembly occurs only at the destination to minimize processing load on intermediate routers."
+    }
+  }
+]

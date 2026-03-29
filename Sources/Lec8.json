@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "question": "According to the lecture, what is the primary goal of the Routing Protocol?",
+    "options": [
+      "To move a packet from a router's input port to the correct output port.",
+      "To decide the end-to-end route or the best next hop to the destination.",
+      "To physicalize the bits onto the transmission medium.",
+      "To manage the flow control between two end hosts."
+    ],
+    "answer": "To decide the end-to-end route or the best next hop to the destination."
+  },
+  {
+    "id": 2,
+    "question": "How is the 'best' route typically defined in modern networks like the Internet?",
+    "options": [
+      "The path with the most routers.",
+      "The path with the least amount of encryption.",
+      "The shortest path (based on a routing/link metric).",
+      "The path that avoids all switches."
+    ],
+    "answer": "The shortest path (based on a routing/link metric)."
+  },
+  {
+    "id": 3,
+    "question": "Which data structure is used inside a router to determine which output port a packet should be sent to?",
+    "options": [
+      "Routing Table",
+      "MAC Table",
+      "Forwarding Table",
+      "Flow Control Window"
+    ],
+    "answer": "Forwarding Table"
+  },
+  {
+    "id": 4,
+    "question": "In the context of the Data Plane, what is the local action of moving a packet from input to output called?",
+    "options": [
+      "Routing",
+      "Forwarding",
+      "Signaling",
+      "Encapsulation"
+    ],
+    "answer": "Forwarding"
+  },
+  {
+    "id": 5,
+    "question": "Which network model evolved from telephony and focuses on strict timing and guaranteed service?",
+    "options": [
+      "Datagram (IP)",
+      "Virtual Circuit (ATM)",
+      "Best-effort delivery",
+      "Elastic service"
+    ],
+    "answer": "Virtual Circuit (ATM)"
+  },
+  {
+    "id": 6,
+    "question": "In a Virtual Circuit (VC) network, what information is maintained in the routers for each connection?",
+    "options": [
+      "No state information is maintained.",
+      "State information including VC identifiers and service requirements.",
+      "The entire contents of the last 100 packets.",
+      "Only the destination IP address of the source."
+    ],
+    "answer": "State information including VC identifiers and service requirements."
+  },
+  {
+    "id": 7,
+    "question": "Why are end systems in the Internet (Datagram) model considered 'smart'?",
+    "options": [
+      "Because they are made of more expensive hardware than routers.",
+      "Because they can adapt, perform control, and handle error recovery.",
+      "Because they determine the VCID for every hop.",
+      "Because they never send out-of-order packets."
+    ],
+    "answer": "Because they can adapt, perform control, and handle error recovery."
+  },
+  {
+    "id": 8,
+    "question": "What is a main consequence of having a very simple Layer 3 in the Internet model?",
+    "options": [
+      "It makes it harder to connect different types of networks.",
+      "It makes it easier to interconnect networks that use very different link layers.",
+      "It requires the network core to be extremely complex.",
+      "It guarantees that packets always arrive in order."
+    ],
+    "answer": "It makes it easier to interconnect networks that use very different link layers."
+  },
+  {
+    "id": 9,
+    "question": "Which model is described as having 'complexity at the edge' and a simple network core?",
+    "options": [
+      "ATM (VC)",
+      "Internet (Datagram)",
+      "Circuit Switching",
+      "Telephony"
+    ],
+    "answer": "Internet (Datagram)"
+  },
+  {
+    "id": 10,
+    "question": "In which type of network can packets from the same source to the same destination take different paths and arrive out-of-order?",
+    "options": [
+      "Virtual Circuit network",
+      "Datagram network",
+      "Telephony network",
+      "Connection-oriented network"
+    ],
+    "answer": "Datagram network"
+  },
+  {
+    "id": 11,
+    "question": "The ATM (VC) model is preferred for applications that are:",
+    "options": [
+      "Elastic and have no strict timing requirements.",
+      "Strict in time and require guaranteed bandwidth.",
+      "Only used for text-based data exchange.",
+      "Completely stateless."
+    ],
+    "answer": "Strict in time and require guaranteed bandwidth."
+  },
+  {
+    "id": 12,
+    "question": "What is Statistical Multiplexing associated with in the lecture notes?",
+    "options": [
+      "Circuit Switching",
+      "Packet Switching",
+      "Dedicated link allocation",
+      "Manual route selection"
+    ],
+    "answer": "Packet Switching"
+  },
+  {
+    "id": 13,
+    "question": "Which phase is NOT present in a Datagram (connectionless) network?",
+    "options": [
+      "Forwarding",
+      "Routing",
+      "Call Setup/Teardown",
+      "Packetization"
+    ],
+    "answer": "Call Setup/Teardown"
+  },
+  {
+    "id": 14,
+    "question": "In a Virtual Circuit network, when does the router decide the VCID for a connection?",
+    "options": [
+      "During the data transfer phase for every packet.",
+      "During the connection setup phase.",
+      "Only when a packet is lost.",
+      "It is hardcoded into the router's hardware."
+    ],
+    "answer": "During the connection setup phase."
+  },
+  {
+    "id": 15,
+    "question": "According to the comparison table, which model uses 'dumb' end systems?",
+    "options": [
+      "Internet (Datagram)",
+      "ATM (VC)",
+      "TCP/IP",
+      "Ethernet"
+    ],
+    "answer": "ATM (VC)"
+  }
+]

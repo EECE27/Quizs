@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "question": "When designing an IP protocol, which of the following is considered a key principle for its architecture?",
+    "options": [
+      "Simplicity",
+      "Fixed payload length",
+      "Strictly local scalability",
+      "High complexity for security"
+    ],
+    "answer": "Simplicity"
+  },
+  {
+    "id": 2,
+    "question": "The IP header is described as 'word-oriented.' How many bits are in one 'word' according to the slides?",
+    "options": [
+      "16 bits",
+      "32 bits",
+      "64 bits",
+      "4 bits"
+    ],
+    "answer": "32 bits"
+  },
+  {
+    "id": 3,
+    "question": "What is the typical overhead (in bytes) of an IP datagram when used with TCP, excluding application layer overhead?",
+    "options": [
+      "20 bytes",
+      "32 bytes",
+      "40 bytes",
+      "60 bytes"
+    ],
+    "answer": "40 bytes"
+  },
+  {
+    "id": 4,
+    "question": "The 'Time to Live' (TTL) field in the IP header is primarily used to prevent which issue?",
+    "options": [
+      "Data corruption",
+      "Forwarding loops",
+      "Packet fragmentation",
+      "Header overflow"
+    ],
+    "answer": "Forwarding loops"
+  },
+  {
+    "id": 5,
+    "question": "What does the 16-bit Header Checksum field specifically verify?",
+    "options": [
+      "Integrity of the entire datagram",
+      "Integrity of the IP header only",
+      "Authentication of the source IP",
+      "The sequence of fragments"
+    ],
+    "answer": "Integrity of the IP header only"
+  },
+  {
+    "id": 6,
+    "question": "Where does the reassembly of fragmented IP datagrams take place?",
+    "options": [
+      "At every intermediate router",
+      "Only at the final destination",
+      "At the first router with a large MTU",
+      "At the source host before sending"
+    ],
+    "answer": "Only at the final destination"
+  },
+  {
+    "id": 7,
+    "question": "If the 'More Fragments' (MF) bit is set to 0, what does it indicate to the receiving host?",
+    "options": [
+      "The packet should not be fragmented",
+      "This is the first fragment of a datagram",
+      "This is the last fragment of the datagram",
+      "The datagram has an error"
+    ],
+    "answer": "This is the last fragment of the datagram"
+  },
+  {
+    "id": 8,
+    "question": "In the fragmentation example provided, a 4000-byte datagram is split. Why is the fragment offset for the second fragment calculated as 185?",
+    "options": [
+      "It is the second word of the header",
+      "It is 1480 divided by 8",
+      "It is the standard value for Ethernet",
+      "It represents 185 words of data"
+    ],
+    "answer": "It is 1480 divided by 8"
+  },
+  {
+    "id": 9,
+    "question": "What is the maximum number of hops a packet can typically travel if the TTL is set to its highest possible 8-bit value?",
+    "options": [
+      "32",
+      "255",
+      "1500",
+      "42"
+    ],
+    "answer": "255"
+  },
+  {
+    "id": 10,
+    "question": "If a packet is too large for a link's MTU but the 'Don't Fragment' (DF) bit is set to 1, what happens to the packet?",
+    "options": [
+      "It is fragmented anyway",
+      "It is compressed to fit",
+      "It is dropped",
+      "It is sent via a different protocol"
+    ],
+    "answer": "It is dropped"
+  }
+]
